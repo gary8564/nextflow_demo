@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/garychang/Documents/RWTH/HiWiJob/MBD/nextflow_demo/scripts/evaluate_metrics.py", line 23, in <module>
-    main()
-  File "/Users/garychang/Documents/RWTH/HiWiJob/MBD/nextflow_demo/scripts/evaluate_metrics.py", line 14, in main
-    exact = json.load(open(os.path.join(args.exact_metrics_dir, "metrics.json")))
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-NotADirectoryError: [Errno 20] Not a directory: 'results_exactgp/metrics.json/metrics.json'
