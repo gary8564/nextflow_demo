@@ -1,0 +1,176 @@
+{
+  "build": "py311h10c502b_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=18",
+    "numpy >=1.19,<3",
+    "python >=3.11,<3.12.0a0",
+    "python >=3.11,<3.12.0a0 *_cpython",
+    "python_abi 3.11.* *_cp311"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/nlopt-2.9.0-py311h10c502b_0",
+  "files": [
+    "include/nlopt.h",
+    "include/nlopt.hpp",
+    "lib/cmake/nlopt/NLoptConfig.cmake",
+    "lib/cmake/nlopt/NLoptConfigVersion.cmake",
+    "lib/cmake/nlopt/NLoptLibraryDepends-release.cmake",
+    "lib/cmake/nlopt/NLoptLibraryDepends.cmake",
+    "lib/libnlopt.0.13.0.dylib",
+    "lib/libnlopt.0.dylib",
+    "lib/libnlopt.dylib",
+    "lib/pkgconfig/nlopt.pc",
+    "lib/python3.11/site-packages/__pycache__/nlopt.cpython-311.pyc",
+    "lib/python3.11/site-packages/_nlopt.so",
+    "lib/python3.11/site-packages/nlopt-2.9.0.dist-info/METADATA",
+    "lib/python3.11/site-packages/nlopt.py",
+    "share/man/man3/nlopt.3",
+    "share/man/man3/nlopt_minimize.3",
+    "share/man/man3/nlopt_minimize_constrained.3"
+  ],
+  "fn": "nlopt-2.9.0-py311h10c502b_0.conda",
+  "license": "LGPL-2.1-or-later",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/nlopt-2.9.0-py311h10c502b_0",
+    "type": 1
+  },
+  "md5": "3875ae4556458fd223b3ccd778f7a47b",
+  "name": "nlopt",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/nlopt-2.9.0-py311h10c502b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/nlopt.h",
+        "path_type": "hardlink",
+        "sha256": "e2b3d79fdeb6f8c95f466753e56eb221f6eb0ef5bf0e974250aeb91cee928d54",
+        "sha256_in_prefix": "e2b3d79fdeb6f8c95f466753e56eb221f6eb0ef5bf0e974250aeb91cee928d54",
+        "size_in_bytes": 15790
+      },
+      {
+        "_path": "include/nlopt.hpp",
+        "path_type": "hardlink",
+        "sha256": "959da76bd8cad7c05fc7cbc17e9ba50ca6110dbf401a71b65e5023283f07dc4d",
+        "sha256_in_prefix": "959da76bd8cad7c05fc7cbc17e9ba50ca6110dbf401a71b65e5023283f07dc4d",
+        "size_in_bytes": 23497
+      },
+      {
+        "_path": "lib/cmake/nlopt/NLoptConfig.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/nlopt_1731404057884/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "b479b0cf64961015e1973d981b5551395d62a02de36a2624bffeb45e06da927d",
+        "sha256_in_prefix": "246f17bcf739619b72a4de0045d4ce1e2f62a84590c868640a95880138f2a907",
+        "size_in_bytes": 1094
+      },
+      {
+        "_path": "lib/cmake/nlopt/NLoptConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "8332baac5144c6d2ba76440d2e864a91192a743b7d0cb654b83e8d689d6dad51",
+        "sha256_in_prefix": "8332baac5144c6d2ba76440d2e864a91192a743b7d0cb654b83e8d689d6dad51",
+        "size_in_bytes": 376
+      },
+      {
+        "_path": "lib/cmake/nlopt/NLoptLibraryDepends-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "9724b4d493b3c8ae89d4dfd8cf5e5cb1a24241d0b9da74b0630454e5898446c2",
+        "sha256_in_prefix": "9724b4d493b3c8ae89d4dfd8cf5e5cb1a24241d0b9da74b0630454e5898446c2",
+        "size_in_bytes": 855
+      },
+      {
+        "_path": "lib/cmake/nlopt/NLoptLibraryDepends.cmake",
+        "path_type": "hardlink",
+        "sha256": "8b71a834e5a0516ecd86a28db09983cc2232825fb59b2decbf70c607b1b9c058",
+        "sha256_in_prefix": "8b71a834e5a0516ecd86a28db09983cc2232825fb59b2decbf70c607b1b9c058",
+        "size_in_bytes": 4192
+      },
+      {
+        "_path": "lib/libnlopt.0.13.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "a66f01fb8851003f54308089a07d61f0bad2b0d60e9d804d4359bf2ee98ada66",
+        "sha256_in_prefix": "a66f01fb8851003f54308089a07d61f0bad2b0d60e9d804d4359bf2ee98ada66",
+        "size_in_bytes": 540416
+      },
+      {
+        "_path": "lib/libnlopt.0.dylib",
+        "path_type": "softlink",
+        "sha256": "a66f01fb8851003f54308089a07d61f0bad2b0d60e9d804d4359bf2ee98ada66",
+        "size_in_bytes": 540416
+      },
+      {
+        "_path": "lib/libnlopt.dylib",
+        "path_type": "softlink",
+        "sha256": "a66f01fb8851003f54308089a07d61f0bad2b0d60e9d804d4359bf2ee98ada66",
+        "size_in_bytes": 540416
+      },
+      {
+        "_path": "lib/pkgconfig/nlopt.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/nlopt_1731404057884/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "a518ca1c7c2f539b238c36fbcd116a1648db263638588a9d5ae2a210acdc7197",
+        "sha256_in_prefix": "9f66f1a55e7a82eadbf97ea5b563b6f2de90e3e32d1a543790853b3604c66564",
+        "size_in_bytes": 481
+      },
+      {
+        "_path": "lib/python3.11/site-packages/__pycache__/nlopt.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "4bd73471fa4257916d3fc6813c550ec98bee7dd0613fb4ed32a40523c142bd68",
+        "sha256_in_prefix": "4bd73471fa4257916d3fc6813c550ec98bee7dd0613fb4ed32a40523c142bd68",
+        "size_in_bytes": 46409
+      },
+      {
+        "_path": "lib/python3.11/site-packages/_nlopt.so",
+        "path_type": "hardlink",
+        "sha256": "dc06e44f9286165e9d83d3f5e08a4075f3ab2ed05aa6a1f82da37b18427cd9b2",
+        "sha256_in_prefix": "dc06e44f9286165e9d83d3f5e08a4075f3ab2ed05aa6a1f82da37b18427cd9b2",
+        "size_in_bytes": 286848
+      },
+      {
+        "_path": "lib/python3.11/site-packages/nlopt-2.9.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "f53fe44d3ffb4a82c9c5a28fee5e53ee532c7212c110d7d3fa29777f1d7d77c1",
+        "sha256_in_prefix": "f53fe44d3ffb4a82c9c5a28fee5e53ee532c7212c110d7d3fa29777f1d7d77c1",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "lib/python3.11/site-packages/nlopt.py",
+        "path_type": "hardlink",
+        "sha256": "7a08daf5816b979f377d63825b9f85a8fc6edc7ad98d3b71e6f4aa8372c625d6",
+        "sha256_in_prefix": "7a08daf5816b979f377d63825b9f85a8fc6edc7ad98d3b71e6f4aa8372c625d6",
+        "size_in_bytes": 20391
+      },
+      {
+        "_path": "share/man/man3/nlopt.3",
+        "path_type": "hardlink",
+        "sha256": "a65a3ae2d9b4f320b4c9da0e933263df967a1f6fe7c64cc743cd41105ce6849b",
+        "sha256_in_prefix": "a65a3ae2d9b4f320b4c9da0e933263df967a1f6fe7c64cc743cd41105ce6849b",
+        "size_in_bytes": 28000
+      },
+      {
+        "_path": "share/man/man3/nlopt_minimize.3",
+        "path_type": "hardlink",
+        "sha256": "f51ad1cda23b6b46efa1c6758eb6c8d8e3d1b6f5ee17447198ddf197ec41d68b",
+        "sha256_in_prefix": "f51ad1cda23b6b46efa1c6758eb6c8d8e3d1b6f5ee17447198ddf197ec41d68b",
+        "size_in_bytes": 17905
+      },
+      {
+        "_path": "share/man/man3/nlopt_minimize_constrained.3",
+        "path_type": "hardlink",
+        "sha256": "228cf0b466e424ec74e12dc52b57fae2484b5693cb46f9ffaf37cdce5cfc62b1",
+        "sha256_in_prefix": "228cf0b466e424ec74e12dc52b57fae2484b5693cb46f9ffaf37cdce5cfc62b1",
+        "size_in_bytes": 20782
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a032b665b9f47ad2c0ada7da261ce41f90dc5d7f0acaf02a95ae68099c44ab9d",
+  "size": 325962,
+  "subdir": "osx-arm64",
+  "timestamp": 1731404435000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/nlopt-2.9.0-py311h10c502b_0.conda",
+  "version": "2.9.0"
+}

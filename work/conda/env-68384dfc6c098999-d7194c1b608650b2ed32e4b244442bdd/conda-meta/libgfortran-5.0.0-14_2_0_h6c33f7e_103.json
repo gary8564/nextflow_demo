@@ -1,0 +1,31 @@
+{
+  "build": "14_2_0_h6c33f7e_103",
+  "build_number": 103,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libgfortran5 14.2.0 h6c33f7e_103"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/libgfortran-5.0.0-14_2_0_h6c33f7e_103",
+  "files": [],
+  "fn": "libgfortran-5.0.0-14_2_0_h6c33f7e_103.conda",
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/libgfortran-5.0.0-14_2_0_h6c33f7e_103",
+    "type": 1
+  },
+  "md5": "044a210bc1d5b8367857755665157413",
+  "name": "libgfortran",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/libgfortran-5.0.0-14_2_0_h6c33f7e_103.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "8628746a8ecd311f1c0d14bb4f527c18686251538f7164982ccbe3b772de58b5",
+  "size": 156291,
+  "subdir": "osx-arm64",
+  "timestamp": 1743863532000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran-5.0.0-14_2_0_h6c33f7e_103.conda",
+  "version": "5.0.0"
+}

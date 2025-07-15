@@ -1,0 +1,44 @@
+{
+  "build": "hb625feb_6",
+  "build_number": 6,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [
+    "cctools_osx-arm64 1010.6.*",
+    "cctools 1010.6.*"
+  ],
+  "depends": [
+    "ld64_osx-arm64 951.9 hcfee506_6",
+    "libllvm20 >=20.1.2,<20.2.0a0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/ld64-951.9-hb625feb_6",
+  "files": [
+    "bin/ld"
+  ],
+  "fn": "ld64-951.9-hb625feb_6.conda",
+  "license": "APSL-2.0",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/ld64-951.9-hb625feb_6",
+    "type": 1
+  },
+  "md5": "bd3d8bd3b929eadb24b8b9724adac7f5",
+  "name": "ld64",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/ld64-951.9-hb625feb_6.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/ld",
+        "path_type": "softlink",
+        "sha256": "2756d7b2b0cde8b550e39f62c6d2c55d5f55de91a30faaf2a6864f02cdca64cb",
+        "size_in_bytes": 4899968
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "ac5c18bdb637c00047f4cc9520409daaaa9b2e5e15c2e8f0dd22a153b38d4aa2",
+  "size": 19462,
+  "subdir": "osx-arm64",
+  "timestamp": 1743872210000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ld64-951.9-hb625feb_6.conda",
+  "version": "951.9"
+}

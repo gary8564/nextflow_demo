@@ -1,0 +1,23 @@
+name: nextflow_dkl_demo
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - matplotlib
+  - numpy<2.0
+  - pandas
+  - r-base
+  - rpy2
+  - openblas
+  - lapack
+  - gfortran
+  - r-robustgasp
+  - scikit-learn
+  - scipy
+  - seaborn
+  - pyyaml
+  - pip
+  - pip:
+      - -r requirements.txt

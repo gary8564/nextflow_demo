@@ -1,0 +1,43 @@
+{
+  "build": "h12301e7_25",
+  "build_number": 25,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "clang_osx-arm64 20.1.7 h07b0088_25",
+    "clangxx 20.1.7.*",
+    "libcxx >=20",
+    "libllvm20 >=20.1.7,<20.2.0a0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/clangxx_impl_osx-arm64-20.1.7-h12301e7_25",
+  "files": [
+    "bin/arm64-apple-darwin20.0.0-clang++"
+  ],
+  "fn": "clangxx_impl_osx-arm64-20.1.7-h12301e7_25.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/clangxx_impl_osx-arm64-20.1.7-h12301e7_25",
+    "type": 1
+  },
+  "md5": "a8a040c550eeb6df251e3c374032b68b",
+  "name": "clangxx_impl_osx-arm64",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/clangxx_impl_osx-arm64-20.1.7-h12301e7_25.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/arm64-apple-darwin20.0.0-clang++",
+        "path_type": "softlink",
+        "sha256": "8a3717195dd6a867ae9aeff88b3ae4e7a336971d3b18b93db716686817de7729",
+        "size_in_bytes": 172896
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "079a298a993201048ed14dd2a79f6d0a9ed1f42f1beb3e658ea7af0f9ca03d31",
+  "size": 18449,
+  "subdir": "osx-arm64",
+  "timestamp": 1749897045000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/clangxx_impl_osx-arm64-20.1.7-h12301e7_25.conda",
+  "version": "20.1.7"
+}

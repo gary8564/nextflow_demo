@@ -1,0 +1,2203 @@
+{
+  "build": "default_h03658f6_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "__osx >=11.0",
+    "libclang-cpp20.1 20.1.7 default_h03658f6_0",
+    "libcxx >=20.1.7",
+    "libllvm20 >=20.1.7,<20.2.0a0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/clang-20-20.1.7-default_h03658f6_0",
+  "files": [
+    "bin/clang-20",
+    "lib/clang/20/include/__clang_cuda_builtin_vars.h",
+    "lib/clang/20/include/__clang_cuda_cmath.h",
+    "lib/clang/20/include/__clang_cuda_complex_builtins.h",
+    "lib/clang/20/include/__clang_cuda_device_functions.h",
+    "lib/clang/20/include/__clang_cuda_intrinsics.h",
+    "lib/clang/20/include/__clang_cuda_libdevice_declares.h",
+    "lib/clang/20/include/__clang_cuda_math.h",
+    "lib/clang/20/include/__clang_cuda_math_forward_declares.h",
+    "lib/clang/20/include/__clang_cuda_runtime_wrapper.h",
+    "lib/clang/20/include/__clang_cuda_texture_intrinsics.h",
+    "lib/clang/20/include/__clang_hip_cmath.h",
+    "lib/clang/20/include/__clang_hip_libdevice_declares.h",
+    "lib/clang/20/include/__clang_hip_math.h",
+    "lib/clang/20/include/__clang_hip_runtime_wrapper.h",
+    "lib/clang/20/include/__clang_hip_stdlib.h",
+    "lib/clang/20/include/__stdarg___gnuc_va_list.h",
+    "lib/clang/20/include/__stdarg___va_copy.h",
+    "lib/clang/20/include/__stdarg_header_macro.h",
+    "lib/clang/20/include/__stdarg_va_arg.h",
+    "lib/clang/20/include/__stdarg_va_copy.h",
+    "lib/clang/20/include/__stdarg_va_list.h",
+    "lib/clang/20/include/__stddef_header_macro.h",
+    "lib/clang/20/include/__stddef_max_align_t.h",
+    "lib/clang/20/include/__stddef_null.h",
+    "lib/clang/20/include/__stddef_nullptr_t.h",
+    "lib/clang/20/include/__stddef_offsetof.h",
+    "lib/clang/20/include/__stddef_ptrdiff_t.h",
+    "lib/clang/20/include/__stddef_rsize_t.h",
+    "lib/clang/20/include/__stddef_size_t.h",
+    "lib/clang/20/include/__stddef_unreachable.h",
+    "lib/clang/20/include/__stddef_wchar_t.h",
+    "lib/clang/20/include/__stddef_wint_t.h",
+    "lib/clang/20/include/__wmmintrin_aes.h",
+    "lib/clang/20/include/__wmmintrin_pclmul.h",
+    "lib/clang/20/include/adcintrin.h",
+    "lib/clang/20/include/adxintrin.h",
+    "lib/clang/20/include/altivec.h",
+    "lib/clang/20/include/amdgpuintrin.h",
+    "lib/clang/20/include/ammintrin.h",
+    "lib/clang/20/include/amxavx512intrin.h",
+    "lib/clang/20/include/amxbf16transposeintrin.h",
+    "lib/clang/20/include/amxcomplexintrin.h",
+    "lib/clang/20/include/amxcomplextransposeintrin.h",
+    "lib/clang/20/include/amxfp16intrin.h",
+    "lib/clang/20/include/amxfp16transposeintrin.h",
+    "lib/clang/20/include/amxfp8intrin.h",
+    "lib/clang/20/include/amxintrin.h",
+    "lib/clang/20/include/amxmovrsintrin.h",
+    "lib/clang/20/include/amxmovrstransposeintrin.h",
+    "lib/clang/20/include/amxtf32intrin.h",
+    "lib/clang/20/include/amxtf32transposeintrin.h",
+    "lib/clang/20/include/amxtransposeintrin.h",
+    "lib/clang/20/include/arm64intr.h",
+    "lib/clang/20/include/arm_acle.h",
+    "lib/clang/20/include/arm_bf16.h",
+    "lib/clang/20/include/arm_cde.h",
+    "lib/clang/20/include/arm_cmse.h",
+    "lib/clang/20/include/arm_fp16.h",
+    "lib/clang/20/include/arm_mve.h",
+    "lib/clang/20/include/arm_neon.h",
+    "lib/clang/20/include/arm_neon_sve_bridge.h",
+    "lib/clang/20/include/arm_sme.h",
+    "lib/clang/20/include/arm_sve.h",
+    "lib/clang/20/include/arm_vector_types.h",
+    "lib/clang/20/include/armintr.h",
+    "lib/clang/20/include/avx10_2_512bf16intrin.h",
+    "lib/clang/20/include/avx10_2_512convertintrin.h",
+    "lib/clang/20/include/avx10_2_512minmaxintrin.h",
+    "lib/clang/20/include/avx10_2_512niintrin.h",
+    "lib/clang/20/include/avx10_2_512satcvtdsintrin.h",
+    "lib/clang/20/include/avx10_2_512satcvtintrin.h",
+    "lib/clang/20/include/avx10_2bf16intrin.h",
+    "lib/clang/20/include/avx10_2convertintrin.h",
+    "lib/clang/20/include/avx10_2copyintrin.h",
+    "lib/clang/20/include/avx10_2minmaxintrin.h",
+    "lib/clang/20/include/avx10_2niintrin.h",
+    "lib/clang/20/include/avx10_2satcvtdsintrin.h",
+    "lib/clang/20/include/avx10_2satcvtintrin.h",
+    "lib/clang/20/include/avx2intrin.h",
+    "lib/clang/20/include/avx512bf16intrin.h",
+    "lib/clang/20/include/avx512bitalgintrin.h",
+    "lib/clang/20/include/avx512bwintrin.h",
+    "lib/clang/20/include/avx512cdintrin.h",
+    "lib/clang/20/include/avx512dqintrin.h",
+    "lib/clang/20/include/avx512fintrin.h",
+    "lib/clang/20/include/avx512fp16intrin.h",
+    "lib/clang/20/include/avx512ifmaintrin.h",
+    "lib/clang/20/include/avx512ifmavlintrin.h",
+    "lib/clang/20/include/avx512vbmi2intrin.h",
+    "lib/clang/20/include/avx512vbmiintrin.h",
+    "lib/clang/20/include/avx512vbmivlintrin.h",
+    "lib/clang/20/include/avx512vlbf16intrin.h",
+    "lib/clang/20/include/avx512vlbitalgintrin.h",
+    "lib/clang/20/include/avx512vlbwintrin.h",
+    "lib/clang/20/include/avx512vlcdintrin.h",
+    "lib/clang/20/include/avx512vldqintrin.h",
+    "lib/clang/20/include/avx512vlfp16intrin.h",
+    "lib/clang/20/include/avx512vlintrin.h",
+    "lib/clang/20/include/avx512vlvbmi2intrin.h",
+    "lib/clang/20/include/avx512vlvnniintrin.h",
+    "lib/clang/20/include/avx512vlvp2intersectintrin.h",
+    "lib/clang/20/include/avx512vnniintrin.h",
+    "lib/clang/20/include/avx512vp2intersectintrin.h",
+    "lib/clang/20/include/avx512vpopcntdqintrin.h",
+    "lib/clang/20/include/avx512vpopcntdqvlintrin.h",
+    "lib/clang/20/include/avxifmaintrin.h",
+    "lib/clang/20/include/avxintrin.h",
+    "lib/clang/20/include/avxneconvertintrin.h",
+    "lib/clang/20/include/avxvnniint16intrin.h",
+    "lib/clang/20/include/avxvnniint8intrin.h",
+    "lib/clang/20/include/avxvnniintrin.h",
+    "lib/clang/20/include/bmi2intrin.h",
+    "lib/clang/20/include/bmiintrin.h",
+    "lib/clang/20/include/builtins.h",
+    "lib/clang/20/include/cet.h",
+    "lib/clang/20/include/cetintrin.h",
+    "lib/clang/20/include/cldemoteintrin.h",
+    "lib/clang/20/include/clflushoptintrin.h",
+    "lib/clang/20/include/clwbintrin.h",
+    "lib/clang/20/include/clzerointrin.h",
+    "lib/clang/20/include/cmpccxaddintrin.h",
+    "lib/clang/20/include/cpuid.h",
+    "lib/clang/20/include/crc32intrin.h",
+    "lib/clang/20/include/cuda_wrappers/algorithm",
+    "lib/clang/20/include/cuda_wrappers/bits/basic_string.h",
+    "lib/clang/20/include/cuda_wrappers/bits/basic_string.tcc",
+    "lib/clang/20/include/cuda_wrappers/bits/shared_ptr_base.h",
+    "lib/clang/20/include/cuda_wrappers/cmath",
+    "lib/clang/20/include/cuda_wrappers/complex",
+    "lib/clang/20/include/cuda_wrappers/new",
+    "lib/clang/20/include/emmintrin.h",
+    "lib/clang/20/include/enqcmdintrin.h",
+    "lib/clang/20/include/f16cintrin.h",
+    "lib/clang/20/include/float.h",
+    "lib/clang/20/include/fma4intrin.h",
+    "lib/clang/20/include/fmaintrin.h",
+    "lib/clang/20/include/fxsrintrin.h",
+    "lib/clang/20/include/gfniintrin.h",
+    "lib/clang/20/include/gpuintrin.h",
+    "lib/clang/20/include/hexagon_circ_brev_intrinsics.h",
+    "lib/clang/20/include/hexagon_protos.h",
+    "lib/clang/20/include/hexagon_types.h",
+    "lib/clang/20/include/hresetintrin.h",
+    "lib/clang/20/include/htmintrin.h",
+    "lib/clang/20/include/htmxlintrin.h",
+    "lib/clang/20/include/hvx_hexagon_protos.h",
+    "lib/clang/20/include/ia32intrin.h",
+    "lib/clang/20/include/immintrin.h",
+    "lib/clang/20/include/intrin.h",
+    "lib/clang/20/include/intrin0.h",
+    "lib/clang/20/include/inttypes.h",
+    "lib/clang/20/include/invpcidintrin.h",
+    "lib/clang/20/include/iso646.h",
+    "lib/clang/20/include/keylockerintrin.h",
+    "lib/clang/20/include/larchintrin.h",
+    "lib/clang/20/include/lasxintrin.h",
+    "lib/clang/20/include/limits.h",
+    "lib/clang/20/include/llvm_libc_wrappers/assert.h",
+    "lib/clang/20/include/llvm_libc_wrappers/ctype.h",
+    "lib/clang/20/include/llvm_libc_wrappers/inttypes.h",
+    "lib/clang/20/include/llvm_libc_wrappers/stdio.h",
+    "lib/clang/20/include/llvm_libc_wrappers/stdlib.h",
+    "lib/clang/20/include/llvm_libc_wrappers/string.h",
+    "lib/clang/20/include/llvm_libc_wrappers/time.h",
+    "lib/clang/20/include/llvm_offload_wrappers/__llvm_offload.h",
+    "lib/clang/20/include/llvm_offload_wrappers/__llvm_offload_device.h",
+    "lib/clang/20/include/llvm_offload_wrappers/__llvm_offload_host.h",
+    "lib/clang/20/include/lsxintrin.h",
+    "lib/clang/20/include/lwpintrin.h",
+    "lib/clang/20/include/lzcntintrin.h",
+    "lib/clang/20/include/mm3dnow.h",
+    "lib/clang/20/include/mm_malloc.h",
+    "lib/clang/20/include/mmintrin.h",
+    "lib/clang/20/include/module.modulemap",
+    "lib/clang/20/include/movdirintrin.h",
+    "lib/clang/20/include/movrs_avx10_2_512intrin.h",
+    "lib/clang/20/include/movrs_avx10_2intrin.h",
+    "lib/clang/20/include/movrsintrin.h",
+    "lib/clang/20/include/msa.h",
+    "lib/clang/20/include/mwaitxintrin.h",
+    "lib/clang/20/include/nmmintrin.h",
+    "lib/clang/20/include/nvptxintrin.h",
+    "lib/clang/20/include/omp.h",
+    "lib/clang/20/include/opencl-c-base.h",
+    "lib/clang/20/include/opencl-c.h",
+    "lib/clang/20/include/openmp_wrappers/__clang_openmp_device_functions.h",
+    "lib/clang/20/include/openmp_wrappers/cmath",
+    "lib/clang/20/include/openmp_wrappers/complex",
+    "lib/clang/20/include/openmp_wrappers/complex.h",
+    "lib/clang/20/include/openmp_wrappers/complex_cmath.h",
+    "lib/clang/20/include/openmp_wrappers/math.h",
+    "lib/clang/20/include/openmp_wrappers/new",
+    "lib/clang/20/include/pconfigintrin.h",
+    "lib/clang/20/include/pkuintrin.h",
+    "lib/clang/20/include/pmmintrin.h",
+    "lib/clang/20/include/popcntintrin.h",
+    "lib/clang/20/include/ppc_wrappers/bmi2intrin.h",
+    "lib/clang/20/include/ppc_wrappers/bmiintrin.h",
+    "lib/clang/20/include/ppc_wrappers/emmintrin.h",
+    "lib/clang/20/include/ppc_wrappers/immintrin.h",
+    "lib/clang/20/include/ppc_wrappers/mm_malloc.h",
+    "lib/clang/20/include/ppc_wrappers/mmintrin.h",
+    "lib/clang/20/include/ppc_wrappers/nmmintrin.h",
+    "lib/clang/20/include/ppc_wrappers/pmmintrin.h",
+    "lib/clang/20/include/ppc_wrappers/smmintrin.h",
+    "lib/clang/20/include/ppc_wrappers/tmmintrin.h",
+    "lib/clang/20/include/ppc_wrappers/x86gprintrin.h",
+    "lib/clang/20/include/ppc_wrappers/x86intrin.h",
+    "lib/clang/20/include/ppc_wrappers/xmmintrin.h",
+    "lib/clang/20/include/prfchiintrin.h",
+    "lib/clang/20/include/prfchwintrin.h",
+    "lib/clang/20/include/ptrauth.h",
+    "lib/clang/20/include/ptwriteintrin.h",
+    "lib/clang/20/include/raointintrin.h",
+    "lib/clang/20/include/rdpruintrin.h",
+    "lib/clang/20/include/rdseedintrin.h",
+    "lib/clang/20/include/riscv_bitmanip.h",
+    "lib/clang/20/include/riscv_corev_alu.h",
+    "lib/clang/20/include/riscv_crypto.h",
+    "lib/clang/20/include/riscv_ntlh.h",
+    "lib/clang/20/include/riscv_vector.h",
+    "lib/clang/20/include/rtmintrin.h",
+    "lib/clang/20/include/s390intrin.h",
+    "lib/clang/20/include/serializeintrin.h",
+    "lib/clang/20/include/sgxintrin.h",
+    "lib/clang/20/include/sha512intrin.h",
+    "lib/clang/20/include/shaintrin.h",
+    "lib/clang/20/include/sifive_vector.h",
+    "lib/clang/20/include/sm3intrin.h",
+    "lib/clang/20/include/sm4evexintrin.h",
+    "lib/clang/20/include/sm4intrin.h",
+    "lib/clang/20/include/smmintrin.h",
+    "lib/clang/20/include/stdalign.h",
+    "lib/clang/20/include/stdarg.h",
+    "lib/clang/20/include/stdatomic.h",
+    "lib/clang/20/include/stdbool.h",
+    "lib/clang/20/include/stdckdint.h",
+    "lib/clang/20/include/stddef.h",
+    "lib/clang/20/include/stdint.h",
+    "lib/clang/20/include/stdnoreturn.h",
+    "lib/clang/20/include/tbmintrin.h",
+    "lib/clang/20/include/tgmath.h",
+    "lib/clang/20/include/tmmintrin.h",
+    "lib/clang/20/include/tsxldtrkintrin.h",
+    "lib/clang/20/include/uintrintrin.h",
+    "lib/clang/20/include/unwind.h",
+    "lib/clang/20/include/usermsrintrin.h",
+    "lib/clang/20/include/vadefs.h",
+    "lib/clang/20/include/vaesintrin.h",
+    "lib/clang/20/include/varargs.h",
+    "lib/clang/20/include/vecintrin.h",
+    "lib/clang/20/include/velintrin.h",
+    "lib/clang/20/include/velintrin_approx.h",
+    "lib/clang/20/include/velintrin_gen.h",
+    "lib/clang/20/include/vpclmulqdqintrin.h",
+    "lib/clang/20/include/waitpkgintrin.h",
+    "lib/clang/20/include/wasm_simd128.h",
+    "lib/clang/20/include/wbnoinvdintrin.h",
+    "lib/clang/20/include/wmmintrin.h",
+    "lib/clang/20/include/x86gprintrin.h",
+    "lib/clang/20/include/x86intrin.h",
+    "lib/clang/20/include/xmmintrin.h",
+    "lib/clang/20/include/xopintrin.h",
+    "lib/clang/20/include/xsavecintrin.h",
+    "lib/clang/20/include/xsaveintrin.h",
+    "lib/clang/20/include/xsaveoptintrin.h",
+    "lib/clang/20/include/xsavesintrin.h",
+    "lib/clang/20/include/xtestintrin.h",
+    "lib/clang/20/include/yvals_core.h",
+    "lib/clang/20/include/zos_wrappers/builtins.h"
+  ],
+  "fn": "clang-20-20.1.7-default_h03658f6_0.conda",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/clang-20-20.1.7-default_h03658f6_0",
+    "type": 1
+  },
+  "md5": "3a6abd686061f2296b31b52665feacb6",
+  "name": "clang-20",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/clang-20-20.1.7-default_h03658f6_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/clang-20",
+        "path_type": "hardlink",
+        "sha256": "8a3717195dd6a867ae9aeff88b3ae4e7a336971d3b18b93db716686817de7729",
+        "sha256_in_prefix": "8a3717195dd6a867ae9aeff88b3ae4e7a336971d3b18b93db716686817de7729",
+        "size_in_bytes": 172896
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_builtin_vars.h",
+        "path_type": "hardlink",
+        "sha256": "32d445ec643c5802efbd54d41e4e8bff952436586d992fc0f91258238cb6e115",
+        "sha256_in_prefix": "32d445ec643c5802efbd54d41e4e8bff952436586d992fc0f91258238cb6e115",
+        "size_in_bytes": 4892
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_cmath.h",
+        "path_type": "hardlink",
+        "sha256": "e44c1e33315864e0906e901d76257ed1c17c4ffc25cb944e4223248e59adb815",
+        "sha256_in_prefix": "e44c1e33315864e0906e901d76257ed1c17c4ffc25cb944e4223248e59adb815",
+        "size_in_bytes": 18493
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_complex_builtins.h",
+        "path_type": "hardlink",
+        "sha256": "2030f2976a00a8894b1434d72c2108210a60b6726550c97e8f78c09445bccce9",
+        "sha256_in_prefix": "2030f2976a00a8894b1434d72c2108210a60b6726550c97e8f78c09445bccce9",
+        "size_in_bytes": 9581
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_device_functions.h",
+        "path_type": "hardlink",
+        "sha256": "e51d7dc42d8d35ebe73e12ae12aa353de5129680218a9290ce4460669575d46e",
+        "sha256_in_prefix": "e51d7dc42d8d35ebe73e12ae12aa353de5129680218a9290ce4460669575d46e",
+        "size_in_bytes": 58740
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "be4aaa7eb11c47540b161db825b340965f65e92d555c98934844efb2afced89b",
+        "sha256_in_prefix": "be4aaa7eb11c47540b161db825b340965f65e92d555c98934844efb2afced89b",
+        "size_in_bytes": 30587
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_libdevice_declares.h",
+        "path_type": "hardlink",
+        "sha256": "ee16f6dab972b4c742e78676e1aa30c4292ef6e099099d9591ce6baf13b7f7c4",
+        "sha256_in_prefix": "ee16f6dab972b4c742e78676e1aa30c4292ef6e099099d9591ce6baf13b7f7c4",
+        "size_in_bytes": 22414
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_math.h",
+        "path_type": "hardlink",
+        "sha256": "debe73cf7191627b94fea9e1bfe13a4318b1616fed38b2e94f5eefe2a8637c72",
+        "sha256_in_prefix": "debe73cf7191627b94fea9e1bfe13a4318b1616fed38b2e94f5eefe2a8637c72",
+        "size_in_bytes": 16602
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_math_forward_declares.h",
+        "path_type": "hardlink",
+        "sha256": "e8a11354786957de82d0887958cec963ee614d953dcbd1cfcee2376cda9fef64",
+        "sha256_in_prefix": "e8a11354786957de82d0887958cec963ee614d953dcbd1cfcee2376cda9fef64",
+        "size_in_bytes": 8469
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_runtime_wrapper.h",
+        "path_type": "hardlink",
+        "sha256": "f390e9f9eec612340becec729dce9a81edf28a262e58c75c18b8f23b1bcc08d7",
+        "sha256_in_prefix": "f390e9f9eec612340becec729dce9a81edf28a262e58c75c18b8f23b1bcc08d7",
+        "size_in_bytes": 18027
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_cuda_texture_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "2fe5e66298eb022571302cfff75fce249234b59b229d6d0b68b4d9e629f736de",
+        "sha256_in_prefix": "2fe5e66298eb022571302cfff75fce249234b59b229d6d0b68b4d9e629f736de",
+        "size_in_bytes": 32624
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_hip_cmath.h",
+        "path_type": "hardlink",
+        "sha256": "b9eb6ebc237b29b5d0af269d1f29ca0140ca150e8d12514242bfd1cfa6d80b65",
+        "sha256_in_prefix": "b9eb6ebc237b29b5d0af269d1f29ca0140ca150e8d12514242bfd1cfa6d80b65",
+        "size_in_bytes": 27115
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_hip_libdevice_declares.h",
+        "path_type": "hardlink",
+        "sha256": "a50271d3960793d86c75dfdebc973cd060dcdffa960ce42086aa8b6f302adf05",
+        "sha256_in_prefix": "a50271d3960793d86c75dfdebc973cd060dcdffa960ce42086aa8b6f302adf05",
+        "size_in_bytes": 20346
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_hip_math.h",
+        "path_type": "hardlink",
+        "sha256": "d8181900089458221a28e5caf66f6fd827fdb19818741602c621e606d16af98e",
+        "sha256_in_prefix": "d8181900089458221a28e5caf66f6fd827fdb19818741602c621e606d16af98e",
+        "size_in_bytes": 33564
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_hip_runtime_wrapper.h",
+        "path_type": "hardlink",
+        "sha256": "9372b41fa835c43544e598bce536eaa949138decea941b4c417d8fd6bd22e9ef",
+        "sha256_in_prefix": "9372b41fa835c43544e598bce536eaa949138decea941b4c417d8fd6bd22e9ef",
+        "size_in_bytes": 5062
+      },
+      {
+        "_path": "lib/clang/20/include/__clang_hip_stdlib.h",
+        "path_type": "hardlink",
+        "sha256": "d9a92fd8cb4712d4bf51082cf094cd6ea83d00974ecb7471dc421574693e0398",
+        "sha256_in_prefix": "d9a92fd8cb4712d4bf51082cf094cd6ea83d00974ecb7471dc421574693e0398",
+        "size_in_bytes": 1223
+      },
+      {
+        "_path": "lib/clang/20/include/__stdarg___gnuc_va_list.h",
+        "path_type": "hardlink",
+        "sha256": "feca975bfdfb254d17458a8e3d51f8ad6d9bdc9fd6287727f0f8b2fb81fcb0b0",
+        "sha256_in_prefix": "feca975bfdfb254d17458a8e3d51f8ad6d9bdc9fd6287727f0f8b2fb81fcb0b0",
+        "size_in_bytes": 467
+      },
+      {
+        "_path": "lib/clang/20/include/__stdarg___va_copy.h",
+        "path_type": "hardlink",
+        "sha256": "f0a8d3c963338173f2d57b2cbc209dde38c90536107b15eb0cf78166d4caee1f",
+        "sha256_in_prefix": "f0a8d3c963338173f2d57b2cbc209dde38c90536107b15eb0cf78166d4caee1f",
+        "size_in_bytes": 445
+      },
+      {
+        "_path": "lib/clang/20/include/__stdarg_header_macro.h",
+        "path_type": "hardlink",
+        "sha256": "7b3fbcc442af2508f36bb2dc98d9ad2b8a1f5c0f5333394fb2159c8bd5ecd5b8",
+        "sha256_in_prefix": "7b3fbcc442af2508f36bb2dc98d9ad2b8a1f5c0f5333394fb2159c8bd5ecd5b8",
+        "size_in_bytes": 417
+      },
+      {
+        "_path": "lib/clang/20/include/__stdarg_va_arg.h",
+        "path_type": "hardlink",
+        "sha256": "db0cca3b7768cf07807553fb88ea74e00cba4503e08a5f5504989fb3cc3e4cf1",
+        "sha256_in_prefix": "db0cca3b7768cf07807553fb88ea74e00cba4503e08a5f5504989fb3cc3e4cf1",
+        "size_in_bytes": 793
+      },
+      {
+        "_path": "lib/clang/20/include/__stdarg_va_copy.h",
+        "path_type": "hardlink",
+        "sha256": "bb195f56cb08d4cee6a60bd9f62f34466e8ac4f89f6fed043b044cb2f7ead010",
+        "sha256_in_prefix": "bb195f56cb08d4cee6a60bd9f62f34466e8ac4f89f6fed043b044cb2f7ead010",
+        "size_in_bytes": 451
+      },
+      {
+        "_path": "lib/clang/20/include/__stdarg_va_list.h",
+        "path_type": "hardlink",
+        "sha256": "81c3055f7033e26e7f53705653bc9d69b5202f25c2692e03b3a4f77ff44a7d76",
+        "sha256_in_prefix": "81c3055f7033e26e7f53705653bc9d69b5202f25c2692e03b3a4f77ff44a7d76",
+        "size_in_bytes": 448
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_header_macro.h",
+        "path_type": "hardlink",
+        "sha256": "4cf46e8fbb809df048eecbbd63686fa741da27afa8db4245bd1f61c1fb1611dc",
+        "sha256_in_prefix": "4cf46e8fbb809df048eecbbd63686fa741da27afa8db4245bd1f61c1fb1611dc",
+        "size_in_bytes": 417
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_max_align_t.h",
+        "path_type": "hardlink",
+        "sha256": "3c1e4de47f4f06b35e2c5890d670052e84f716760505ff51b022fc8b21a9400f",
+        "sha256_in_prefix": "3c1e4de47f4f06b35e2c5890d670052e84f716760505ff51b022fc8b21a9400f",
+        "size_in_bytes": 857
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_null.h",
+        "path_type": "hardlink",
+        "sha256": "b1d71b08563ab3d2c22a1e4f8ddf4d9a1111c89e9404b859a45c307e8ebc6c69",
+        "sha256_in_prefix": "b1d71b08563ab3d2c22a1e4f8ddf4d9a1111c89e9404b859a45c307e8ebc6c69",
+        "size_in_bytes": 875
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_nullptr_t.h",
+        "path_type": "hardlink",
+        "sha256": "898b4465c5d3040d27e760e82983a751b1b0cae23ba280b18a1b81451841f9eb",
+        "sha256_in_prefix": "898b4465c5d3040d27e760e82983a751b1b0cae23ba280b18a1b81451841f9eb",
+        "size_in_bytes": 958
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_offsetof.h",
+        "path_type": "hardlink",
+        "sha256": "e5f0f4ff8ff5fc6a1cc8b535f5065f1728eadd2bf1e1401f021f803ec7b4222f",
+        "sha256_in_prefix": "e5f0f4ff8ff5fc6a1cc8b535f5065f1728eadd2bf1e1401f021f803ec7b4222f",
+        "size_in_bytes": 708
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_ptrdiff_t.h",
+        "path_type": "hardlink",
+        "sha256": "b4178a57f3711b7013cba747a72a2f178c29fa9364e77d75b2159754072ced43",
+        "sha256_in_prefix": "b4178a57f3711b7013cba747a72a2f178c29fa9364e77d75b2159754072ced43",
+        "size_in_bytes": 717
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_rsize_t.h",
+        "path_type": "hardlink",
+        "sha256": "132339d4f07e852bf2d879bc91c4ccdfcf08c581c7c97f6f3794510e0bdda7bd",
+        "sha256_in_prefix": "132339d4f07e852bf2d879bc91c4ccdfcf08c581c7c97f6f3794510e0bdda7bd",
+        "size_in_bytes": 710
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_size_t.h",
+        "path_type": "hardlink",
+        "sha256": "d86ddc0238da09b385846ebef814ffc50a44e40cf85d4e3793f485952b7e73ad",
+        "sha256_in_prefix": "d86ddc0238da09b385846ebef814ffc50a44e40cf85d4e3793f485952b7e73ad",
+        "size_in_bytes": 708
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_unreachable.h",
+        "path_type": "hardlink",
+        "sha256": "bba07c327f8168f37b266a19aed625e0fa633a25cabef4f54f21faf3df5522b8",
+        "sha256_in_prefix": "bba07c327f8168f37b266a19aed625e0fa633a25cabef4f54f21faf3df5522b8",
+        "size_in_bytes": 735
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_wchar_t.h",
+        "path_type": "hardlink",
+        "sha256": "1900d4998aef3698b06399ed686db0c21e26509b08638a25734fb97ae89b1001",
+        "sha256_in_prefix": "1900d4998aef3698b06399ed686db0c21e26509b08638a25734fb97ae89b1001",
+        "size_in_bytes": 853
+      },
+      {
+        "_path": "lib/clang/20/include/__stddef_wint_t.h",
+        "path_type": "hardlink",
+        "sha256": "f2ededa38c5454397242aceaefa65b42b292a1b3cc258e7ca6e216f146e51f0d",
+        "sha256_in_prefix": "f2ededa38c5454397242aceaefa65b42b292a1b3cc258e7ca6e216f146e51f0d",
+        "size_in_bytes": 443
+      },
+      {
+        "_path": "lib/clang/20/include/__wmmintrin_aes.h",
+        "path_type": "hardlink",
+        "sha256": "c72344a1e5874d3af7049ecdccae91304cc5c2b619776947434e49904f5f03a1",
+        "sha256_in_prefix": "c72344a1e5874d3af7049ecdccae91304cc5c2b619776947434e49904f5f03a1",
+        "size_in_bytes": 5269
+      },
+      {
+        "_path": "lib/clang/20/include/__wmmintrin_pclmul.h",
+        "path_type": "hardlink",
+        "sha256": "0492aed7e0731e9d5d83bca76ef338223d3ae9c89d38f7600b7294465b6ebfdc",
+        "sha256_in_prefix": "0492aed7e0731e9d5d83bca76ef338223d3ae9c89d38f7600b7294465b6ebfdc",
+        "size_in_bytes": 2036
+      },
+      {
+        "_path": "lib/clang/20/include/adcintrin.h",
+        "path_type": "hardlink",
+        "sha256": "7a0a9ab238134ffeb5b05fe55dfd34daf00e372fc091761dbcaa07c4db044330",
+        "sha256_in_prefix": "7a0a9ab238134ffeb5b05fe55dfd34daf00e372fc091761dbcaa07c4db044330",
+        "size_in_bytes": 5565
+      },
+      {
+        "_path": "lib/clang/20/include/adxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "760d3d2d4fe278dd7e044a21bb60fdce73d7f1de2f896446c258bda0d78639b6",
+        "sha256_in_prefix": "760d3d2d4fe278dd7e044a21bb60fdce73d7f1de2f896446c258bda0d78639b6",
+        "size_in_bytes": 3447
+      },
+      {
+        "_path": "lib/clang/20/include/altivec.h",
+        "path_type": "hardlink",
+        "sha256": "b4b62a17cf30a7cd1ac18f1ba2c83c660b9b469b7914fadfd227dd07ce4fbf19",
+        "sha256_in_prefix": "b4b62a17cf30a7cd1ac18f1ba2c83c660b9b469b7914fadfd227dd07ce4fbf19",
+        "size_in_bytes": 715216
+      },
+      {
+        "_path": "lib/clang/20/include/amdgpuintrin.h",
+        "path_type": "hardlink",
+        "sha256": "a43759ee576cf5cf689d6dd9695a4f068d03b84f91b1ac9c904094719f7b2313",
+        "sha256_in_prefix": "a43759ee576cf5cf689d6dd9695a4f068d03b84f91b1ac9c904094719f7b2313",
+        "size_in_bytes": 7576
+      },
+      {
+        "_path": "lib/clang/20/include/ammintrin.h",
+        "path_type": "hardlink",
+        "sha256": "4d5751058e2630a390ce53cbc8d360d794ca71acbf49eb85f177313c884dc2a6",
+        "sha256_in_prefix": "4d5751058e2630a390ce53cbc8d360d794ca71acbf49eb85f177313c884dc2a6",
+        "size_in_bytes": 7739
+      },
+      {
+        "_path": "lib/clang/20/include/amxavx512intrin.h",
+        "path_type": "hardlink",
+        "sha256": "6d44d136af8473ebf3d3bfda2f988bfc079009fd010832d35133b98dcbd04da4",
+        "sha256_in_prefix": "6d44d136af8473ebf3d3bfda2f988bfc079009fd010832d35133b98dcbd04da4",
+        "size_in_bytes": 12975
+      },
+      {
+        "_path": "lib/clang/20/include/amxbf16transposeintrin.h",
+        "path_type": "hardlink",
+        "sha256": "69c054259271212da8449b64aefb5cb1cd9294c24ffd91fbb24d52889f8ba411",
+        "sha256_in_prefix": "69c054259271212da8449b64aefb5cb1cd9294c24ffd91fbb24d52889f8ba411",
+        "size_in_bytes": 3525
+      },
+      {
+        "_path": "lib/clang/20/include/amxcomplexintrin.h",
+        "path_type": "hardlink",
+        "sha256": "573736da7259cd04cda142815072832bb7486db2336a3eec59ee471ed90a61b6",
+        "sha256_in_prefix": "573736da7259cd04cda142815072832bb7486db2336a3eec59ee471ed90a61b6",
+        "size_in_bytes": 6973
+      },
+      {
+        "_path": "lib/clang/20/include/amxcomplextransposeintrin.h",
+        "path_type": "hardlink",
+        "sha256": "ae6a6482c414fa5d0c94fde61288a1064018f05adbe4e051baad557913b44982",
+        "sha256_in_prefix": "ae6a6482c414fa5d0c94fde61288a1064018f05adbe4e051baad557913b44982",
+        "size_in_bytes": 12061
+      },
+      {
+        "_path": "lib/clang/20/include/amxfp16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "018df703a69c14621c56bf3af142a607fcd30fd25e295bd71ace5e9728cbe0c9",
+        "sha256_in_prefix": "018df703a69c14621c56bf3af142a607fcd30fd25e295bd71ace5e9728cbe0c9",
+        "size_in_bytes": 3327
+      },
+      {
+        "_path": "lib/clang/20/include/amxfp16transposeintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d5210f303ea2582159e6712a02029efd7c93ec061148850b560f3be17773931c",
+        "sha256_in_prefix": "d5210f303ea2582159e6712a02029efd7c93ec061148850b560f3be17773931c",
+        "size_in_bytes": 3525
+      },
+      {
+        "_path": "lib/clang/20/include/amxfp8intrin.h",
+        "path_type": "hardlink",
+        "sha256": "7d4f7e3fd5bcf9f131fca2ef14935f894bdc9fa25dc042608f1cb1c3e3e03c46",
+        "sha256_in_prefix": "7d4f7e3fd5bcf9f131fca2ef14935f894bdc9fa25dc042608f1cb1c3e3e03c46",
+        "size_in_bytes": 8839
+      },
+      {
+        "_path": "lib/clang/20/include/amxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d9e9ced848f8a1f22b53f0aa5a1339bc5dc70c9280a98466c527195abba63e37",
+        "sha256_in_prefix": "d9e9ced848f8a1f22b53f0aa5a1339bc5dc70c9280a98466c527195abba63e37",
+        "size_in_bytes": 20304
+      },
+      {
+        "_path": "lib/clang/20/include/amxmovrsintrin.h",
+        "path_type": "hardlink",
+        "sha256": "ffa67cf3cacdcbcbb35864a8bfac382ae7e107b5f2fbc489ffd2899e761bf23a",
+        "sha256_in_prefix": "ffa67cf3cacdcbcbb35864a8bfac382ae7e107b5f2fbc489ffd2899e761bf23a",
+        "size_in_bytes": 2290
+      },
+      {
+        "_path": "lib/clang/20/include/amxmovrstransposeintrin.h",
+        "path_type": "hardlink",
+        "sha256": "88cc35f81bd052879bc6dbaa556e2917d7421b27221a8e2673f00ced5877218d",
+        "sha256_in_prefix": "88cc35f81bd052879bc6dbaa556e2917d7421b27221a8e2673f00ced5877218d",
+        "size_in_bytes": 9401
+      },
+      {
+        "_path": "lib/clang/20/include/amxtf32intrin.h",
+        "path_type": "hardlink",
+        "sha256": "2f849389dc399c714cc1ff591f4d40c25533361bb0b06a0b98209789f15c95b2",
+        "sha256_in_prefix": "2f849389dc399c714cc1ff591f4d40c25533361bb0b06a0b98209789f15c95b2",
+        "size_in_bytes": 3562
+      },
+      {
+        "_path": "lib/clang/20/include/amxtf32transposeintrin.h",
+        "path_type": "hardlink",
+        "sha256": "7b97d78141e27b0c3b16376747f1bf094d8f434544cff0a1ecce1357a5664313",
+        "sha256_in_prefix": "7b97d78141e27b0c3b16376747f1bf094d8f434544cff0a1ecce1357a5664313",
+        "size_in_bytes": 3642
+      },
+      {
+        "_path": "lib/clang/20/include/amxtransposeintrin.h",
+        "path_type": "hardlink",
+        "sha256": "2bbc2acdc418cfe284bcefcf6bce69829d6adabf4eb833e53a15d4668e3c3015",
+        "sha256_in_prefix": "2bbc2acdc418cfe284bcefcf6bce69829d6adabf4eb833e53a15d4668e3c3015",
+        "size_in_bytes": 10853
+      },
+      {
+        "_path": "lib/clang/20/include/arm64intr.h",
+        "path_type": "hardlink",
+        "sha256": "183845bfa6f0bae53748d5706568fe3d8830c5c720823152eacb107e7c234046",
+        "sha256_in_prefix": "183845bfa6f0bae53748d5706568fe3d8830c5c720823152eacb107e7c234046",
+        "size_in_bytes": 993
+      },
+      {
+        "_path": "lib/clang/20/include/arm_acle.h",
+        "path_type": "hardlink",
+        "sha256": "f1ebcac29e960f817f20df029d353d543a97dd08de124036a5978e541b852126",
+        "sha256_in_prefix": "f1ebcac29e960f817f20df029d353d543a97dd08de124036a5978e541b852126",
+        "size_in_bytes": 30685
+      },
+      {
+        "_path": "lib/clang/20/include/arm_bf16.h",
+        "path_type": "hardlink",
+        "sha256": "87f7bc1cb7aa53a85347bd4e1855cccd45599408bb106e66515519c1033a6a3d",
+        "sha256_in_prefix": "87f7bc1cb7aa53a85347bd4e1855cccd45599408bb106e66515519c1033a6a3d",
+        "size_in_bytes": 548
+      },
+      {
+        "_path": "lib/clang/20/include/arm_cde.h",
+        "path_type": "hardlink",
+        "sha256": "486e75376c1cd42b4579d342fe776591520a50b1a8ae4b9ed005d7a895fdf490",
+        "sha256_in_prefix": "486e75376c1cd42b4579d342fe776591520a50b1a8ae4b9ed005d7a895fdf490",
+        "size_in_bytes": 33450
+      },
+      {
+        "_path": "lib/clang/20/include/arm_cmse.h",
+        "path_type": "hardlink",
+        "sha256": "75b8a5a66726f8c4e8fc329b7b98b21977e2033ce2c95f362d624d0cc6d8a773",
+        "sha256_in_prefix": "75b8a5a66726f8c4e8fc329b7b98b21977e2033ce2c95f362d624d0cc6d8a773",
+        "size_in_bytes": 6357
+      },
+      {
+        "_path": "lib/clang/20/include/arm_fp16.h",
+        "path_type": "hardlink",
+        "sha256": "38d9991c033c9669e742190024e5a5207ec696b7a9b189785799b7e09dde8e38",
+        "sha256_in_prefix": "38d9991c033c9669e742190024e5a5207ec696b7a9b189785799b7e09dde8e38",
+        "size_in_bytes": 17349
+      },
+      {
+        "_path": "lib/clang/20/include/arm_mve.h",
+        "path_type": "hardlink",
+        "sha256": "8e6fa1bb91c0e5403e6f6152380b4ff318833028b0d4e9c91911e4dd107bd762",
+        "sha256_in_prefix": "8e6fa1bb91c0e5403e6f6152380b4ff318833028b0d4e9c91911e4dd107bd762",
+        "size_in_bytes": 1554929
+      },
+      {
+        "_path": "lib/clang/20/include/arm_neon.h",
+        "path_type": "hardlink",
+        "sha256": "dd8ec7811a72c76bd8737f710e9044e7705a62d78f187aa298f24cbf46e6495a",
+        "sha256_in_prefix": "dd8ec7811a72c76bd8737f710e9044e7705a62d78f187aa298f24cbf46e6495a",
+        "size_in_bytes": 2788713
+      },
+      {
+        "_path": "lib/clang/20/include/arm_neon_sve_bridge.h",
+        "path_type": "hardlink",
+        "sha256": "9a0e636549d26df39bec2dfcb9eb1110744972ede03bab2a52187e1b7d87bfee",
+        "sha256_in_prefix": "9a0e636549d26df39bec2dfcb9eb1110744972ede03bab2a52187e1b7d87bfee",
+        "size_in_bytes": 9708
+      },
+      {
+        "_path": "lib/clang/20/include/arm_sme.h",
+        "path_type": "hardlink",
+        "sha256": "7795428d86ec432ad8933f8f6f271c3338bedafc80235a13e6f917d99980a42a",
+        "sha256_in_prefix": "7795428d86ec432ad8933f8f6f271c3338bedafc80235a13e6f917d99980a42a",
+        "size_in_bytes": 228718
+      },
+      {
+        "_path": "lib/clang/20/include/arm_sve.h",
+        "path_type": "hardlink",
+        "sha256": "905b164771e642a705e82946dbdbc3c6c68065323fbf552d2226c1b49480696a",
+        "sha256_in_prefix": "905b164771e642a705e82946dbdbc3c6c68065323fbf552d2226c1b49480696a",
+        "size_in_bytes": 2125654
+      },
+      {
+        "_path": "lib/clang/20/include/arm_vector_types.h",
+        "path_type": "hardlink",
+        "sha256": "6fe5730cbf5b4760620d643e5b44c9abbb13969b168dd7733252158503003034",
+        "sha256_in_prefix": "6fe5730cbf5b4760620d643e5b44c9abbb13969b168dd7733252158503003034",
+        "size_in_bytes": 10098
+      },
+      {
+        "_path": "lib/clang/20/include/armintr.h",
+        "path_type": "hardlink",
+        "sha256": "6bc077ccfe4c9f230f37a1b7803ca1706850d288a18d505323a520eebab57311",
+        "sha256_in_prefix": "6bc077ccfe4c9f230f37a1b7803ca1706850d288a18d505323a520eebab57311",
+        "size_in_bytes": 843
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2_512bf16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "109b9600ec2f7891c45ecae8c04ebd4b3939a834a1daaee96d3881e75a4f238a",
+        "sha256_in_prefix": "109b9600ec2f7891c45ecae8c04ebd4b3939a834a1daaee96d3881e75a4f238a",
+        "size_in_bytes": 23418
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2_512convertintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d312da0faf9169f8616f0f68e7dc828d484afdb64165324c52dcad0f1a628f6d",
+        "sha256_in_prefix": "d312da0faf9169f8616f0f68e7dc828d484afdb64165324c52dcad0f1a628f6d",
+        "size_in_bytes": 13192
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2_512minmaxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "ea0a028278b5e4dd92904163f308949efa38683d07d851d8f6a7ac27506d3674",
+        "sha256_in_prefix": "ea0a028278b5e4dd92904163f308949efa38683d07d851d8f6a7ac27506d3674",
+        "size_in_bytes": 7526
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2_512niintrin.h",
+        "path_type": "hardlink",
+        "sha256": "b3772e3c0b7a422e49969e86f075c56337e8cd8a9f7ac92066bd8b3345502e63",
+        "sha256_in_prefix": "b3772e3c0b7a422e49969e86f075c56337e8cd8a9f7ac92066bd8b3345502e63",
+        "size_in_bytes": 14039
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2_512satcvtdsintrin.h",
+        "path_type": "hardlink",
+        "sha256": "4a2fc69b9c1fbdd6865efbf1e0bd2aaa9970e79d056b180d34c7fa7075f94ed5",
+        "sha256_in_prefix": "4a2fc69b9c1fbdd6865efbf1e0bd2aaa9970e79d056b180d34c7fa7075f94ed5",
+        "size_in_bytes": 13799
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2_512satcvtintrin.h",
+        "path_type": "hardlink",
+        "sha256": "48da2c9ecc5da4b6e45b477eb0bc5610a0e83dbaf898645930b6cdf7d8019fd8",
+        "sha256_in_prefix": "48da2c9ecc5da4b6e45b477eb0bc5610a0e83dbaf898645930b6cdf7d8019fd8",
+        "size_in_bytes": 16999
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2bf16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "ad15dd69fa956a8ae80cf0d865e2953ba7e8c30e3e7ccf5a6eda94151908e8ce",
+        "sha256_in_prefix": "ad15dd69fa956a8ae80cf0d865e2953ba7e8c30e3e7ccf5a6eda94151908e8ce",
+        "size_in_bytes": 44674
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2convertintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e2d880f0e44896aee76660963c8fa2ebb621e351a54115d461552e3f4813602a",
+        "sha256_in_prefix": "e2d880f0e44896aee76660963c8fa2ebb621e351a54115d461552e3f4813602a",
+        "size_in_bytes": 23295
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2copyintrin.h",
+        "path_type": "hardlink",
+        "sha256": "273d16291b62626c7c4c863bb548ad0c29b19fdcff9a91685c474a41a373bb38",
+        "sha256_in_prefix": "273d16291b62626c7c4c863bb548ad0c29b19fdcff9a91685c474a41a373bb38",
+        "size_in_bytes": 2410
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2minmaxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "500db67dd6c5c7abfc7dd633dac4bb569e408770d39ac8af995fc3095b3f8340",
+        "sha256_in_prefix": "500db67dd6c5c7abfc7dd633dac4bb569e408770d39ac8af995fc3095b3f8340",
+        "size_in_bytes": 13851
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2niintrin.h",
+        "path_type": "hardlink",
+        "sha256": "30527dc8a0a22e9133e345b292c099732322557fb25f3aa5eb9258276d617264",
+        "sha256_in_prefix": "30527dc8a0a22e9133e345b292c099732322557fb25f3aa5eb9258276d617264",
+        "size_in_bytes": 17003
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2satcvtdsintrin.h",
+        "path_type": "hardlink",
+        "sha256": "59b9f4ae31c977954c304f115c71b17a4155c4297ee3613e35090f683ea07dc8",
+        "sha256_in_prefix": "59b9f4ae31c977954c304f115c71b17a4155c4297ee3613e35090f683ea07dc8",
+        "size_in_bytes": 15725
+      },
+      {
+        "_path": "lib/clang/20/include/avx10_2satcvtintrin.h",
+        "path_type": "hardlink",
+        "sha256": "01726e7d385f8bdf611de00cf6dfe7b79d2e97b53758334f23bb2310492809b9",
+        "sha256_in_prefix": "01726e7d385f8bdf611de00cf6dfe7b79d2e97b53758334f23bb2310492809b9",
+        "size_in_bytes": 19320
+      },
+      {
+        "_path": "lib/clang/20/include/avx2intrin.h",
+        "path_type": "hardlink",
+        "sha256": "eb2a35ae03975e937db2be1c6f162c7172bf8e782cfe66296129585e7e619853",
+        "sha256_in_prefix": "eb2a35ae03975e937db2be1c6f162c7172bf8e782cfe66296129585e7e619853",
+        "size_in_bytes": 192637
+      },
+      {
+        "_path": "lib/clang/20/include/avx512bf16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "ea3ee83a8c95a6feba588d3d5de78f6dc24adbebd043f593efb974e93778b4e3",
+        "sha256_in_prefix": "ea3ee83a8c95a6feba588d3d5de78f6dc24adbebd043f593efb974e93778b4e3",
+        "size_in_bytes": 10832
+      },
+      {
+        "_path": "lib/clang/20/include/avx512bitalgintrin.h",
+        "path_type": "hardlink",
+        "sha256": "92aa9707f67eafa6e0facf22e59d5d961ccafc60676e5594b1aede4a2ef87154",
+        "sha256_in_prefix": "92aa9707f67eafa6e0facf22e59d5d961ccafc60676e5594b1aede4a2ef87154",
+        "size_in_bytes": 2626
+      },
+      {
+        "_path": "lib/clang/20/include/avx512bwintrin.h",
+        "path_type": "hardlink",
+        "sha256": "394ee7f037ea129f9c363a88d73a091a15bca1d3b07476ceca0e562f8ab20c9b",
+        "sha256_in_prefix": "394ee7f037ea129f9c363a88d73a091a15bca1d3b07476ceca0e562f8ab20c9b",
+        "size_in_bytes": 77845
+      },
+      {
+        "_path": "lib/clang/20/include/avx512cdintrin.h",
+        "path_type": "hardlink",
+        "sha256": "6f7d017bc978245c089c8caaa994156723fa5c49375ada07a221814cab6eb80f",
+        "sha256_in_prefix": "6f7d017bc978245c089c8caaa994156723fa5c49375ada07a221814cab6eb80f",
+        "size_in_bytes": 4327
+      },
+      {
+        "_path": "lib/clang/20/include/avx512dqintrin.h",
+        "path_type": "hardlink",
+        "sha256": "1d8d0ebf7276a50deee5bbb608cf7bbe4f0051902c07b907f0057eaff433cf2e",
+        "sha256_in_prefix": "1d8d0ebf7276a50deee5bbb608cf7bbe4f0051902c07b907f0057eaff433cf2e",
+        "size_in_bytes": 60287
+      },
+      {
+        "_path": "lib/clang/20/include/avx512fintrin.h",
+        "path_type": "hardlink",
+        "sha256": "ae3f2f75e4f73a7527b0082669068e922551f36998a1c2b18a37d13cae5248f8",
+        "sha256_in_prefix": "ae3f2f75e4f73a7527b0082669068e922551f36998a1c2b18a37d13cae5248f8",
+        "size_in_bytes": 392651
+      },
+      {
+        "_path": "lib/clang/20/include/avx512fp16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "4653ea3f861401bcefaca6e59e9152f2f7233a5d9553cba1ed81a6159d70386c",
+        "sha256_in_prefix": "4653ea3f861401bcefaca6e59e9152f2f7233a5d9553cba1ed81a6159d70386c",
+        "size_in_bytes": 160687
+      },
+      {
+        "_path": "lib/clang/20/include/avx512ifmaintrin.h",
+        "path_type": "hardlink",
+        "sha256": "afa219631345315ee3f6c4c4d19858a971200e78723f190fc0f35756c6a46a0b",
+        "sha256_in_prefix": "afa219631345315ee3f6c4c4d19858a971200e78723f190fc0f35756c6a46a0b",
+        "size_in_bytes": 2660
+      },
+      {
+        "_path": "lib/clang/20/include/avx512ifmavlintrin.h",
+        "path_type": "hardlink",
+        "sha256": "75d50b90a2d43190201007d92b30c504e76d944c7ba4fa36737e1704e9463076",
+        "sha256_in_prefix": "75d50b90a2d43190201007d92b30c504e76d944c7ba4fa36737e1704e9463076",
+        "size_in_bytes": 4712
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vbmi2intrin.h",
+        "path_type": "hardlink",
+        "sha256": "290796e7ac715b503ff5b0457fb706a74b1bd1d0375c8547a8b01a61f21fd400",
+        "sha256_in_prefix": "290796e7ac715b503ff5b0457fb706a74b1bd1d0375c8547a8b01a61f21fd400",
+        "size_in_bytes": 13493
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vbmiintrin.h",
+        "path_type": "hardlink",
+        "sha256": "2d38897f86b5a8d070641773e0d0df1aba8c4923e6432d0425ad170b1f86df35",
+        "sha256_in_prefix": "2d38897f86b5a8d070641773e0d0df1aba8c4923e6432d0425ad170b1f86df35",
+        "size_in_bytes": 3920
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vbmivlintrin.h",
+        "path_type": "hardlink",
+        "sha256": "2a5b68a5b7816bbaaa0a6e21e753846825b048f7bef925939e3e441b68776bc5",
+        "sha256_in_prefix": "2a5b68a5b7816bbaaa0a6e21e753846825b048f7bef925939e3e441b68776bc5",
+        "size_in_bytes": 7402
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlbf16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "bef8b890d4ff7ad5ef4ef6124b62be83eb3f5da0a653cfff33568162924d7162",
+        "sha256_in_prefix": "bef8b890d4ff7ad5ef4ef6124b62be83eb3f5da0a653cfff33568162924d7162",
+        "size_in_bytes": 19922
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlbitalgintrin.h",
+        "path_type": "hardlink",
+        "sha256": "511bd6e58a25dbfed783d2a52d84f993890e6dff77225f9819761b969a6ddd6e",
+        "sha256_in_prefix": "511bd6e58a25dbfed783d2a52d84f993890e6dff77225f9819761b969a6ddd6e",
+        "size_in_bytes": 4629
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlbwintrin.h",
+        "path_type": "hardlink",
+        "sha256": "3ab5091ec9f6ed3d39dc617373678165e47d71c1288752a24980292c7c659543",
+        "sha256_in_prefix": "3ab5091ec9f6ed3d39dc617373678165e47d71c1288752a24980292c7c659543",
+        "size_in_bytes": 124474
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlcdintrin.h",
+        "path_type": "hardlink",
+        "sha256": "cd14d673844dc0c1ff75df14029352dc7dc350b137f90156822ad53befe8e3c4",
+        "sha256_in_prefix": "cd14d673844dc0c1ff75df14029352dc7dc350b137f90156822ad53befe8e3c4",
+        "size_in_bytes": 8141
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vldqintrin.h",
+        "path_type": "hardlink",
+        "sha256": "30dedffcf21153addb581959e6f2ddf5f2a2e360719a8971bd48382dc1aa67d9",
+        "sha256_in_prefix": "30dedffcf21153addb581959e6f2ddf5f2a2e360719a8971bd48382dc1aa67d9",
+        "size_in_bytes": 47827
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlfp16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "f41282042043395f23c51bc9b13930ba2780b18fcd9c744d58aa2e847f3c65b9",
+        "sha256_in_prefix": "f41282042043395f23c51bc9b13930ba2780b18fcd9c744d58aa2e847f3c65b9",
+        "size_in_bytes": 87561
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlintrin.h",
+        "path_type": "hardlink",
+        "sha256": "43f8d7215141c5c27a9c82fce3d5c00285e6f4477924f8d18654ddf21b157b45",
+        "sha256_in_prefix": "43f8d7215141c5c27a9c82fce3d5c00285e6f4477924f8d18654ddf21b157b45",
+        "size_in_bytes": 330339
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlvbmi2intrin.h",
+        "path_type": "hardlink",
+        "sha256": "7921fef1c74c75b1362aeb1c4c53374740585e98adabd4091a9de681d574cac2",
+        "sha256_in_prefix": "7921fef1c74c75b1362aeb1c4c53374740585e98adabd4091a9de681d574cac2",
+        "size_in_bytes": 26633
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlvnniintrin.h",
+        "path_type": "hardlink",
+        "sha256": "342a1b4843d42c8c92970ecb13c3e0ec585cc1c7799d13c8d96546fc25d9f12d",
+        "sha256_in_prefix": "342a1b4843d42c8c92970ecb13c3e0ec585cc1c7799d13c8d96546fc25d9f12d",
+        "size_in_bytes": 13736
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vlvp2intersectintrin.h",
+        "path_type": "hardlink",
+        "sha256": "779724d5315664120b50eb627ccd75a061815474118903c260abe5e9996482c2",
+        "sha256_in_prefix": "779724d5315664120b50eb627ccd75a061815474118903c260abe5e9996482c2",
+        "size_in_bytes": 4782
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vnniintrin.h",
+        "path_type": "hardlink",
+        "sha256": "21d10483bc80d4c6acc1fe1946d295e6244ef5bcee47ae7803dce2c0961e3ad5",
+        "sha256_in_prefix": "21d10483bc80d4c6acc1fe1946d295e6244ef5bcee47ae7803dce2c0961e3ad5",
+        "size_in_bytes": 4428
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vp2intersectintrin.h",
+        "path_type": "hardlink",
+        "sha256": "840da01f3aa586b28b0f45359a4fbba3760c2e7c25ce0f96b493d425f1a829d8",
+        "sha256_in_prefix": "840da01f3aa586b28b0f45359a4fbba3760c2e7c25ce0f96b493d425f1a829d8",
+        "size_in_bytes": 3102
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vpopcntdqintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e940382006937a474c55c3e798d3d9eb010d81d6c580ee4b5acf8833c13e6d53",
+        "sha256_in_prefix": "e940382006937a474c55c3e798d3d9eb010d81d6c580ee4b5acf8833c13e6d53",
+        "size_in_bytes": 2357
+      },
+      {
+        "_path": "lib/clang/20/include/avx512vpopcntdqvlintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d833bc993eb724c9b0ebbf3758a20839f65e2e898ca223234155ab6250b1f12c",
+        "sha256_in_prefix": "d833bc993eb724c9b0ebbf3758a20839f65e2e898ca223234155ab6250b1f12c",
+        "size_in_bytes": 3957
+      },
+      {
+        "_path": "lib/clang/20/include/avxifmaintrin.h",
+        "path_type": "hardlink",
+        "sha256": "67de2a399146be4d56423b1a1aa15792314db2fab075186c2dcb90d5d11719b6",
+        "sha256_in_prefix": "67de2a399146be4d56423b1a1aa15792314db2fab075186c2dcb90d5d11719b6",
+        "size_in_bytes": 5886
+      },
+      {
+        "_path": "lib/clang/20/include/avxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "368a9905c25ccf46014444fc88c54a15f9a5de3be31cef8e159ed9b58f7efbc6",
+        "sha256_in_prefix": "368a9905c25ccf46014444fc88c54a15f9a5de3be31cef8e159ed9b58f7efbc6",
+        "size_in_bytes": 201849
+      },
+      {
+        "_path": "lib/clang/20/include/avxneconvertintrin.h",
+        "path_type": "hardlink",
+        "sha256": "05482a9fb775e9595b1bdcc0b822cde959296b6cdaf57d116d716df6a118c91a",
+        "sha256_in_prefix": "05482a9fb775e9595b1bdcc0b822cde959296b6cdaf57d116d716df6a118c91a",
+        "size_in_bytes": 14432
+      },
+      {
+        "_path": "lib/clang/20/include/avxvnniint16intrin.h",
+        "path_type": "hardlink",
+        "sha256": "4f15eeaecb28ed881354939d0c571e0d3d22eb5cc9a73df60212fbb0e97ee646",
+        "sha256_in_prefix": "4f15eeaecb28ed881354939d0c571e0d3d22eb5cc9a73df60212fbb0e97ee646",
+        "size_in_bytes": 16222
+      },
+      {
+        "_path": "lib/clang/20/include/avxvnniint8intrin.h",
+        "path_type": "hardlink",
+        "sha256": "989d9bd736fd53166140d871dfe0d459e1799b6438c3955cf7189406f7e317fe",
+        "sha256_in_prefix": "989d9bd736fd53166140d871dfe0d459e1799b6438c3955cf7189406f7e317fe",
+        "size_in_bytes": 17431
+      },
+      {
+        "_path": "lib/clang/20/include/avxvnniintrin.h",
+        "path_type": "hardlink",
+        "sha256": "0e8b2996074f83b42d62c49ab8333754d1d492dcae48908ab9fd7b4a0a05bc9d",
+        "sha256_in_prefix": "0e8b2996074f83b42d62c49ab8333754d1d492dcae48908ab9fd7b4a0a05bc9d",
+        "size_in_bytes": 10690
+      },
+      {
+        "_path": "lib/clang/20/include/bmi2intrin.h",
+        "path_type": "hardlink",
+        "sha256": "fffd85faacca202b9539176a120cd5ca5ec9bafe91ebd234ad42eec4eb1dbcea",
+        "sha256_in_prefix": "fffd85faacca202b9539176a120cd5ca5ec9bafe91ebd234ad42eec4eb1dbcea",
+        "size_in_bytes": 7546
+      },
+      {
+        "_path": "lib/clang/20/include/bmiintrin.h",
+        "path_type": "hardlink",
+        "sha256": "bb23541f314cd994fe6cf6bccfda8855ade79781bfb2e3fd689a6b44ca79b209",
+        "sha256_in_prefix": "bb23541f314cd994fe6cf6bccfda8855ade79781bfb2e3fd689a6b44ca79b209",
+        "size_in_bytes": 20497
+      },
+      {
+        "_path": "lib/clang/20/include/builtins.h",
+        "path_type": "hardlink",
+        "sha256": "a7d1f052d48c4e27d0ae1023b1cb2419e443c686193a3ab392adc776595ee23f",
+        "sha256_in_prefix": "a7d1f052d48c4e27d0ae1023b1cb2419e443c686193a3ab392adc776595ee23f",
+        "size_in_bytes": 846
+      },
+      {
+        "_path": "lib/clang/20/include/cet.h",
+        "path_type": "hardlink",
+        "sha256": "23568727f480e5701af3f7371d38680952e33264d9f184843353b87f583a2a9a",
+        "sha256_in_prefix": "23568727f480e5701af3f7371d38680952e33264d9f184843353b87f583a2a9a",
+        "size_in_bytes": 1527
+      },
+      {
+        "_path": "lib/clang/20/include/cetintrin.h",
+        "path_type": "hardlink",
+        "sha256": "ec1203e06e12b4a21944443330eab3a968b1048d429470c4ee0236b7ddfa39e7",
+        "sha256_in_prefix": "ec1203e06e12b4a21944443330eab3a968b1048d429470c4ee0236b7ddfa39e7",
+        "size_in_bytes": 3351
+      },
+      {
+        "_path": "lib/clang/20/include/cldemoteintrin.h",
+        "path_type": "hardlink",
+        "sha256": "bc5d9530ed13a5fc22ddc26f72f695d225053462bf06783a95a3532e0fcebe0c",
+        "sha256_in_prefix": "bc5d9530ed13a5fc22ddc26f72f695d225053462bf06783a95a3532e0fcebe0c",
+        "size_in_bytes": 1207
+      },
+      {
+        "_path": "lib/clang/20/include/clflushoptintrin.h",
+        "path_type": "hardlink",
+        "sha256": "930b1feb5f02450e0f75228cdaaf380f18557fee8ea64d7d8dd7268edfb50656",
+        "sha256_in_prefix": "930b1feb5f02450e0f75228cdaaf380f18557fee8ea64d7d8dd7268edfb50656",
+        "size_in_bytes": 1193
+      },
+      {
+        "_path": "lib/clang/20/include/clwbintrin.h",
+        "path_type": "hardlink",
+        "sha256": "c014c43c1fc700e529fa5f0df8504af8c03bf21609ded625526ada7a1833ca08",
+        "sha256_in_prefix": "c014c43c1fc700e529fa5f0df8504af8c03bf21609ded625526ada7a1833ca08",
+        "size_in_bytes": 1229
+      },
+      {
+        "_path": "lib/clang/20/include/clzerointrin.h",
+        "path_type": "hardlink",
+        "sha256": "3ae5138554f982a100b937124ec5bb914620e1a4dfd9e57fc89689428d5bb100",
+        "sha256_in_prefix": "3ae5138554f982a100b937124ec5bb914620e1a4dfd9e57fc89689428d5bb100",
+        "size_in_bytes": 1220
+      },
+      {
+        "_path": "lib/clang/20/include/cmpccxaddintrin.h",
+        "path_type": "hardlink",
+        "sha256": "223b48bdd9e567ed17b377040b81663d3baf7fa077676d49cf3f598fc7ebf825",
+        "sha256_in_prefix": "223b48bdd9e567ed17b377040b81663d3baf7fa077676d49cf3f598fc7ebf825",
+        "size_in_bytes": 2383
+      },
+      {
+        "_path": "lib/clang/20/include/cpuid.h",
+        "path_type": "hardlink",
+        "sha256": "b348f951fd76c3f33a99eab9b5a8154faf90092bf73b47829066d5a27b0218fa",
+        "sha256_in_prefix": "b348f951fd76c3f33a99eab9b5a8154faf90092bf73b47829066d5a27b0218fa",
+        "size_in_bytes": 12189
+      },
+      {
+        "_path": "lib/clang/20/include/crc32intrin.h",
+        "path_type": "hardlink",
+        "sha256": "0f73e381b39e4718f70159158faa3da510769bb16120ec23f35bdcff14d34cb1",
+        "sha256_in_prefix": "0f73e381b39e4718f70159158faa3da510769bb16120ec23f35bdcff14d34cb1",
+        "size_in_bytes": 3347
+      },
+      {
+        "_path": "lib/clang/20/include/cuda_wrappers/algorithm",
+        "path_type": "hardlink",
+        "sha256": "52a1dba93372b31091687c7559098b1417612b783f0c23006456636a0506f7ab",
+        "sha256_in_prefix": "52a1dba93372b31091687c7559098b1417612b783f0c23006456636a0506f7ab",
+        "size_in_bytes": 4612
+      },
+      {
+        "_path": "lib/clang/20/include/cuda_wrappers/bits/basic_string.h",
+        "path_type": "hardlink",
+        "sha256": "f9aacc58217e4d682054c9bc79a855f66484c7c4941049442823c4e2fc5911ff",
+        "sha256_in_prefix": "f9aacc58217e4d682054c9bc79a855f66484c7c4941049442823c4e2fc5911ff",
+        "size_in_bytes": 352
+      },
+      {
+        "_path": "lib/clang/20/include/cuda_wrappers/bits/basic_string.tcc",
+        "path_type": "hardlink",
+        "sha256": "109eae76b6c4bd234c104ecc0966881ecb82a8da20505d6802ccf2aa2f5a78de",
+        "sha256_in_prefix": "109eae76b6c4bd234c104ecc0966881ecb82a8da20505d6802ccf2aa2f5a78de",
+        "size_in_bytes": 354
+      },
+      {
+        "_path": "lib/clang/20/include/cuda_wrappers/bits/shared_ptr_base.h",
+        "path_type": "hardlink",
+        "sha256": "51984393c2035f289bf533c0539b40bb616833a4315380e9a7ca338282b272da",
+        "sha256_in_prefix": "51984393c2035f289bf533c0539b40bb616833a4315380e9a7ca338282b272da",
+        "size_in_bytes": 355
+      },
+      {
+        "_path": "lib/clang/20/include/cuda_wrappers/cmath",
+        "path_type": "hardlink",
+        "sha256": "0e5e4f9d5b7d9167c1d85148bc14b030d995b41c6773b4ae86abce9edb7115e7",
+        "sha256_in_prefix": "0e5e4f9d5b7d9167c1d85148bc14b030d995b41c6773b4ae86abce9edb7115e7",
+        "size_in_bytes": 3823
+      },
+      {
+        "_path": "lib/clang/20/include/cuda_wrappers/complex",
+        "path_type": "hardlink",
+        "sha256": "fd4be2fd14eb31ba883593b450f7587af2914c0faf76073fa8c8d4a507822a7c",
+        "sha256_in_prefix": "fd4be2fd14eb31ba883593b450f7587af2914c0faf76073fa8c8d4a507822a7c",
+        "size_in_bytes": 3618
+      },
+      {
+        "_path": "lib/clang/20/include/cuda_wrappers/new",
+        "path_type": "hardlink",
+        "sha256": "5f77bd6bb7eebfce9e4c6575bf598a76349e18edefc6ce95fe4a921dd861d13b",
+        "sha256_in_prefix": "5f77bd6bb7eebfce9e4c6575bf598a76349e18edefc6ce95fe4a921dd861d13b",
+        "size_in_bytes": 3739
+      },
+      {
+        "_path": "lib/clang/20/include/emmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "48ec3b11cc4a7c5f7af2f23229b1402440b2d89d53cf4ee023211fe957d466d4",
+        "sha256_in_prefix": "48ec3b11cc4a7c5f7af2f23229b1402440b2d89d53cf4ee023211fe957d466d4",
+        "size_in_bytes": 201616
+      },
+      {
+        "_path": "lib/clang/20/include/enqcmdintrin.h",
+        "path_type": "hardlink",
+        "sha256": "024a79176d11b3646aa6d3648c61cead39086228178ed1138990bd861c0818f5",
+        "sha256_in_prefix": "024a79176d11b3646aa6d3648c61cead39086228178ed1138990bd861c0818f5",
+        "size_in_bytes": 2167
+      },
+      {
+        "_path": "lib/clang/20/include/f16cintrin.h",
+        "path_type": "hardlink",
+        "sha256": "835f822dd6d88ad7f2b14b5c82255c1f124dc850e305df53f6edabe894280357",
+        "sha256_in_prefix": "835f822dd6d88ad7f2b14b5c82255c1f124dc850e305df53f6edabe894280357",
+        "size_in_bytes": 5524
+      },
+      {
+        "_path": "lib/clang/20/include/float.h",
+        "path_type": "hardlink",
+        "sha256": "a29019c5ba04f9bf55a46f9bf75c63039a6015921ddde7298e057b2a188bebec",
+        "sha256_in_prefix": "a29019c5ba04f9bf55a46f9bf75c63039a6015921ddde7298e057b2a188bebec",
+        "size_in_bytes": 6583
+      },
+      {
+        "_path": "lib/clang/20/include/fma4intrin.h",
+        "path_type": "hardlink",
+        "sha256": "c605b5d80947d945b925ca0ed79adc98c190ddc2b4e82fcee284caffe5288361",
+        "sha256_in_prefix": "c605b5d80947d945b925ca0ed79adc98c190ddc2b4e82fcee284caffe5288361",
+        "size_in_bytes": 6986
+      },
+      {
+        "_path": "lib/clang/20/include/fmaintrin.h",
+        "path_type": "hardlink",
+        "sha256": "648c377bcf8ca86b717eb695536c76e2206561751eacbfe285c9218767161664",
+        "sha256_in_prefix": "648c377bcf8ca86b717eb695536c76e2206561751eacbfe285c9218767161664",
+        "size_in_bytes": 29337
+      },
+      {
+        "_path": "lib/clang/20/include/fxsrintrin.h",
+        "path_type": "hardlink",
+        "sha256": "892f1f63664e34c69497333eae7495f217db9ad0b4975d13c4967faec481ce04",
+        "sha256_in_prefix": "892f1f63664e34c69497333eae7495f217db9ad0b4975d13c4967faec481ce04",
+        "size_in_bytes": 2890
+      },
+      {
+        "_path": "lib/clang/20/include/gfniintrin.h",
+        "path_type": "hardlink",
+        "sha256": "4f75e4256b395c02fffab1d6462d95c78fff66da4f3869cedf1ecdef85c8cb77",
+        "sha256_in_prefix": "4f75e4256b395c02fffab1d6462d95c78fff66da4f3869cedf1ecdef85c8cb77",
+        "size_in_bytes": 9822
+      },
+      {
+        "_path": "lib/clang/20/include/gpuintrin.h",
+        "path_type": "hardlink",
+        "sha256": "bdf4279456a4aa67d324fe4f66ff71d3834fdb16acca09c4f48052b23519af78",
+        "sha256_in_prefix": "bdf4279456a4aa67d324fe4f66ff71d3834fdb16acca09c4f48052b23519af78",
+        "size_in_bytes": 9291
+      },
+      {
+        "_path": "lib/clang/20/include/hexagon_circ_brev_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "a1e5a7d54a47697707d54edf31b6c3eef0c3593cff2a15bb9319238b08d54be7",
+        "sha256_in_prefix": "a1e5a7d54a47697707d54edf31b6c3eef0c3593cff2a15bb9319238b08d54be7",
+        "size_in_bytes": 15966
+      },
+      {
+        "_path": "lib/clang/20/include/hexagon_protos.h",
+        "path_type": "hardlink",
+        "sha256": "0b130e0b52feb7074551b2389648a0fdc790784bb875e4f21fe47c9b0899fc8b",
+        "sha256_in_prefix": "0b130e0b52feb7074551b2389648a0fdc790784bb875e4f21fe47c9b0899fc8b",
+        "size_in_bytes": 383410
+      },
+      {
+        "_path": "lib/clang/20/include/hexagon_types.h",
+        "path_type": "hardlink",
+        "sha256": "2ba756d62277f009ec853486a3f11fa63733a256a7bb1c6600aa9775d5970f31",
+        "sha256_in_prefix": "2ba756d62277f009ec853486a3f11fa63733a256a7bb1c6600aa9775d5970f31",
+        "size_in_bytes": 133505
+      },
+      {
+        "_path": "lib/clang/20/include/hresetintrin.h",
+        "path_type": "hardlink",
+        "sha256": "ea5012c0fe5e8818863fb65104783772f21dd278f5b4880e98451bb5d70f550a",
+        "sha256_in_prefix": "ea5012c0fe5e8818863fb65104783772f21dd278f5b4880e98451bb5d70f550a",
+        "size_in_bytes": 1395
+      },
+      {
+        "_path": "lib/clang/20/include/htmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "8f422a3313386d8767bfb89955928e32687e5dbd0698c8451f52969b21ca4e2f",
+        "sha256_in_prefix": "8f422a3313386d8767bfb89955928e32687e5dbd0698c8451f52969b21ca4e2f",
+        "size_in_bytes": 6283
+      },
+      {
+        "_path": "lib/clang/20/include/htmxlintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d42ffa98cdceb028ed7497e5245711d5667540b70f865697ffa5a1d42155807a",
+        "sha256_in_prefix": "d42ffa98cdceb028ed7497e5245711d5667540b70f865697ffa5a1d42155807a",
+        "size_in_bytes": 9225
+      },
+      {
+        "_path": "lib/clang/20/include/hvx_hexagon_protos.h",
+        "path_type": "hardlink",
+        "sha256": "003ec9964fd0b572d85978c400338b19a3bdbe55fd0ec01a09bace5de1608517",
+        "sha256_in_prefix": "003ec9964fd0b572d85978c400338b19a3bdbe55fd0ec01a09bace5de1608517",
+        "size_in_bytes": 281785
+      },
+      {
+        "_path": "lib/clang/20/include/ia32intrin.h",
+        "path_type": "hardlink",
+        "sha256": "ab2cf5dda79d4fc65346ec85c5d776153440f7bc538386d419e0e0be230ac9e4",
+        "sha256_in_prefix": "ab2cf5dda79d4fc65346ec85c5d776153440f7bc538386d419e0e0be230ac9e4",
+        "size_in_bytes": 25986
+      },
+      {
+        "_path": "lib/clang/20/include/immintrin.h",
+        "path_type": "hardlink",
+        "sha256": "523bb6dbaf85ccf72fbd81ca939f631de81fa81088f75097d234b1b4d6cf5c04",
+        "sha256_in_prefix": "523bb6dbaf85ccf72fbd81ca939f631de81fa81088f75097d234b1b4d6cf5c04",
+        "size_in_bytes": 26068
+      },
+      {
+        "_path": "lib/clang/20/include/intrin.h",
+        "path_type": "hardlink",
+        "sha256": "a2ea74eb96304792dc57a6bbd27464d5fdd2b64e708e39de9e7bda289208ce14",
+        "sha256_in_prefix": "a2ea74eb96304792dc57a6bbd27464d5fdd2b64e708e39de9e7bda289208ce14",
+        "size_in_bytes": 18596
+      },
+      {
+        "_path": "lib/clang/20/include/intrin0.h",
+        "path_type": "hardlink",
+        "sha256": "085c456a603387cb0a7c19fbeba0d0f26237988c2346085b5916bee874830b3e",
+        "sha256_in_prefix": "085c456a603387cb0a7c19fbeba0d0f26237988c2346085b5916bee874830b3e",
+        "size_in_bytes": 14093
+      },
+      {
+        "_path": "lib/clang/20/include/inttypes.h",
+        "path_type": "hardlink",
+        "sha256": "eb8a7b2e17d57e9321043282bf0267fedd2ca58aadb11b04929ddbf8100fc3bc",
+        "sha256_in_prefix": "eb8a7b2e17d57e9321043282bf0267fedd2ca58aadb11b04929ddbf8100fc3bc",
+        "size_in_bytes": 2427
+      },
+      {
+        "_path": "lib/clang/20/include/invpcidintrin.h",
+        "path_type": "hardlink",
+        "sha256": "70f32ed90521d7135aa2b96e6fef366e9793ad99caf6fb5e0ec188be1fa6b7ed",
+        "sha256_in_prefix": "70f32ed90521d7135aa2b96e6fef366e9793ad99caf6fb5e0ec188be1fa6b7ed",
+        "size_in_bytes": 764
+      },
+      {
+        "_path": "lib/clang/20/include/iso646.h",
+        "path_type": "hardlink",
+        "sha256": "3a190443022054d1fd72ec44316dce619b8f130bd10eacf906edf9486e8c270c",
+        "sha256_in_prefix": "3a190443022054d1fd72ec44316dce619b8f130bd10eacf906edf9486e8c270c",
+        "size_in_bytes": 763
+      },
+      {
+        "_path": "lib/clang/20/include/keylockerintrin.h",
+        "path_type": "hardlink",
+        "sha256": "013f44c4bb8c13378c5a80a80c56a5bd09359c4c3630ed78030b312a456d9e30",
+        "sha256_in_prefix": "013f44c4bb8c13378c5a80a80c56a5bd09359c4c3630ed78030b312a456d9e30",
+        "size_in_bytes": 18282
+      },
+      {
+        "_path": "lib/clang/20/include/larchintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e769cbd2b3bcdefd2cf996a499ba81b40e18cb6390658d56caff19ddf721dfaf",
+        "sha256_in_prefix": "e769cbd2b3bcdefd2cf996a499ba81b40e18cb6390658d56caff19ddf721dfaf",
+        "size_in_bytes": 8703
+      },
+      {
+        "_path": "lib/clang/20/include/lasxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e155828e0a8c7673599275233fa7ccd1b9bef42eb6b636f3ef44595808562db6",
+        "sha256_in_prefix": "e155828e0a8c7673599275233fa7ccd1b9bef42eb6b636f3ef44595808562db6",
+        "size_in_bytes": 145551
+      },
+      {
+        "_path": "lib/clang/20/include/limits.h",
+        "path_type": "hardlink",
+        "sha256": "6b59cc1b6f86c901bf41ce942b8434530e852eb16e79e6e9287f89441f71efca",
+        "sha256_in_prefix": "6b59cc1b6f86c901bf41ce942b8434530e852eb16e79e6e9287f89441f71efca",
+        "size_in_bytes": 3794
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_libc_wrappers/assert.h",
+        "path_type": "hardlink",
+        "sha256": "9451a01129c66dc1b6ddb8f56aed139e0fdf3f9bf6da426292880d6ecea374b3",
+        "sha256_in_prefix": "9451a01129c66dc1b6ddb8f56aed139e0fdf3f9bf6da426292880d6ecea374b3",
+        "size_in_bytes": 942
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_libc_wrappers/ctype.h",
+        "path_type": "hardlink",
+        "sha256": "370792f0d59714c9984865ce2f814679696f72407e4f0488ee80c6c7f6d77296",
+        "sha256_in_prefix": "370792f0d59714c9984865ce2f814679696f72407e4f0488ee80c6c7f6d77296",
+        "size_in_bytes": 3840
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_libc_wrappers/inttypes.h",
+        "path_type": "hardlink",
+        "sha256": "11cee61d1b4155f3ebc9a084dab327c6522a73fe6ebad86e819d4691e1a94724",
+        "sha256_in_prefix": "11cee61d1b4155f3ebc9a084dab327c6522a73fe6ebad86e819d4691e1a94724",
+        "size_in_bytes": 954
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_libc_wrappers/stdio.h",
+        "path_type": "hardlink",
+        "sha256": "0267196669be2fccebe276b8b3f9c5eb7dfd2ce4a471675bdf63a95dde60b874",
+        "sha256_in_prefix": "0267196669be2fccebe276b8b3f9c5eb7dfd2ce4a471675bdf63a95dde60b874",
+        "size_in_bytes": 2931
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_libc_wrappers/stdlib.h",
+        "path_type": "hardlink",
+        "sha256": "54638cb4e8cf3b5a6be332cf5c1b0823695cf2de4e556ea7cdd5e70b443fb31a",
+        "sha256_in_prefix": "54638cb4e8cf3b5a6be332cf5c1b0823695cf2de4e556ea7cdd5e70b443fb31a",
+        "size_in_bytes": 1706
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_libc_wrappers/string.h",
+        "path_type": "hardlink",
+        "sha256": "3073516355e10451c97f06552aab2c2d582892cd948209f1f8c00df67d677cb8",
+        "sha256_in_prefix": "3073516355e10451c97f06552aab2c2d582892cd948209f1f8c00df67d677cb8",
+        "size_in_bytes": 4028
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_libc_wrappers/time.h",
+        "path_type": "hardlink",
+        "sha256": "f9d4a45668e04014800613361d7f2f235a10ef6e4ca4b5fb772b8c0b2f87b55f",
+        "sha256_in_prefix": "f9d4a45668e04014800613361d7f2f235a10ef6e4ca4b5fb772b8c0b2f87b55f",
+        "size_in_bytes": 976
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_offload_wrappers/__llvm_offload.h",
+        "path_type": "hardlink",
+        "sha256": "e07f4bb61698a2e55d7fd2e8a7a39dd91c08f1a275363b045c3d4929153cec42",
+        "sha256_in_prefix": "e07f4bb61698a2e55d7fd2e8a7a39dd91c08f1a275363b045c3d4929153cec42",
+        "size_in_bytes": 1063
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_offload_wrappers/__llvm_offload_device.h",
+        "path_type": "hardlink",
+        "sha256": "5b246a387424b8ff24fbfc00091b148feb90514367fbc79713fbc95ee2759702",
+        "sha256_in_prefix": "5b246a387424b8ff24fbfc00091b148feb90514367fbc79713fbc95ee2759702",
+        "size_in_bytes": 400
+      },
+      {
+        "_path": "lib/clang/20/include/llvm_offload_wrappers/__llvm_offload_host.h",
+        "path_type": "hardlink",
+        "sha256": "cc9e08884bbc2a41b77161776a7ca8e40900c7f98d13e2b6e69eb88352f5ccfd",
+        "sha256_in_prefix": "cc9e08884bbc2a41b77161776a7ca8e40900c7f98d13e2b6e69eb88352f5ccfd",
+        "size_in_bytes": 569
+      },
+      {
+        "_path": "lib/clang/20/include/lsxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "22b225744f28d416d29ad488bb4002efba9728400bea655b644b838d85e794cb",
+        "sha256_in_prefix": "22b225744f28d416d29ad488bb4002efba9728400bea655b644b838d85e794cb",
+        "size_in_bytes": 137936
+      },
+      {
+        "_path": "lib/clang/20/include/lwpintrin.h",
+        "path_type": "hardlink",
+        "sha256": "485b84552e9163bd7362e6353d5b2a5a3bce9c45d385d0c3224ad1ec543e790c",
+        "sha256_in_prefix": "485b84552e9163bd7362e6353d5b2a5a3bce9c45d385d0c3224ad1ec543e790c",
+        "size_in_bytes": 5115
+      },
+      {
+        "_path": "lib/clang/20/include/lzcntintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e3a004220287c7f041cb470a11c7dc587dae8185f6d9dd781472874363b715c5",
+        "sha256_in_prefix": "e3a004220287c7f041cb470a11c7dc587dae8185f6d9dd781472874363b715c5",
+        "size_in_bytes": 3536
+      },
+      {
+        "_path": "lib/clang/20/include/mm3dnow.h",
+        "path_type": "hardlink",
+        "sha256": "9779205196471f01374264a25acdf50c6705c29db47bb180bfa4f549b33c5a51",
+        "sha256_in_prefix": "9779205196471f01374264a25acdf50c6705c29db47bb180bfa4f549b33c5a51",
+        "size_in_bytes": 729
+      },
+      {
+        "_path": "lib/clang/20/include/mm_malloc.h",
+        "path_type": "hardlink",
+        "sha256": "5cd8a3d288d469c9e5a2fc8a8ee624f50889dbcd06dea1262ef7aaf510a204af",
+        "sha256_in_prefix": "5cd8a3d288d469c9e5a2fc8a8ee624f50889dbcd06dea1262ef7aaf510a204af",
+        "size_in_bytes": 1929
+      },
+      {
+        "_path": "lib/clang/20/include/mmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "b3a59c5b4bd653d0ea3b96b82fadc4a7adb97ae9dc7bb2abd8872e9348238a3b",
+        "sha256_in_prefix": "b3a59c5b4bd653d0ea3b96b82fadc4a7adb97ae9dc7bb2abd8872e9348238a3b",
+        "size_in_bytes": 60004
+      },
+      {
+        "_path": "lib/clang/20/include/module.modulemap",
+        "path_type": "hardlink",
+        "sha256": "f2db9bf0a85edb1b7794d345a678c98c1f06d6b47eb393aab744e99de6a82283",
+        "sha256_in_prefix": "f2db9bf0a85edb1b7794d345a678c98c1f06d6b47eb393aab744e99de6a82283",
+        "size_in_bytes": 6622
+      },
+      {
+        "_path": "lib/clang/20/include/movdirintrin.h",
+        "path_type": "hardlink",
+        "sha256": "ae4691076535aefa2a2c465e13e3873d29e1dcf7a6d12faf5f631a54ae7c77f8",
+        "sha256_in_prefix": "ae4691076535aefa2a2c465e13e3873d29e1dcf7a6d12faf5f631a54ae7c77f8",
+        "size_in_bytes": 1612
+      },
+      {
+        "_path": "lib/clang/20/include/movrs_avx10_2_512intrin.h",
+        "path_type": "hardlink",
+        "sha256": "28c9c2debd1adca64d953834571c8b5571ed47ee0fb2d25f6aca0e7a37dd3a16",
+        "sha256_in_prefix": "28c9c2debd1adca64d953834571c8b5571ed47ee0fb2d25f6aca0e7a37dd3a16",
+        "size_in_bytes": 3973
+      },
+      {
+        "_path": "lib/clang/20/include/movrs_avx10_2intrin.h",
+        "path_type": "hardlink",
+        "sha256": "3b68f1e37ae9ac3ab84e0503a04d64f235a6f556ad97202318e007dd7ecefeac",
+        "sha256_in_prefix": "3b68f1e37ae9ac3ab84e0503a04d64f235a6f556ad97202318e007dd7ecefeac",
+        "size_in_bytes": 7036
+      },
+      {
+        "_path": "lib/clang/20/include/movrsintrin.h",
+        "path_type": "hardlink",
+        "sha256": "2895ccee336e54f9242d3d021e6a456dcfe41e1302437d901d027e5fe9b78e8b",
+        "sha256_in_prefix": "2895ccee336e54f9242d3d021e6a456dcfe41e1302437d901d027e5fe9b78e8b",
+        "size_in_bytes": 2024
+      },
+      {
+        "_path": "lib/clang/20/include/msa.h",
+        "path_type": "hardlink",
+        "sha256": "1283e2b1437a068ce0d0d287b541df50badb5ea1781d79c173db7a672c0e0d80",
+        "sha256_in_prefix": "1283e2b1437a068ce0d0d287b541df50badb5ea1781d79c173db7a672c0e0d80",
+        "size_in_bytes": 25615
+      },
+      {
+        "_path": "lib/clang/20/include/mwaitxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e7dc6d77422aa1fcd6f26126dd98f6a88b2ff506ed75fd1538cc4b2aaf33ef8d",
+        "sha256_in_prefix": "e7dc6d77422aa1fcd6f26126dd98f6a88b2ff506ed75fd1538cc4b2aaf33ef8d",
+        "size_in_bytes": 2244
+      },
+      {
+        "_path": "lib/clang/20/include/nmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "cd7b51a1c33c7e7d710f070315e7bc034757ea6be9e6804864cf159c79f48d54",
+        "sha256_in_prefix": "cd7b51a1c33c7e7d710f070315e7bc034757ea6be9e6804864cf159c79f48d54",
+        "size_in_bytes": 709
+      },
+      {
+        "_path": "lib/clang/20/include/nvptxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "f2142174a4bf0de3f53445e364f1a2ea11802b3da75e3c49dafc4df78bef84bd",
+        "sha256_in_prefix": "f2142174a4bf0de3f53445e364f1a2ea11802b3da75e3c49dafc4df78bef84bd",
+        "size_in_bytes": 7593
+      },
+      {
+        "_path": "lib/clang/20/include/omp.h",
+        "path_type": "softlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/clang/20/include/opencl-c-base.h",
+        "path_type": "hardlink",
+        "sha256": "ae61f6d1343d53e96a7488fb78db5cc9719a8397babbce06dbb435e4ab531efd",
+        "sha256_in_prefix": "ae61f6d1343d53e96a7488fb78db5cc9719a8397babbce06dbb435e4ab531efd",
+        "size_in_bytes": 31681
+      },
+      {
+        "_path": "lib/clang/20/include/opencl-c.h",
+        "path_type": "hardlink",
+        "sha256": "579b58f482ab0b3dfd396cab32ea3e0537bc5cf4c1067377b83fe417cbcc513b",
+        "sha256_in_prefix": "579b58f482ab0b3dfd396cab32ea3e0537bc5cf4c1067377b83fe417cbcc513b",
+        "size_in_bytes": 895977
+      },
+      {
+        "_path": "lib/clang/20/include/openmp_wrappers/__clang_openmp_device_functions.h",
+        "path_type": "hardlink",
+        "sha256": "7e4ae115f8fe22dec814d39d4ba1e2ff20763fedc308e8955a8b706f767fc39b",
+        "sha256_in_prefix": "7e4ae115f8fe22dec814d39d4ba1e2ff20763fedc308e8955a8b706f767fc39b",
+        "size_in_bytes": 2603
+      },
+      {
+        "_path": "lib/clang/20/include/openmp_wrappers/cmath",
+        "path_type": "hardlink",
+        "sha256": "bb75069b6aacb79ba85236f69c98410ea0ae84dd02e5d04da50b884d723e2d49",
+        "sha256_in_prefix": "bb75069b6aacb79ba85236f69c98410ea0ae84dd02e5d04da50b884d723e2d49",
+        "size_in_bytes": 5251
+      },
+      {
+        "_path": "lib/clang/20/include/openmp_wrappers/complex",
+        "path_type": "hardlink",
+        "sha256": "c1448d113395586b11c357506f9a8dc207acf5e464b446995ba3dae5ae16e8d8",
+        "sha256_in_prefix": "c1448d113395586b11c357506f9a8dc207acf5e464b446995ba3dae5ae16e8d8",
+        "size_in_bytes": 1802
+      },
+      {
+        "_path": "lib/clang/20/include/openmp_wrappers/complex.h",
+        "path_type": "hardlink",
+        "sha256": "5e0c4bd3e1165deaf1c557fa7fb9959772d476204507a42205099febd2232152",
+        "sha256_in_prefix": "5e0c4bd3e1165deaf1c557fa7fb9959772d476204507a42205099febd2232152",
+        "size_in_bytes": 898
+      },
+      {
+        "_path": "lib/clang/20/include/openmp_wrappers/complex_cmath.h",
+        "path_type": "hardlink",
+        "sha256": "b904380d5094d97a7ae5daa6477773f172f8817457189c4b7d49cab4e3f88454",
+        "sha256_in_prefix": "b904380d5094d97a7ae5daa6477773f172f8817457189c4b7d49cab4e3f88454",
+        "size_in_bytes": 12559
+      },
+      {
+        "_path": "lib/clang/20/include/openmp_wrappers/math.h",
+        "path_type": "hardlink",
+        "sha256": "74e192fa76f1648fc3081232fb4ebd6700ef92cde3a76ca4da30205ceea75277",
+        "sha256_in_prefix": "74e192fa76f1648fc3081232fb4ebd6700ef92cde3a76ca4da30205ceea75277",
+        "size_in_bytes": 2054
+      },
+      {
+        "_path": "lib/clang/20/include/openmp_wrappers/new",
+        "path_type": "hardlink",
+        "sha256": "b5d050cf4ac693abcfaeef786c656d55900256efe274fdcbbc73d9b383e94bc2",
+        "sha256_in_prefix": "b5d050cf4ac693abcfaeef786c656d55900256efe274fdcbbc73d9b383e94bc2",
+        "size_in_bytes": 1409
+      },
+      {
+        "_path": "lib/clang/20/include/pconfigintrin.h",
+        "path_type": "hardlink",
+        "sha256": "c8090603fa18cca9af372a25de032695bc782e6480520a9da880907dc7f31679",
+        "sha256_in_prefix": "c8090603fa18cca9af372a25de032695bc782e6480520a9da880907dc7f31679",
+        "size_in_bytes": 1216
+      },
+      {
+        "_path": "lib/clang/20/include/pkuintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d103441f018b003a07117ad8ae662294cb59c9b457196d85d8ac4287f1c0d01b",
+        "sha256_in_prefix": "d103441f018b003a07117ad8ae662294cb59c9b457196d85d8ac4287f1c0d01b",
+        "size_in_bytes": 934
+      },
+      {
+        "_path": "lib/clang/20/include/pmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d339fc33b62cad78adcdf359c662c293e2e6c562d56104b1a9d5806dda9b85ca",
+        "sha256_in_prefix": "d339fc33b62cad78adcdf359c662c293e2e6c562d56104b1a9d5806dda9b85ca",
+        "size_in_bytes": 11390
+      },
+      {
+        "_path": "lib/clang/20/include/popcntintrin.h",
+        "path_type": "hardlink",
+        "sha256": "c10c93f79d0d2b61e9fa2340560c6bd331c7d977f9543d431e3756861e1ef8de",
+        "sha256_in_prefix": "c10c93f79d0d2b61e9fa2340560c6bd331c7d977f9543d431e3756861e1ef8de",
+        "size_in_bytes": 1948
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/bmi2intrin.h",
+        "path_type": "hardlink",
+        "sha256": "0f0da0d31166135263adc3034475314536296ac0aa2ac45dac3ecfd75eac16b5",
+        "sha256_in_prefix": "0f0da0d31166135263adc3034475314536296ac0aa2ac45dac3ecfd75eac16b5",
+        "size_in_bytes": 4671
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/bmiintrin.h",
+        "path_type": "hardlink",
+        "sha256": "f5d485c66e0de5d881c7051432ec0e9b56e650d4a1c679877a62de3f287579cc",
+        "sha256_in_prefix": "f5d485c66e0de5d881c7051432ec0e9b56e650d4a1c679877a62de3f287579cc",
+        "size_in_bytes": 5002
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/emmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "3125e83d7fcdebda705ef1864aa1f765ba59ee2c3fb81b4dbdfb26dfdf258e8e",
+        "sha256_in_prefix": "3125e83d7fcdebda705ef1864aa1f765ba59ee2c3fb81b4dbdfb26dfdf258e8e",
+        "size_in_bytes": 71273
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/immintrin.h",
+        "path_type": "hardlink",
+        "sha256": "fd91e22fac3443525b0863eebe7db74381b8286e5dd6631ddcd12e40022839ca",
+        "sha256_in_prefix": "fd91e22fac3443525b0863eebe7db74381b8286e5dd6631ddcd12e40022839ca",
+        "size_in_bytes": 611
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/mm_malloc.h",
+        "path_type": "hardlink",
+        "sha256": "6ff2b87659f5184f0655b6e83f59a230051e8f0ec2238fee07195dd5f3183417",
+        "sha256_in_prefix": "6ff2b87659f5184f0655b6e83f59a230051e8f0ec2238fee07195dd5f3183417",
+        "size_in_bytes": 1337
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/mmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "4211ef43a49c3f06ed33c9624adcb434cbb644078fb3e0f70bb766327efff2cd",
+        "sha256_in_prefix": "4211ef43a49c3f06ed33c9624adcb434cbb644078fb3e0f70bb766327efff2cd",
+        "size_in_bytes": 45763
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/nmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "93a42888efebb8de76b8fb963d688cc82e690893a36913f73f4b39eebc2123b4",
+        "sha256_in_prefix": "93a42888efebb8de76b8fb963d688cc82e690893a36913f73f4b39eebc2123b4",
+        "size_in_bytes": 977
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/pmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "37eca55a0d5db5a2aa0463fe4a31ccaac6441e15b38b08ca8bd8776acd57e39a",
+        "sha256_in_prefix": "37eca55a0d5db5a2aa0463fe4a31ccaac6441e15b38b08ca8bd8776acd57e39a",
+        "size_in_bytes": 5898
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/smmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "4d38f5fe3dd49a3f125c147f4a3fec5d03f60bd97cc6168027be455efb8e16c0",
+        "sha256_in_prefix": "4d38f5fe3dd49a3f125c147f4a3fec5d03f60bd97cc6168027be455efb8e16c0",
+        "size_in_bytes": 23559
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/tmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "1b58acbfe5f1d20dbc3f47909c2d73982ccafc9a0930b5127702e6c40d3e690f",
+        "sha256_in_prefix": "1b58acbfe5f1d20dbc3f47909c2d73982ccafc9a0930b5127702e6c40d3e690f",
+        "size_in_bytes": 16341
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/x86gprintrin.h",
+        "path_type": "hardlink",
+        "sha256": "9d18b4b2272918636a78e865d2087387dbb0d2a25b588b036071ffbbb76586d5",
+        "sha256_in_prefix": "9d18b4b2272918636a78e865d2087387dbb0d2a25b588b036071ffbbb76586d5",
+        "size_in_bytes": 499
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/x86intrin.h",
+        "path_type": "hardlink",
+        "sha256": "df147bbd99a860a79bae6ab7e8ae958b4a2634f2ae9fbc89e417252960c9fa9f",
+        "sha256_in_prefix": "df147bbd99a860a79bae6ab7e8ae958b4a2634f2ae9fbc89e417252960c9fa9f",
+        "size_in_bytes": 1067
+      },
+      {
+        "_path": "lib/clang/20/include/ppc_wrappers/xmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "064a446bfbb110ff61ac79faad162ff52fbef02a1943aefb45007cdcb601975e",
+        "sha256_in_prefix": "064a446bfbb110ff61ac79faad162ff52fbef02a1943aefb45007cdcb601975e",
+        "size_in_bytes": 64333
+      },
+      {
+        "_path": "lib/clang/20/include/prfchiintrin.h",
+        "path_type": "hardlink",
+        "sha256": "8dec1f9509fd459fc4d51bf5183e2672a7a3497681b322a36e78379c7e371af0",
+        "sha256_in_prefix": "8dec1f9509fd459fc4d51bf5183e2672a7a3497681b322a36e78379c7e371af0",
+        "size_in_bytes": 2073
+      },
+      {
+        "_path": "lib/clang/20/include/prfchwintrin.h",
+        "path_type": "hardlink",
+        "sha256": "debbd15c33686e9d09f2acb4941fe60247a5a06e37df28067fa700dde32fceaf",
+        "sha256_in_prefix": "debbd15c33686e9d09f2acb4941fe60247a5a06e37df28067fa700dde32fceaf",
+        "size_in_bytes": 2108
+      },
+      {
+        "_path": "lib/clang/20/include/ptrauth.h",
+        "path_type": "hardlink",
+        "sha256": "118265e8bd745baa0cd7a946b44569ec468bb03c31e412d0f0e1431ed21bceb4",
+        "sha256_in_prefix": "118265e8bd745baa0cd7a946b44569ec468bb03c31e412d0f0e1431ed21bceb4",
+        "size_in_bytes": 15989
+      },
+      {
+        "_path": "lib/clang/20/include/ptwriteintrin.h",
+        "path_type": "hardlink",
+        "sha256": "549e44eef926d5bb1333c87d32d977270649a8fd7c7161093db600e472d23039",
+        "sha256_in_prefix": "549e44eef926d5bb1333c87d32d977270649a8fd7c7161093db600e472d23039",
+        "size_in_bytes": 1076
+      },
+      {
+        "_path": "lib/clang/20/include/raointintrin.h",
+        "path_type": "hardlink",
+        "sha256": "fcc60ade967bf5152675de42f9f48fe5b17b40ff432ab993159119ba2038c5e5",
+        "sha256_in_prefix": "fcc60ade967bf5152675de42f9f48fe5b17b40ff432ab993159119ba2038c5e5",
+        "size_in_bytes": 6748
+      },
+      {
+        "_path": "lib/clang/20/include/rdpruintrin.h",
+        "path_type": "hardlink",
+        "sha256": "6d0b9af132bfbbc72f6a3821b9eedbbb7457fc43cd94ad73c08d1de72ed8b7f3",
+        "sha256_in_prefix": "6d0b9af132bfbbc72f6a3821b9eedbbb7457fc43cd94ad73c08d1de72ed8b7f3",
+        "size_in_bytes": 1624
+      },
+      {
+        "_path": "lib/clang/20/include/rdseedintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d936c47a6fd689a47acb819dd28ba4ad779e667116ae5002c1e06149c0804b14",
+        "sha256_in_prefix": "d936c47a6fd689a47acb819dd28ba4ad779e667116ae5002c1e06149c0804b14",
+        "size_in_bytes": 2919
+      },
+      {
+        "_path": "lib/clang/20/include/riscv_bitmanip.h",
+        "path_type": "hardlink",
+        "sha256": "736cee6955e7ed4e0ff4e17a5edb42591e1e28f083ca9f9c109085c7ac57f8aa",
+        "sha256_in_prefix": "736cee6955e7ed4e0ff4e17a5edb42591e1e28f083ca9f9c109085c7ac57f8aa",
+        "size_in_bytes": 5725
+      },
+      {
+        "_path": "lib/clang/20/include/riscv_corev_alu.h",
+        "path_type": "hardlink",
+        "sha256": "cc5f9eb70892d26e12731772d2832aaddcf2690f24dde8bf53edc9f90a17cb42",
+        "sha256_in_prefix": "cc5f9eb70892d26e12731772d2832aaddcf2690f24dde8bf53edc9f90a17cb42",
+        "size_in_bytes": 4037
+      },
+      {
+        "_path": "lib/clang/20/include/riscv_crypto.h",
+        "path_type": "hardlink",
+        "sha256": "215fc9a87e37fe2d2c389e78895cccf2dca67f31964408da2b050c75c7e3b139",
+        "sha256_in_prefix": "215fc9a87e37fe2d2c389e78895cccf2dca67f31964408da2b050c75c7e3b139",
+        "size_in_bytes": 5211
+      },
+      {
+        "_path": "lib/clang/20/include/riscv_ntlh.h",
+        "path_type": "hardlink",
+        "sha256": "a0a75c40f11a4910506c44a6c1bb44e568f0c90c34aeb715836380c9ae7f54e5",
+        "sha256_in_prefix": "a0a75c40f11a4910506c44a6c1bb44e568f0c90c34aeb715836380c9ae7f54e5",
+        "size_in_bytes": 744
+      },
+      {
+        "_path": "lib/clang/20/include/riscv_vector.h",
+        "path_type": "hardlink",
+        "sha256": "0a54aad497015bba2e641866704b7bbc9463592501b79db1ddc64b4c9f460d18",
+        "sha256_in_prefix": "0a54aad497015bba2e641866704b7bbc9463592501b79db1ddc64b4c9f460d18",
+        "size_in_bytes": 17525
+      },
+      {
+        "_path": "lib/clang/20/include/rtmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "18fe263a76ad5970e47d2e8b9b5c99a4370f1a4f7258e2e197c4c8fab0cb2123",
+        "sha256_in_prefix": "18fe263a76ad5970e47d2e8b9b5c99a4370f1a4f7258e2e197c4c8fab0cb2123",
+        "size_in_bytes": 1280
+      },
+      {
+        "_path": "lib/clang/20/include/s390intrin.h",
+        "path_type": "hardlink",
+        "sha256": "2c8bfec677cd371893070d06f06e2ed9a6657c8e7d1dbafb2d8e3054dd8fe7c5",
+        "sha256_in_prefix": "2c8bfec677cd371893070d06f06e2ed9a6657c8e7d1dbafb2d8e3054dd8fe7c5",
+        "size_in_bytes": 604
+      },
+      {
+        "_path": "lib/clang/20/include/serializeintrin.h",
+        "path_type": "hardlink",
+        "sha256": "dd29ae159d83161dd61d6bfcd6a7a37aa3f5930f814e8d12bf15ae131a0c6ac6",
+        "sha256_in_prefix": "dd29ae159d83161dd61d6bfcd6a7a37aa3f5930f814e8d12bf15ae131a0c6ac6",
+        "size_in_bytes": 881
+      },
+      {
+        "_path": "lib/clang/20/include/sgxintrin.h",
+        "path_type": "hardlink",
+        "sha256": "0e8dc78c7311b9dda1499587ac5eaa3e1c485b9c7df0fc54225b8425db5ae964",
+        "sha256_in_prefix": "0e8dc78c7311b9dda1499587ac5eaa3e1c485b9c7df0fc54225b8425db5ae964",
+        "size_in_bytes": 1816
+      },
+      {
+        "_path": "lib/clang/20/include/sha512intrin.h",
+        "path_type": "hardlink",
+        "sha256": "094f1882a68f1511fec3d1145aef332ce75086cf194101dd5049e143ff771de0",
+        "sha256_in_prefix": "094f1882a68f1511fec3d1145aef332ce75086cf194101dd5049e143ff771de0",
+        "size_in_bytes": 6088
+      },
+      {
+        "_path": "lib/clang/20/include/shaintrin.h",
+        "path_type": "hardlink",
+        "sha256": "29dc687117c543bc40f843702b60c3e71d581a567235f645a542740d4cc182fc",
+        "sha256_in_prefix": "29dc687117c543bc40f843702b60c3e71d581a567235f645a542740d4cc182fc",
+        "size_in_bytes": 7551
+      },
+      {
+        "_path": "lib/clang/20/include/sifive_vector.h",
+        "path_type": "hardlink",
+        "sha256": "9057e9337dd16700b9a24890628f62f9f372bebfc0d5d903e138f9cf3e2d1f15",
+        "sha256_in_prefix": "9057e9337dd16700b9a24890628f62f9f372bebfc0d5d903e138f9cf3e2d1f15",
+        "size_in_bytes": 7041
+      },
+      {
+        "_path": "lib/clang/20/include/sm3intrin.h",
+        "path_type": "hardlink",
+        "sha256": "66680c0998f322f5ae97157dd422a735bcf32363fe382076d43cd669b3361d0c",
+        "sha256_in_prefix": "66680c0998f322f5ae97157dd422a735bcf32363fe382076d43cd669b3361d0c",
+        "size_in_bytes": 7470
+      },
+      {
+        "_path": "lib/clang/20/include/sm4evexintrin.h",
+        "path_type": "hardlink",
+        "sha256": "5cc2ed1df229d567a80937ec3321a2a27dacc90da8430bf0b9cda6e1301147ed",
+        "sha256_in_prefix": "5cc2ed1df229d567a80937ec3321a2a27dacc90da8430bf0b9cda6e1301147ed",
+        "size_in_bytes": 1195
+      },
+      {
+        "_path": "lib/clang/20/include/sm4intrin.h",
+        "path_type": "hardlink",
+        "sha256": "1a56d69f3c2fdadbf81c67b6cf7b36efc3892777d7c64d55bacdfb31b21aa5e6",
+        "sha256_in_prefix": "1a56d69f3c2fdadbf81c67b6cf7b36efc3892777d7c64d55bacdfb31b21aa5e6",
+        "size_in_bytes": 8401
+      },
+      {
+        "_path": "lib/clang/20/include/smmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "b471a91b7d3990d9bcbc82262510681b5b6d250e646bd8aa07894598d0cc951f",
+        "sha256_in_prefix": "b471a91b7d3990d9bcbc82262510681b5b6d250e646bd8aa07894598d0cc951f",
+        "size_in_bytes": 101720
+      },
+      {
+        "_path": "lib/clang/20/include/stdalign.h",
+        "path_type": "hardlink",
+        "sha256": "0375392ce44c0bce9d2dda696b0b2e7129e2e58233e002f532d010c9ac02d27b",
+        "sha256_in_prefix": "0375392ce44c0bce9d2dda696b0b2e7129e2e58233e002f532d010c9ac02d27b",
+        "size_in_bytes": 756
+      },
+      {
+        "_path": "lib/clang/20/include/stdarg.h",
+        "path_type": "hardlink",
+        "sha256": "ce6e43d79dc89b50208ecf259b1ffd519f5a78cd3a2c7fcaac6386f376b89fef",
+        "sha256_in_prefix": "ce6e43d79dc89b50208ecf259b1ffd519f5a78cd3a2c7fcaac6386f376b89fef",
+        "size_in_bytes": 2497
+      },
+      {
+        "_path": "lib/clang/20/include/stdatomic.h",
+        "path_type": "hardlink",
+        "sha256": "728b690f127fc85faa32b9031e3a0019da92f77db92ca91b749571e45617a9ea",
+        "sha256_in_prefix": "728b690f127fc85faa32b9031e3a0019da92f77db92ca91b749571e45617a9ea",
+        "size_in_bytes": 8662
+      },
+      {
+        "_path": "lib/clang/20/include/stdbool.h",
+        "path_type": "hardlink",
+        "sha256": "48655faf4ebd4ca0af26a1ee8e3e16f8dc68385c9cd550ffb3629320681305b3",
+        "sha256_in_prefix": "48655faf4ebd4ca0af26a1ee8e3e16f8dc68385c9cd550ffb3629320681305b3",
+        "size_in_bytes": 1172
+      },
+      {
+        "_path": "lib/clang/20/include/stdckdint.h",
+        "path_type": "hardlink",
+        "sha256": "808854b229028d66012bef0eb5f7cccb2d9a228edcdc5eb2bc710bc7cea4b25a",
+        "sha256_in_prefix": "808854b229028d66012bef0eb5f7cccb2d9a228edcdc5eb2bc710bc7cea4b25a",
+        "size_in_bytes": 1666
+      },
+      {
+        "_path": "lib/clang/20/include/stddef.h",
+        "path_type": "hardlink",
+        "sha256": "b3e62a046ddf28d09eedebe6eb9461cb7060e47cad2c69964b222c4eea10347e",
+        "sha256_in_prefix": "b3e62a046ddf28d09eedebe6eb9461cb7060e47cad2c69964b222c4eea10347e",
+        "size_in_bytes": 5053
+      },
+      {
+        "_path": "lib/clang/20/include/stdint.h",
+        "path_type": "hardlink",
+        "sha256": "655616d8fcb2c92b38c039019685c658c2346b3dd0021aed4ea057b43f621247",
+        "sha256_in_prefix": "655616d8fcb2c92b38c039019685c658c2346b3dd0021aed4ea057b43f621247",
+        "size_in_bytes": 31054
+      },
+      {
+        "_path": "lib/clang/20/include/stdnoreturn.h",
+        "path_type": "hardlink",
+        "sha256": "53912b2e9a149a73fe58d88d6c41e69f49020eab7884c81ebf0b4f3607e96847",
+        "sha256_in_prefix": "53912b2e9a149a73fe58d88d6c41e69f49020eab7884c81ebf0b4f3607e96847",
+        "size_in_bytes": 1316
+      },
+      {
+        "_path": "lib/clang/20/include/tbmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "5dbc7e08c1eb24436182fb9b2bf9bb157f944a20c3b88f4d975af12b7c02fb11",
+        "sha256_in_prefix": "5dbc7e08c1eb24436182fb9b2bf9bb157f944a20c3b88f4d975af12b7c02fb11",
+        "size_in_bytes": 3507
+      },
+      {
+        "_path": "lib/clang/20/include/tgmath.h",
+        "path_type": "hardlink",
+        "sha256": "7aa69dc82ec404a51295498cc4cb07d0441e5dcd891819247c14ccb3f9745e3b",
+        "sha256_in_prefix": "7aa69dc82ec404a51295498cc4cb07d0441e5dcd891819247c14ccb3f9745e3b",
+        "size_in_bytes": 30389
+      },
+      {
+        "_path": "lib/clang/20/include/tmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "6fb2fa4dd65f56573b3c2f404b21095d7ecde88675cf08a6495f49b51bd56ec0",
+        "sha256_in_prefix": "6fb2fa4dd65f56573b3c2f404b21095d7ecde88675cf08a6495f49b51bd56ec0",
+        "size_in_bytes": 31927
+      },
+      {
+        "_path": "lib/clang/20/include/tsxldtrkintrin.h",
+        "path_type": "hardlink",
+        "sha256": "c833bd7383b431a0b1bf65c864deef445a25fb7db2c924b4b83272957f2ceb51",
+        "sha256_in_prefix": "c833bd7383b431a0b1bf65c864deef445a25fb7db2c924b4b83272957f2ceb51",
+        "size_in_bytes": 2015
+      },
+      {
+        "_path": "lib/clang/20/include/uintrintrin.h",
+        "path_type": "hardlink",
+        "sha256": "d34ec074087d3b827cdff359c4ce646f3563a94f335fab6ece28970e448d4bdb",
+        "sha256_in_prefix": "d34ec074087d3b827cdff359c4ce646f3563a94f335fab6ece28970e448d4bdb",
+        "size_in_bytes": 5079
+      },
+      {
+        "_path": "lib/clang/20/include/unwind.h",
+        "path_type": "hardlink",
+        "sha256": "fb7175e889f60907dbd0fd02fdc1571fcf33d867f3d0bbffb21356d2bd9b69ea",
+        "sha256_in_prefix": "fb7175e889f60907dbd0fd02fdc1571fcf33d867f3d0bbffb21356d2bd9b69ea",
+        "size_in_bytes": 11477
+      },
+      {
+        "_path": "lib/clang/20/include/usermsrintrin.h",
+        "path_type": "hardlink",
+        "sha256": "03c169539a584284e2eabb5230f98bdf7e85772a41f7d6e93fef11485499da32",
+        "sha256_in_prefix": "03c169539a584284e2eabb5230f98bdf7e85772a41f7d6e93fef11485499da32",
+        "size_in_bytes": 1572
+      },
+      {
+        "_path": "lib/clang/20/include/vadefs.h",
+        "path_type": "hardlink",
+        "sha256": "e338a8bbdbc40a9662d76a0a395313cf17a9541a0fadf3cf8bfa6ee6fa3db4ec",
+        "sha256_in_prefix": "e338a8bbdbc40a9662d76a0a395313cf17a9541a0fadf3cf8bfa6ee6fa3db4ec",
+        "size_in_bytes": 1420
+      },
+      {
+        "_path": "lib/clang/20/include/vaesintrin.h",
+        "path_type": "hardlink",
+        "sha256": "2f2bb9eeb9bb63e519c6d5a9486a1e1a03b799254f1ad372dd7f60e3e0ec0dd2",
+        "sha256_in_prefix": "2f2bb9eeb9bb63e519c6d5a9486a1e1a03b799254f1ad372dd7f60e3e0ec0dd2",
+        "size_in_bytes": 2671
+      },
+      {
+        "_path": "lib/clang/20/include/varargs.h",
+        "path_type": "hardlink",
+        "sha256": "41bf9afa7c9cf7e5eb5e4a42aab8eee3f5a97977a6d33094b2c8f6b3ef1943bb",
+        "sha256_in_prefix": "41bf9afa7c9cf7e5eb5e4a42aab8eee3f5a97977a6d33094b2c8f6b3ef1943bb",
+        "size_in_bytes": 584
+      },
+      {
+        "_path": "lib/clang/20/include/vecintrin.h",
+        "path_type": "hardlink",
+        "sha256": "00f64ef019d6724615b8dd7e40aa6fdcfcb237b6f14ce1d7733a06ff2a91e9b5",
+        "sha256_in_prefix": "00f64ef019d6724615b8dd7e40aa6fdcfcb237b6f14ce1d7733a06ff2a91e9b5",
+        "size_in_bytes": 429293
+      },
+      {
+        "_path": "lib/clang/20/include/velintrin.h",
+        "path_type": "hardlink",
+        "sha256": "7c2e001d36310ceaea4045d9cea1f227f491d0cdebf749959c852b44b217978f",
+        "sha256_in_prefix": "7c2e001d36310ceaea4045d9cea1f227f491d0cdebf749959c852b44b217978f",
+        "size_in_bytes": 2153
+      },
+      {
+        "_path": "lib/clang/20/include/velintrin_approx.h",
+        "path_type": "hardlink",
+        "sha256": "6655c27881e5d1bb8d68f9aa3fee49576e22287f02e2cf422ed9dd3259727b57",
+        "sha256_in_prefix": "6655c27881e5d1bb8d68f9aa3fee49576e22287f02e2cf422ed9dd3259727b57",
+        "size_in_bytes": 3623
+      },
+      {
+        "_path": "lib/clang/20/include/velintrin_gen.h",
+        "path_type": "hardlink",
+        "sha256": "d39909a5d140e00148cda92e485afccd02288db702b1dbb4b2eb38b2c61a7754",
+        "sha256_in_prefix": "d39909a5d140e00148cda92e485afccd02288db702b1dbb4b2eb38b2c61a7754",
+        "size_in_bytes": 70721
+      },
+      {
+        "_path": "lib/clang/20/include/vpclmulqdqintrin.h",
+        "path_type": "hardlink",
+        "sha256": "db240ad56ccfc14a7e29862b50c1214b1be5666cccecde1401d28afe075a606f",
+        "sha256_in_prefix": "db240ad56ccfc14a7e29862b50c1214b1be5666cccecde1401d28afe075a606f",
+        "size_in_bytes": 1086
+      },
+      {
+        "_path": "lib/clang/20/include/waitpkgintrin.h",
+        "path_type": "hardlink",
+        "sha256": "8b036e6a2c20dca74fbc38b898dc32a36dc46bdb4c0a5a71d691096ca04f6ca3",
+        "sha256_in_prefix": "8b036e6a2c20dca74fbc38b898dc32a36dc46bdb4c0a5a71d691096ca04f6ca3",
+        "size_in_bytes": 1357
+      },
+      {
+        "_path": "lib/clang/20/include/wasm_simd128.h",
+        "path_type": "hardlink",
+        "sha256": "93a4905ac462809f5a5d970286e0ef7cca11b27726c2e8461304e7bc701f9db7",
+        "sha256_in_prefix": "93a4905ac462809f5a5d970286e0ef7cca11b27726c2e8461304e7bc701f9db7",
+        "size_in_bytes": 83675
+      },
+      {
+        "_path": "lib/clang/20/include/wbnoinvdintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e22b8221209e1aeed8de50e81c6bfe84b378a8b92bdf018aea601bf1d3c4ac22",
+        "sha256_in_prefix": "e22b8221209e1aeed8de50e81c6bfe84b378a8b92bdf018aea601bf1d3c4ac22",
+        "size_in_bytes": 749
+      },
+      {
+        "_path": "lib/clang/20/include/wmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "eb4f03593063aa1c27cc306474814e3c3caeb6644379415e1104d299288a3231",
+        "sha256_in_prefix": "eb4f03593063aa1c27cc306474814e3c3caeb6644379415e1104d299288a3231",
+        "size_in_bytes": 659
+      },
+      {
+        "_path": "lib/clang/20/include/x86gprintrin.h",
+        "path_type": "hardlink",
+        "sha256": "e6584b89eab7b6fbdb19a68b467530f6825cecb2f1d737b5eac7d59ea4d8d82a",
+        "sha256_in_prefix": "e6584b89eab7b6fbdb19a68b467530f6825cecb2f1d737b5eac7d59ea4d8d82a",
+        "size_in_bytes": 2275
+      },
+      {
+        "_path": "lib/clang/20/include/x86intrin.h",
+        "path_type": "hardlink",
+        "sha256": "105eb1700585770276391f512f60fe9c22c94cdf66d2a4957ec7279cf4fdf062",
+        "sha256_in_prefix": "105eb1700585770276391f512f60fe9c22c94cdf66d2a4957ec7279cf4fdf062",
+        "size_in_bytes": 1410
+      },
+      {
+        "_path": "lib/clang/20/include/xmmintrin.h",
+        "path_type": "hardlink",
+        "sha256": "1170eca99f1c81888a66103da14e2c0c72d0a9c383f6c355db610a4e508e5ce9",
+        "sha256_in_prefix": "1170eca99f1c81888a66103da14e2c0c72d0a9c383f6c355db610a4e508e5ce9",
+        "size_in_bytes": 120252
+      },
+      {
+        "_path": "lib/clang/20/include/xopintrin.h",
+        "path_type": "hardlink",
+        "sha256": "dea8859bff1b74ad2ec860136168e907907dcbf793aab0bb8c0e6e8984db10ac",
+        "sha256_in_prefix": "dea8859bff1b74ad2ec860136168e907907dcbf793aab0bb8c0e6e8984db10ac",
+        "size_in_bytes": 20434
+      },
+      {
+        "_path": "lib/clang/20/include/xsavecintrin.h",
+        "path_type": "hardlink",
+        "sha256": "b3d0b240cd59068ba5dd40f79a921e727815f0722d07051ec01aae09b91c4ac8",
+        "sha256_in_prefix": "b3d0b240cd59068ba5dd40f79a921e727815f0722d07051ec01aae09b91c4ac8",
+        "size_in_bytes": 2574
+      },
+      {
+        "_path": "lib/clang/20/include/xsaveintrin.h",
+        "path_type": "hardlink",
+        "sha256": "bb5b08b5b929d0a34b88230c7f5633071a05d17f0680332a30c4e1b607c3c164",
+        "sha256_in_prefix": "bb5b08b5b929d0a34b88230c7f5633071a05d17f0680332a30c4e1b607c3c164",
+        "size_in_bytes": 1678
+      },
+      {
+        "_path": "lib/clang/20/include/xsaveoptintrin.h",
+        "path_type": "hardlink",
+        "sha256": "3dee1885dff4d101804c273d87f98cdf37a5e0975d936a3683ffbe1d10ffda7e",
+        "sha256_in_prefix": "3dee1885dff4d101804c273d87f98cdf37a5e0975d936a3683ffbe1d10ffda7e",
+        "size_in_bytes": 1026
+      },
+      {
+        "_path": "lib/clang/20/include/xsavesintrin.h",
+        "path_type": "hardlink",
+        "sha256": "cf3692a69c4c96e0b4c0d291c6aa09cba851dff1d82f8b266d08fee7bdeaa5ea",
+        "sha256_in_prefix": "cf3692a69c4c96e0b4c0d291c6aa09cba851dff1d82f8b266d08fee7bdeaa5ea",
+        "size_in_bytes": 1268
+      },
+      {
+        "_path": "lib/clang/20/include/xtestintrin.h",
+        "path_type": "hardlink",
+        "sha256": "05e7c974641109d1214f9016c3939787e2912e6990fd20bf5886fcca4c40e699",
+        "sha256_in_prefix": "05e7c974641109d1214f9016c3939787e2912e6990fd20bf5886fcca4c40e699",
+        "size_in_bytes": 873
+      },
+      {
+        "_path": "lib/clang/20/include/yvals_core.h",
+        "path_type": "hardlink",
+        "sha256": "8f1033d2fc8cb786d7a6d3ff174aa819495c1c7d8948b5a94a9daca24d5ee3c2",
+        "sha256_in_prefix": "8f1033d2fc8cb786d7a6d3ff174aa819495c1c7d8948b5a94a9daca24d5ee3c2",
+        "size_in_bytes": 687
+      },
+      {
+        "_path": "lib/clang/20/include/zos_wrappers/builtins.h",
+        "path_type": "hardlink",
+        "sha256": "fca65b1462b08910b24dbd2016425aa6f4b7b32f1ed2eaa8014c10f79f88fbd4",
+        "sha256_in_prefix": "fca65b1462b08910b24dbd2016425aa6f4b7b32f1ed2eaa8014c10f79f88fbd4",
+        "size_in_bytes": 608
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "7cf36685a26b93968f6191ae5a165f3f67a106102e1e9ac9d12847f466cad073",
+  "size": 799208,
+  "subdir": "osx-arm64",
+  "timestamp": 1749872894000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/clang-20-20.1.7-default_h03658f6_0.conda",
+  "version": "20.1.7"
+}

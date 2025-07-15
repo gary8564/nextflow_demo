@@ -1,0 +1,43 @@
+{
+  "build": "default_h03658f6_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=20.1.7",
+    "libllvm20 >=20.1.7,<20.2.0a0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/libclang-cpp20.1-20.1.7-default_h03658f6_0",
+  "files": [
+    "lib/libclang-cpp.20.1.dylib"
+  ],
+  "fn": "libclang-cpp20.1-20.1.7-default_h03658f6_0.conda",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/libclang-cpp20.1-20.1.7-default_h03658f6_0",
+    "type": 1
+  },
+  "md5": "35ef0e50dd8a285263861c963e3125ed",
+  "name": "libclang-cpp20.1",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/libclang-cpp20.1-20.1.7-default_h03658f6_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libclang-cpp.20.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "0dc5e31a81a1f62488c22f368a65ec0cae24c523716c4fa0349084807acc611b",
+        "sha256_in_prefix": "0dc5e31a81a1f62488c22f368a65ec0cae24c523716c4fa0349084807acc611b",
+        "size_in_bytes": 71184800
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "10a1163e3dc58e0488723950dfa9e36d1cec66eb6a1f5ce2de8b16478025ec2f",
+  "size": 13942459,
+  "subdir": "osx-arm64",
+  "timestamp": 1749872785000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libclang-cpp20.1-20.1.7-default_h03658f6_0.conda",
+  "version": "20.1.7"
+}

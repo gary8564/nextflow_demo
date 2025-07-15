@@ -1,0 +1,423 @@
+{
+  "build": "h64b5c3f_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "__osx >=11.0",
+    "gmp >=6.3.0,<7.0a0",
+    "isl 0.26.*",
+    "libcxx >=17",
+    "libgfortran-devel_osx-arm64 13.4.0.*",
+    "libgfortran5 >=13.4.0",
+    "libiconv >=1.18,<2.0a0",
+    "libzlib >=1.3.1,<2.0a0",
+    "mpc >=1.3.1,<2.0a0",
+    "mpfr >=4.2.1,<5.0a0",
+    "zlib"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/gfortran_impl_osx-arm64-13.4.0-h64b5c3f_0",
+  "files": [
+    "bin/arm64-apple-darwin20.0.0-gfortran",
+    "bin/gfortran",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/README",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/dispatch/object.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/math.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/os/base.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/os/trace.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/stdint.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/stdio.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/ISO_Fortran_binding.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/acc_prof.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_acle.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_bf16.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_fp16.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_neon.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_sve.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/float.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/gcov.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/iso646.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/limits.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/omp.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/openacc.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/quadmath.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/quadmath_weak.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdalign.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdarg.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdatomic.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdbool.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stddef.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdfix.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdint-gcc.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdint.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdnoreturn.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/syslimits.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/tgmath.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/unwind.h",
+    "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/varargs.h",
+    "lib/libgfortran.a",
+    "lib/libgfortran.spec",
+    "lib/libgomp.a",
+    "lib/libgomp.spec",
+    "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/cc1",
+    "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/cc1.bin",
+    "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/collect2",
+    "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/f951",
+    "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/lto-wrapper"
+  ],
+  "fn": "gfortran_impl_osx-arm64-13.4.0-h64b5c3f_0.conda",
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/gfortran_impl_osx-arm64-13.4.0-h64b5c3f_0",
+    "type": 1
+  },
+  "md5": "b74cdd00c64ffa2c988c786a64795d3c",
+  "name": "gfortran_impl_osx-arm64",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/gfortran_impl_osx-arm64-13.4.0-h64b5c3f_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/arm64-apple-darwin20.0.0-gfortran",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1750177359642/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "55ec45ae0778f9e842c06a91ac24820aa8892c4fbe0e69f946fc9231999332ef",
+        "sha256_in_prefix": "f5ebd68a618c508fc244e6463f695606faa6765943b9c81569bbc0648ec5997f",
+        "size_in_bytes": 1566224
+      },
+      {
+        "_path": "bin/gfortran",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1750177359642/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "b6cdb0098574d8beefe36b3cc29d4f16396f91e3b1b4ee06377ecd31e6f776d3",
+        "sha256_in_prefix": "9755955efef35cfe80cbc49412dbdb7c0050aab69f5ab2a4db71e5203b3595e4",
+        "size_in_bytes": 1566192
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/README",
+        "path_type": "hardlink",
+        "sha256": "32baa94efdf4fb418c20321f14a1b66982a6cd3c2b5bc8fbfbe438f687c528d6",
+        "sha256_in_prefix": "32baa94efdf4fb418c20321f14a1b66982a6cd3c2b5bc8fbfbe438f687c528d6",
+        "size_in_bytes": 750
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/dispatch/object.h",
+        "path_type": "hardlink",
+        "sha256": "4683e680bb5db3395d667291aaabf324b501a90e897e620b6f80a12b7be5f870",
+        "sha256_in_prefix": "4683e680bb5db3395d667291aaabf324b501a90e897e620b6f80a12b7be5f870",
+        "size_in_bytes": 19572
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/math.h",
+        "path_type": "hardlink",
+        "sha256": "2753d0ada78fdb7a353fe560b5fdd45456c68c305a796f55b5894cb31c7626e6",
+        "sha256_in_prefix": "2753d0ada78fdb7a353fe560b5fdd45456c68c305a796f55b5894cb31c7626e6",
+        "size_in_bytes": 32969
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/os/base.h",
+        "path_type": "hardlink",
+        "sha256": "98dae0e319cfb0e4accf68565e62e83e0ec85eb3e0983f5dbc7bfd2a87cb6107",
+        "sha256_in_prefix": "98dae0e319cfb0e4accf68565e62e83e0ec85eb3e0983f5dbc7bfd2a87cb6107",
+        "size_in_bytes": 10952
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/os/trace.h",
+        "path_type": "hardlink",
+        "sha256": "acc612009669782134c66cfba2cfb6e4dfe77bc4b428cee1ec43f0576db9a161",
+        "sha256_in_prefix": "acc612009669782134c66cfba2cfb6e4dfe77bc4b428cee1ec43f0576db9a161",
+        "size_in_bytes": 17255
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/stdint.h",
+        "path_type": "hardlink",
+        "sha256": "21c816c523e17c753e75996b814ff487a05f6f6305abc879b3f589b03ea4aad3",
+        "sha256_in_prefix": "21c816c523e17c753e75996b814ff487a05f6f6305abc879b3f589b03ea4aad3",
+        "size_in_bytes": 5974
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include-fixed/stdio.h",
+        "path_type": "hardlink",
+        "sha256": "bfe483686033429902d149e94ea98bdedc154d7e8021f7414bfc280892eb95ce",
+        "sha256_in_prefix": "bfe483686033429902d149e94ea98bdedc154d7e8021f7414bfc280892eb95ce",
+        "size_in_bytes": 16878
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/ISO_Fortran_binding.h",
+        "path_type": "hardlink",
+        "sha256": "3f849a2265e0cd1ecd44727959e27e7c7fcd42012ad7dddfe9353294e4805ab3",
+        "sha256_in_prefix": "3f849a2265e0cd1ecd44727959e27e7c7fcd42012ad7dddfe9353294e4805ab3",
+        "size_in_bytes": 13156
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/acc_prof.h",
+        "path_type": "hardlink",
+        "sha256": "8f4730ba7399e5d67159b71f817a23f44a06004164d85e4dae63c6b4d7c47bda",
+        "sha256_in_prefix": "8f4730ba7399e5d67159b71f817a23f44a06004164d85e4dae63c6b4d7c47bda",
+        "size_in_bytes": 7454
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_acle.h",
+        "path_type": "hardlink",
+        "sha256": "696437ddfd831bc2c4b967c2f7a2524a2f67b8b177da0716dcd1e6b8449c2965",
+        "sha256_in_prefix": "696437ddfd831bc2c4b967c2f7a2524a2f67b8b177da0716dcd1e6b8449c2965",
+        "size_in_bytes": 9244
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_bf16.h",
+        "path_type": "hardlink",
+        "sha256": "59cbb47bc77c5386082a0f7454223bcf077ade848ce63645ae277eab86b1db77",
+        "sha256_in_prefix": "59cbb47bc77c5386082a0f7454223bcf077ade848ce63645ae277eab86b1db77",
+        "size_in_bytes": 1647
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_fp16.h",
+        "path_type": "hardlink",
+        "sha256": "4f5c20b219e4923bbf9acc888be17d153e61de4e1eecc5f931f7ed623f3fe61d",
+        "sha256_in_prefix": "4f5c20b219e4923bbf9acc888be17d153e61de4e1eecc5f931f7ed623f3fe61d",
+        "size_in_bytes": 18689
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_neon.h",
+        "path_type": "hardlink",
+        "sha256": "dfffbd77461b63f8bfbcfd35aa9af3301f61ae1e2b2cfff3ec464c1a4c33f7eb",
+        "sha256_in_prefix": "dfffbd77461b63f8bfbcfd35aa9af3301f61ae1e2b2cfff3ec464c1a4c33f7eb",
+        "size_in_bytes": 874386
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/arm_sve.h",
+        "path_type": "hardlink",
+        "sha256": "9f67c3bb4a8092ba8e9223ff5ce40dba49024c4a99e02eaca22cedf548d9be03",
+        "sha256_in_prefix": "9f67c3bb4a8092ba8e9223ff5ce40dba49024c4a99e02eaca22cedf548d9be03",
+        "size_in_bytes": 1611
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/float.h",
+        "path_type": "hardlink",
+        "sha256": "797fe35b6d174600d8124844ae4d34ed82caee39e6c71fa9dbf539215167c2e0",
+        "sha256_in_prefix": "797fe35b6d174600d8124844ae4d34ed82caee39e6c71fa9dbf539215167c2e0",
+        "size_in_bytes": 20749
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/gcov.h",
+        "path_type": "hardlink",
+        "sha256": "05747ba21e9fb52121db61fec20edde359d3becfd35f3391b9600111d3adbfdc",
+        "sha256_in_prefix": "05747ba21e9fb52121db61fec20edde359d3becfd35f3391b9600111d3adbfdc",
+        "size_in_bytes": 2940
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/iso646.h",
+        "path_type": "hardlink",
+        "sha256": "c673d8cbb7d12315f00f99f3f26b644c3406e04e289a4c2510520926e41a00f1",
+        "sha256_in_prefix": "c673d8cbb7d12315f00f99f3f26b644c3406e04e289a4c2510520926e41a00f1",
+        "size_in_bytes": 1272
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/limits.h",
+        "path_type": "hardlink",
+        "sha256": "1c6beac959e966424f81278b354d035bf354c735bb6cffa35ef2c42f6c899ff8",
+        "sha256_in_prefix": "1c6beac959e966424f81278b354d035bf354c735bb6cffa35ef2c42f6c899ff8",
+        "size_in_bytes": 6399
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "c7f6b3be15f6fd5edd3c98ed7f3aaa08f3f5c1554a73d8903349b26c012e665e",
+        "sha256_in_prefix": "c7f6b3be15f6fd5edd3c98ed7f3aaa08f3f5c1554a73d8903349b26c012e665e",
+        "size_in_bytes": 12460
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/openacc.h",
+        "path_type": "hardlink",
+        "sha256": "47ce486c77465fa063b5b668caf2fe0e2d7fc63139379e1efda458a4aa3ffa10",
+        "sha256_in_prefix": "47ce486c77465fa063b5b668caf2fe0e2d7fc63139379e1efda458a4aa3ffa10",
+        "size_in_bytes": 6403
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/quadmath.h",
+        "path_type": "hardlink",
+        "sha256": "e8711f597c69a64800a00b80644f66156623323615b03d0cdba4b4c845e44736",
+        "sha256_in_prefix": "e8711f597c69a64800a00b80644f66156623323615b03d0cdba4b4c845e44736",
+        "size_in_bytes": 9358
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/quadmath_weak.h",
+        "path_type": "hardlink",
+        "sha256": "666936d1e7ddc08bf0c94e0f82cbedcbca6b3ad0a69e385d753cf530453144b8",
+        "sha256_in_prefix": "666936d1e7ddc08bf0c94e0f82cbedcbca6b3ad0a69e385d753cf530453144b8",
+        "size_in_bytes": 3208
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdalign.h",
+        "path_type": "hardlink",
+        "sha256": "e119f674e1f6194b6d561f95b01270aff8570cfdaf460098d08be38d92fe910d",
+        "sha256_in_prefix": "e119f674e1f6194b6d561f95b01270aff8570cfdaf460098d08be38d92fe910d",
+        "size_in_bytes": 1290
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdarg.h",
+        "path_type": "hardlink",
+        "sha256": "5a443943e67d7bab17203591b4ccb508757587d9b955ee883a053d755ed09321",
+        "sha256_in_prefix": "5a443943e67d7bab17203591b4ccb508757587d9b955ee883a053d755ed09321",
+        "size_in_bytes": 4303
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdatomic.h",
+        "path_type": "hardlink",
+        "sha256": "e6544cb60cf2b30c69d47424f7b04ab18bd2bc97e03a9c852b238f95ed26f3ca",
+        "sha256_in_prefix": "e6544cb60cf2b30c69d47424f7b04ab18bd2bc97e03a9c852b238f95ed26f3ca",
+        "size_in_bytes": 9726
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdbool.h",
+        "path_type": "hardlink",
+        "sha256": "68b898fc39d5d2a450df9b7263d984e7d2ad4c02675f4043a62e762f169e4b85",
+        "sha256_in_prefix": "68b898fc39d5d2a450df9b7263d984e7d2ad4c02675f4043a62e762f169e4b85",
+        "size_in_bytes": 1490
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stddef.h",
+        "path_type": "hardlink",
+        "sha256": "9cad3ed3496d76cf7d523a392dea7dde6c6101be0452fa503dca6e8c88e1738f",
+        "sha256_in_prefix": "9cad3ed3496d76cf7d523a392dea7dde6c6101be0452fa503dca6e8c88e1738f",
+        "size_in_bytes": 13833
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdfix.h",
+        "path_type": "hardlink",
+        "sha256": "29e006fb1bc4f043f5c2fc959efba14c9cd82c1e6dd06af955c6f105276cf6ad",
+        "sha256_in_prefix": "29e006fb1bc4f043f5c2fc959efba14c9cd82c1e6dd06af955c6f105276cf6ad",
+        "size_in_bytes": 6000
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdint-gcc.h",
+        "path_type": "hardlink",
+        "sha256": "0a2e42d37b032271a0f6328a35bdb6fc694411a7627decaf857ba75ae7e00589",
+        "sha256_in_prefix": "0a2e42d37b032271a0f6328a35bdb6fc694411a7627decaf857ba75ae7e00589",
+        "size_in_bytes": 9648
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdint.h",
+        "path_type": "hardlink",
+        "sha256": "86a7914ab7d6a18465a6fb9a7b54f945cad604fdbf3ca0d10e4e0254e0037911",
+        "sha256_in_prefix": "86a7914ab7d6a18465a6fb9a7b54f945cad604fdbf3ca0d10e4e0254e0037911",
+        "size_in_bytes": 328
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/stdnoreturn.h",
+        "path_type": "hardlink",
+        "sha256": "15561282dfd0764e010204d93f2189d3466148a164bb09393da6c496efc09a27",
+        "sha256_in_prefix": "15561282dfd0764e010204d93f2189d3466148a164bb09393da6c496efc09a27",
+        "size_in_bytes": 1136
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/syslimits.h",
+        "path_type": "hardlink",
+        "sha256": "22dd0ab81baadd5a8d455b445855f341d419c7b0267beca235de00b7ec78e529",
+        "sha256_in_prefix": "22dd0ab81baadd5a8d455b445855f341d419c7b0267beca235de00b7ec78e529",
+        "size_in_bytes": 330
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/tgmath.h",
+        "path_type": "hardlink",
+        "sha256": "a00e6a96690ecc144068172033dc4afb79976bfb8a2e3d23712284ff8cb117cc",
+        "sha256_in_prefix": "a00e6a96690ecc144068172033dc4afb79976bfb8a2e3d23712284ff8cb117cc",
+        "size_in_bytes": 5461
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/unwind.h",
+        "path_type": "hardlink",
+        "sha256": "d42912846d21a01d15717f71934c5f8c0f6d290d08aaf4052ca00cc7b8cfa174",
+        "sha256_in_prefix": "d42912846d21a01d15717f71934c5f8c0f6d290d08aaf4052ca00cc7b8cfa174",
+        "size_in_bytes": 10938
+      },
+      {
+        "_path": "lib/gcc/arm64-apple-darwin20.0.0/13.4.0/include/varargs.h",
+        "path_type": "hardlink",
+        "sha256": "f9acb21973be5764aa2fd689c941ad963c1ecdd133f3a6529f279803135f8268",
+        "sha256_in_prefix": "f9acb21973be5764aa2fd689c941ad963c1ecdd133f3a6529f279803135f8268",
+        "size_in_bytes": 139
+      },
+      {
+        "_path": "lib/libgfortran.a",
+        "path_type": "hardlink",
+        "sha256": "ff64739e1093a54e3a72132a13fdc83f0e3981566e0bf38dd722a5432875c407",
+        "sha256_in_prefix": "ff64739e1093a54e3a72132a13fdc83f0e3981566e0bf38dd722a5432875c407",
+        "size_in_bytes": 2853688
+      },
+      {
+        "_path": "lib/libgfortran.spec",
+        "path_type": "softlink",
+        "sha256": "ee5dddbffbb4a4d7a911138f7be56481e4cba7df2d56638b0f30cb4b67a46f46",
+        "size_in_bytes": 467
+      },
+      {
+        "_path": "lib/libgomp.a",
+        "path_type": "hardlink",
+        "sha256": "708d09e7a8a56cf8d6cc09179096abb74b71abfc55191f7fef60e8fb697b18d2",
+        "sha256_in_prefix": "708d09e7a8a56cf8d6cc09179096abb74b71abfc55191f7fef60e8fb697b18d2",
+        "size_in_bytes": 501464
+      },
+      {
+        "_path": "lib/libgomp.spec",
+        "path_type": "softlink",
+        "sha256": "06851fc0a32d1c008b3ea56bdb562c2922b9f50a6da08d31c9783708cbb06681",
+        "size_in_bytes": 164
+      },
+      {
+        "_path": "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/cc1",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1750177359642/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "d5ac8a1639ecb0fed8a55d5ca3fc798cc6c0b480f0f44a49c157c6b8aa021590",
+        "sha256_in_prefix": "68260c278330cbe8b58ad63b79c8b62a48976c5c460ecaf630453da7e3e01dbd",
+        "size_in_bytes": 893
+      },
+      {
+        "_path": "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/cc1.bin",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1750177359642/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "b39737e17a724d4bc8f278dffc9bfca05c7def91aac8029a9047f57bd07444be",
+        "sha256_in_prefix": "f06a7748ef958da295d3f3c5fcf4b3ceb07ff94f899676bfe2f5811998ea680a",
+        "size_in_bytes": 29144400
+      },
+      {
+        "_path": "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/collect2",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1750177359642/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "351e87658cce58f325308483c80a18cb81554a55973fe7cac4c69f9c633cf480",
+        "sha256_in_prefix": "deec6e0f357b45160c0dd83b9b8db175c6c0fcde5c513de8e6250d3e146d1293",
+        "size_in_bytes": 970624
+      },
+      {
+        "_path": "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/f951",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1750177359642/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "9761b05af8745d602f74d0237598826933b8a28dab0ac39f34d4951e3376c8bf",
+        "sha256_in_prefix": "40886808053c080ff4d64fd1f293e883b7116a68b6862ceb495011d3defeb9d7",
+        "size_in_bytes": 30046736
+      },
+      {
+        "_path": "libexec/gcc/arm64-apple-darwin20.0.0/13.4.0/lto-wrapper",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gfortran_impl_osx-arm64_1750177359642/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "5d466478092603e50c001fef1e5e5ea02edd8f44803a27beaa9fd6ba14a1d793",
+        "sha256_in_prefix": "a4b8b2f6be4493c753793d66e96d19de496af270a0f8313b00059108a10337a9",
+        "size_in_bytes": 1449024
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "65146c416ce0e00847c995196ac097392e624fdd7897804d31b9bf7bacba71eb",
+  "size": 18896355,
+  "subdir": "osx-arm64",
+  "timestamp": 1750181820000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/gfortran_impl_osx-arm64-13.4.0-h64b5c3f_0.conda",
+  "version": "13.4.0"
+}

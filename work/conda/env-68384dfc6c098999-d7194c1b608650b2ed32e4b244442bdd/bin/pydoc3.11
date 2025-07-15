@@ -1,0 +1,5 @@
+#!/Users/garychang/Documents/RWTH/HiWiJob/MBD/nextflow_demo/work/conda/env-68384dfc6c098999-d7194c1b608650b2ed32e4b244442bdd/bin/python3.11
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

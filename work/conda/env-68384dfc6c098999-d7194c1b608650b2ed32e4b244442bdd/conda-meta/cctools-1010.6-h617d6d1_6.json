@@ -1,0 +1,252 @@
+{
+  "build": "h617d6d1_6",
+  "build_number": 6,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "cctools_osx-arm64 1010.6 h729f01a_6",
+    "ld64 951.9 hb625feb_6",
+    "libllvm20 >=20.1.2,<20.2.0a0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/cctools-1010.6-h617d6d1_6",
+  "files": [
+    "bin/ObjectDump",
+    "bin/ar",
+    "bin/as",
+    "bin/bitcode_strip",
+    "bin/check_dylib",
+    "bin/checksyms",
+    "bin/cmpdylib",
+    "bin/codesign_allocate",
+    "bin/ctf_insert",
+    "bin/inout",
+    "bin/install_name_tool",
+    "bin/libtool",
+    "bin/lipo",
+    "bin/machocheck",
+    "bin/makerelocs",
+    "bin/mtoc",
+    "bin/mtor",
+    "bin/nm",
+    "bin/nmedit",
+    "bin/otool",
+    "bin/pagestuff",
+    "bin/ranlib",
+    "bin/redo_prebinding",
+    "bin/seg_addr_table",
+    "bin/seg_hack",
+    "bin/segedit",
+    "bin/size",
+    "bin/strings",
+    "bin/strip",
+    "bin/unwinddump",
+    "bin/vtool"
+  ],
+  "fn": "cctools-1010.6-h617d6d1_6.conda",
+  "license": "APSL-2.0",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/cctools-1010.6-h617d6d1_6",
+    "type": 1
+  },
+  "md5": "5b049803d94102483ff75ad46e56c52d",
+  "name": "cctools",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/cctools-1010.6-h617d6d1_6.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/ObjectDump",
+        "path_type": "softlink",
+        "sha256": "fb43375440a1ff4052c6265b3cc89d2888a2e8853a0f72b6aa3f870844879d7b",
+        "size_in_bytes": 1110048
+      },
+      {
+        "_path": "bin/ar",
+        "path_type": "softlink",
+        "sha256": "52d8ea4c0ae9573ef0bb0af6d28500026ad76a1854ee6b8924b61dfb11c4d64a",
+        "size_in_bytes": 80656
+      },
+      {
+        "_path": "bin/as",
+        "path_type": "softlink",
+        "sha256": "b606dd46d426c614022de2d76e95843cd07b19f4745305040be29e7cabd13464",
+        "size_in_bytes": 76784
+      },
+      {
+        "_path": "bin/bitcode_strip",
+        "path_type": "softlink",
+        "sha256": "14f761252847b255d39818f6a7cd691347a2d3c06c772d95ed6caa2a7e98764d",
+        "size_in_bytes": 220384
+      },
+      {
+        "_path": "bin/check_dylib",
+        "path_type": "softlink",
+        "sha256": "0961453420687ece476386e3062ac510df2975c19e65910dfd02f423cc703892",
+        "size_in_bytes": 181520
+      },
+      {
+        "_path": "bin/checksyms",
+        "path_type": "softlink",
+        "sha256": "09d1fd624fd778d1ce5d859a6fcaa183db7bb015d02739ead15bc67aeb74d54a",
+        "size_in_bytes": 182112
+      },
+      {
+        "_path": "bin/cmpdylib",
+        "path_type": "softlink",
+        "sha256": "439fcae1300e6646d8474807b2f011bb88f80f0aa767a5b6c12c81f6be6ba38f",
+        "size_in_bytes": 181680
+      },
+      {
+        "_path": "bin/codesign_allocate",
+        "path_type": "softlink",
+        "sha256": "5e1c2243be6986a2471a351e26a958475c0dad24aa7c06734c8dbf87615682b3",
+        "size_in_bytes": 220016
+      },
+      {
+        "_path": "bin/ctf_insert",
+        "path_type": "softlink",
+        "sha256": "003cca0c9e40a50354044cecefb9d3c27e90ea17c995b0bca014eeb5eabdf690",
+        "size_in_bytes": 219296
+      },
+      {
+        "_path": "bin/inout",
+        "path_type": "softlink",
+        "sha256": "48d6652c2528add26dd867f4ca06e709ddacb9a1af4e9633ca151455e02a3e6b",
+        "size_in_bytes": 217904
+      },
+      {
+        "_path": "bin/install_name_tool",
+        "path_type": "softlink",
+        "sha256": "72d8490eb9973a401029b11ec31474b7fc0c788922864d704fe94e8388344a35",
+        "size_in_bytes": 219680
+      },
+      {
+        "_path": "bin/libtool",
+        "path_type": "softlink",
+        "sha256": "cc3bfd145c09ec93ee351f641e3d9631e6ec9edbfe0c48768b22d4067ab610ad",
+        "size_in_bytes": 239440
+      },
+      {
+        "_path": "bin/lipo",
+        "path_type": "softlink",
+        "sha256": "3797565fcc4b8762db9110dec6e9faefa8a4884ceaa806c93030d46a5fd292ff",
+        "size_in_bytes": 129968
+      },
+      {
+        "_path": "bin/machocheck",
+        "path_type": "softlink",
+        "sha256": "9005f8c66c707b6e52d7e8b776be8107f220a3c140da2b09fdcaf42825053ae9",
+        "size_in_bytes": 223392
+      },
+      {
+        "_path": "bin/makerelocs",
+        "path_type": "softlink",
+        "sha256": "fa0e8d9fd8ab6f38c40f822bc4079c306ee240823cc8d6253f661a4870866279",
+        "size_in_bytes": 183744
+      },
+      {
+        "_path": "bin/mtoc",
+        "path_type": "softlink",
+        "sha256": "0fb50a1470ecf48fcb2fc3d43947fb7395e7def5a694b8c4cfade4459d76b0c2",
+        "size_in_bytes": 221568
+      },
+      {
+        "_path": "bin/mtor",
+        "path_type": "softlink",
+        "sha256": "9655404b6cd2c16364878aab244a5cde42a7e77438eedf6f51a945c041223a88",
+        "size_in_bytes": 200928
+      },
+      {
+        "_path": "bin/nm",
+        "path_type": "softlink",
+        "sha256": "c1cfe046f7cd7cfc45edace9c1a302f4e0e804df823e344a3e49a5dd70ed59c0",
+        "size_in_bytes": 201344
+      },
+      {
+        "_path": "bin/nmedit",
+        "path_type": "softlink",
+        "sha256": "4cc6bdba54ab74ba96912184a6f0e2ec16b3bcace99d935ae12275d2097376ce",
+        "size_in_bytes": 241472
+      },
+      {
+        "_path": "bin/otool",
+        "path_type": "softlink",
+        "sha256": "5d5b7a23f5340e78f850444f3a72721235116f924c2246336714091bd70862ac",
+        "size_in_bytes": 780016
+      },
+      {
+        "_path": "bin/pagestuff",
+        "path_type": "softlink",
+        "sha256": "5a0fd1fc33fab2d64529c1c988eb45c02b4d982cb5765b9d61d6c21481677bd1",
+        "size_in_bytes": 198912
+      },
+      {
+        "_path": "bin/ranlib",
+        "path_type": "softlink",
+        "sha256": "c090d8410e586c23a431e3c38a5e32f319c7926792d5d6baa70d92768e685254",
+        "size_in_bytes": 222464
+      },
+      {
+        "_path": "bin/redo_prebinding",
+        "path_type": "softlink",
+        "sha256": "154c6461925f8580dac8f42a814c49d96a2155745a7237abf8553feeb8f644a4",
+        "size_in_bytes": 296864
+      },
+      {
+        "_path": "bin/seg_addr_table",
+        "path_type": "softlink",
+        "sha256": "9f41eb7953c8cc96306eb4eab54c2773231c149b9ecab7f824af8d5af1a3d3bd",
+        "size_in_bytes": 220416
+      },
+      {
+        "_path": "bin/seg_hack",
+        "path_type": "softlink",
+        "sha256": "5a999a38678002c1f7ef19fc5d46c956628bc6c4112c8006c7099115f12e970f",
+        "size_in_bytes": 201360
+      },
+      {
+        "_path": "bin/segedit",
+        "path_type": "softlink",
+        "sha256": "5fc5d1ece7fa1819a47e74da8c09fae15afce6ee47de1dfb7e3f1edc7cd27721",
+        "size_in_bytes": 87600
+      },
+      {
+        "_path": "bin/size",
+        "path_type": "softlink",
+        "sha256": "f7a9c06b6ac9c3ec08ab00e3cf4fe9ee90cf1ea2969f835f49928bb914fe61c0",
+        "size_in_bytes": 180896
+      },
+      {
+        "_path": "bin/strings",
+        "path_type": "softlink",
+        "sha256": "b8aec557b8b9b467b6231a0e719c1d81b4dd07fde8b04950fcef99bee6b00a28",
+        "size_in_bytes": 181888
+      },
+      {
+        "_path": "bin/strip",
+        "path_type": "softlink",
+        "sha256": "1483faf67aecbacc55e7395b25d7a44a99c541af22754d671f069722b15df588",
+        "size_in_bytes": 260992
+      },
+      {
+        "_path": "bin/unwinddump",
+        "path_type": "softlink",
+        "sha256": "59d7d6731e3ae41a3f67e2ac1f7a40008bcea05eab3566a252678e5c0fc3ed21",
+        "size_in_bytes": 125536
+      },
+      {
+        "_path": "bin/vtool",
+        "path_type": "softlink",
+        "sha256": "0f589e9fe7dfc939d7b476d2d06a5706eedd49943c856df8fdfa44a162590d56",
+        "size_in_bytes": 102832
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "25cf938ddb8f71d91d6063a1584485108e4bbb7832d9e14c7a822377dd3e1f72",
+  "size": 22135,
+  "subdir": "osx-arm64",
+  "timestamp": 1743872226000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cctools-1010.6-h617d6d1_6.conda",
+  "version": "1010.6"
+}

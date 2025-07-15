@@ -1,0 +1,54 @@
+{
+  "build": "default_hcdeef69_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "clang-20 20.1.7 default_h03658f6_0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/clang-20.1.7-default_hcdeef69_0",
+  "files": [
+    "bin/clang",
+    "bin/clang-cl",
+    "bin/clang-cpp"
+  ],
+  "fn": "clang-20.1.7-default_hcdeef69_0.conda",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/clang-20.1.7-default_hcdeef69_0",
+    "type": 1
+  },
+  "md5": "5a4e09aabe5034c752d7ca736fc66c3c",
+  "name": "clang",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/clang-20.1.7-default_hcdeef69_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/clang",
+        "path_type": "softlink",
+        "sha256": "8a3717195dd6a867ae9aeff88b3ae4e7a336971d3b18b93db716686817de7729",
+        "size_in_bytes": 172896
+      },
+      {
+        "_path": "bin/clang-cl",
+        "path_type": "softlink",
+        "sha256": "8a3717195dd6a867ae9aeff88b3ae4e7a336971d3b18b93db716686817de7729",
+        "size_in_bytes": 172896
+      },
+      {
+        "_path": "bin/clang-cpp",
+        "path_type": "softlink",
+        "sha256": "8a3717195dd6a867ae9aeff88b3ae4e7a336971d3b18b93db716686817de7729",
+        "size_in_bytes": 172896
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "59dceb780c9580600b7c87bdfde41ca7e7040891ef4234dc99a2488e648f7af6",
+  "size": 24240,
+  "subdir": "osx-arm64",
+  "timestamp": 1749872999000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/clang-20.1.7-default_hcdeef69_0.conda",
+  "version": "20.1.7"
+}

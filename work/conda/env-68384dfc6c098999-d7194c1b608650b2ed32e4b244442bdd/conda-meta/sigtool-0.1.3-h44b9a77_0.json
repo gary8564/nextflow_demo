@@ -1,0 +1,97 @@
+{
+  "build": "h44b9a77_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "openssl >=3.0.0,<4.0a0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/sigtool-0.1.3-h44b9a77_0",
+  "files": [
+    "bin/codesign",
+    "bin/sigtool",
+    "include/sigtool/commands.h",
+    "include/sigtool/emit.h",
+    "include/sigtool/hash.h",
+    "include/sigtool/macho.h",
+    "include/sigtool/signature.h",
+    "lib/libsigtool.dylib"
+  ],
+  "fn": "sigtool-0.1.3-h44b9a77_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/sigtool-0.1.3-h44b9a77_0",
+    "type": 1
+  },
+  "md5": "4a2cac04f86a4540b8c9b8d8f597848f",
+  "name": "sigtool",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/sigtool-0.1.3-h44b9a77_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/codesign",
+        "path_type": "hardlink",
+        "sha256": "52000107271c09eaec71d5dafdf64112ca96c5c2c45ea784f71169a941e734bd",
+        "sha256_in_prefix": "52000107271c09eaec71d5dafdf64112ca96c5c2c45ea784f71169a941e734bd",
+        "size_in_bytes": 396976
+      },
+      {
+        "_path": "bin/sigtool",
+        "path_type": "hardlink",
+        "sha256": "b2e023db29f62e115ee837252f7a314dadf381eae02d61db55361113418c32cc",
+        "sha256_in_prefix": "b2e023db29f62e115ee837252f7a314dadf381eae02d61db55361113418c32cc",
+        "size_in_bytes": 388288
+      },
+      {
+        "_path": "include/sigtool/commands.h",
+        "path_type": "hardlink",
+        "sha256": "c42aaab5b958b52e3a1ee4f7dcd3fa3756c58d1dfe2bd4bf25d5e736eb02093a",
+        "sha256_in_prefix": "c42aaab5b958b52e3a1ee4f7dcd3fa3756c58d1dfe2bd4bf25d5e736eb02093a",
+        "size_in_bytes": 714
+      },
+      {
+        "_path": "include/sigtool/emit.h",
+        "path_type": "hardlink",
+        "sha256": "d8345b1ec7d0bd0c4eb41b05a03b92d28894b35170335c74e39105a49613f2a1",
+        "sha256_in_prefix": "d8345b1ec7d0bd0c4eb41b05a03b92d28894b35170335c74e39105a49613f2a1",
+        "size_in_bytes": 1829
+      },
+      {
+        "_path": "include/sigtool/hash.h",
+        "path_type": "hardlink",
+        "sha256": "9fd56cbbf5e888a143cd13b0fbbea587bd00e7ae133ecb1546fbe01f1960a814",
+        "sha256_in_prefix": "9fd56cbbf5e888a143cd13b0fbbea587bd00e7ae133ecb1546fbe01f1960a814",
+        "size_in_bytes": 511
+      },
+      {
+        "_path": "include/sigtool/macho.h",
+        "path_type": "hardlink",
+        "sha256": "f2f7de8794e980cbcb9f4e49de44f7cd03d663da560267d7740ef9361a9d36d8",
+        "sha256_in_prefix": "f2f7de8794e980cbcb9f4e49de44f7cd03d663da560267d7740ef9361a9d36d8",
+        "size_in_bytes": 3306
+      },
+      {
+        "_path": "include/sigtool/signature.h",
+        "path_type": "hardlink",
+        "sha256": "40dd05632d94167f78bee2d958d8801dc974dfeb7b463497e9488e72dcca025e",
+        "sha256_in_prefix": "40dd05632d94167f78bee2d958d8801dc974dfeb7b463497e9488e72dcca025e",
+        "size_in_bytes": 2574
+      },
+      {
+        "_path": "lib/libsigtool.dylib",
+        "path_type": "hardlink",
+        "sha256": "b6b6b5d19366870ff83f3acc93b95ee6b1854fdc6b016a7ec5db860214aff56d",
+        "sha256_in_prefix": "b6b6b5d19366870ff83f3acc93b95ee6b1854fdc6b016a7ec5db860214aff56d",
+        "size_in_bytes": 116848
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "70791ae00a3756830cb50451db55f63e2a42a2fa2a8f1bab1ebd36bbb7d55bff",
+  "size": 210264,
+  "subdir": "osx-arm64",
+  "timestamp": 1643442231000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/sigtool-0.1.3-h44b9a77_0.tar.bz2",
+  "version": "0.1.3"
+}

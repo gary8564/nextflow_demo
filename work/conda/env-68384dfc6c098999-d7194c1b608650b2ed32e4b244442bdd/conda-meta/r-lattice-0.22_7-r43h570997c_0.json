@@ -1,0 +1,370 @@
+{
+  "build": "r43h570997c_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "__osx >=11.0",
+    "r-base >=4.3,<4.4.0a0"
+  ],
+  "extracted_package_dir": "/Users/garychang/miniconda3/pkgs/r-lattice-0.22_7-r43h570997c_0",
+  "files": [
+    "lib/R/library/lattice/CITATION",
+    "lib/R/library/lattice/DESCRIPTION",
+    "lib/R/library/lattice/INDEX",
+    "lib/R/library/lattice/Meta/Rd.rds",
+    "lib/R/library/lattice/Meta/data.rds",
+    "lib/R/library/lattice/Meta/demo.rds",
+    "lib/R/library/lattice/Meta/features.rds",
+    "lib/R/library/lattice/Meta/hsearch.rds",
+    "lib/R/library/lattice/Meta/links.rds",
+    "lib/R/library/lattice/Meta/nsInfo.rds",
+    "lib/R/library/lattice/Meta/package.rds",
+    "lib/R/library/lattice/Meta/vignette.rds",
+    "lib/R/library/lattice/NAMESPACE",
+    "lib/R/library/lattice/NEWS.md",
+    "lib/R/library/lattice/R/lattice",
+    "lib/R/library/lattice/R/lattice.rdb",
+    "lib/R/library/lattice/R/lattice.rdx",
+    "lib/R/library/lattice/data/Rdata.rdb",
+    "lib/R/library/lattice/data/Rdata.rds",
+    "lib/R/library/lattice/data/Rdata.rdx",
+    "lib/R/library/lattice/demo/intervals.R",
+    "lib/R/library/lattice/demo/labels.R",
+    "lib/R/library/lattice/demo/lattice.R",
+    "lib/R/library/lattice/demo/panel.R",
+    "lib/R/library/lattice/doc/grid.R",
+    "lib/R/library/lattice/doc/grid.Rnw",
+    "lib/R/library/lattice/doc/grid.pdf",
+    "lib/R/library/lattice/doc/index.html",
+    "lib/R/library/lattice/help/AnIndex",
+    "lib/R/library/lattice/help/aliases.rds",
+    "lib/R/library/lattice/help/lattice.rdb",
+    "lib/R/library/lattice/help/lattice.rdx",
+    "lib/R/library/lattice/help/paths.rds",
+    "lib/R/library/lattice/html/00Index.html",
+    "lib/R/library/lattice/html/R.css",
+    "lib/R/library/lattice/libs/lattice.dylib",
+    "lib/R/library/lattice/po/de/LC_MESSAGES/R-lattice.mo",
+    "lib/R/library/lattice/po/en@quot/LC_MESSAGES/R-lattice.mo",
+    "lib/R/library/lattice/po/fr/LC_MESSAGES/R-lattice.mo",
+    "lib/R/library/lattice/po/it/LC_MESSAGES/R-lattice.mo",
+    "lib/R/library/lattice/po/ko/LC_MESSAGES/R-lattice.mo",
+    "lib/R/library/lattice/po/pl/LC_MESSAGES/R-lattice.mo"
+  ],
+  "fn": "r-lattice-0.22_7-r43h570997c_0.conda",
+  "license": "GPL-2.0-or-later",
+  "link": {
+    "source": "/Users/garychang/miniconda3/pkgs/r-lattice-0.22_7-r43h570997c_0",
+    "type": 1
+  },
+  "md5": "62758d76621290dea91a38acc70dee7e",
+  "name": "r-lattice",
+  "package_tarball_full_path": "/Users/garychang/miniconda3/pkgs/r-lattice-0.22_7-r43h570997c_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/R/library/lattice/CITATION",
+        "path_type": "hardlink",
+        "sha256": "9f2e066e4153e0c44897b3445287829120288cb9220c8c365379f897d4125c8b",
+        "sha256_in_prefix": "9f2e066e4153e0c44897b3445287829120288cb9220c8c365379f897d4125c8b",
+        "size_in_bytes": 322
+      },
+      {
+        "_path": "lib/R/library/lattice/DESCRIPTION",
+        "path_type": "hardlink",
+        "sha256": "3664ae6f68678f7236bf94a4a43034ad628da7ced4f9f2ed59656bbc6dd37472",
+        "sha256_in_prefix": "3664ae6f68678f7236bf94a4a43034ad628da7ced4f9f2ed59656bbc6dd37472",
+        "size_in_bytes": 2331
+      },
+      {
+        "_path": "lib/R/library/lattice/INDEX",
+        "path_type": "hardlink",
+        "sha256": "ca4ac7f31b21d7e23c59289ad1bc3aa4d9e9c767a6219592f98fec048a45140b",
+        "sha256_in_prefix": "ca4ac7f31b21d7e23c59289ad1bc3aa4d9e9c767a6219592f98fec048a45140b",
+        "size_in_bytes": 4078
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/Rd.rds",
+        "path_type": "hardlink",
+        "sha256": "26fcbed99402801e8bbcb96ae04a08f4a08951824d07b42370600bb1cf377ae0",
+        "sha256_in_prefix": "26fcbed99402801e8bbcb96ae04a08f4a08951824d07b42370600bb1cf377ae0",
+        "size_in_bytes": 3745
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/data.rds",
+        "path_type": "hardlink",
+        "sha256": "2c0e38d6802974b42fbd3e95ec025d6e6f19c93064dec927a1155180f2540600",
+        "sha256_in_prefix": "2c0e38d6802974b42fbd3e95ec025d6e6f19c93064dec927a1155180f2540600",
+        "size_in_bytes": 312
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/demo.rds",
+        "path_type": "hardlink",
+        "sha256": "6385069a066460f3902b3305329a03504c174db2efbe5e6d02ad29ef86499ca0",
+        "sha256_in_prefix": "6385069a066460f3902b3305329a03504c174db2efbe5e6d02ad29ef86499ca0",
+        "size_in_bytes": 172
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/features.rds",
+        "path_type": "hardlink",
+        "sha256": "c2b8497d90ea570203bb214fc9b322aa1ed6365669dcb579554562f9253f5745",
+        "sha256_in_prefix": "c2b8497d90ea570203bb214fc9b322aa1ed6365669dcb579554562f9253f5745",
+        "size_in_bytes": 123
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/hsearch.rds",
+        "path_type": "hardlink",
+        "sha256": "eea6c63c835433efcd166f2f16a834e2e2cdf52ba2c82c5caedceceea71cf19c",
+        "sha256_in_prefix": "eea6c63c835433efcd166f2f16a834e2e2cdf52ba2c82c5caedceceea71cf19c",
+        "size_in_bytes": 3819
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/links.rds",
+        "path_type": "hardlink",
+        "sha256": "d3c264822a0e6b95828759cd01e454f368b9c3b6975969f067ae30e5a405ec72",
+        "sha256_in_prefix": "d3c264822a0e6b95828759cd01e454f368b9c3b6975969f067ae30e5a405ec72",
+        "size_in_bytes": 2121
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/nsInfo.rds",
+        "path_type": "hardlink",
+        "sha256": "1a96a90303a9397b29b18a3d623ca0fe1f1f127ace319077d8ed4d0d4d348c1c",
+        "sha256_in_prefix": "1a96a90303a9397b29b18a3d623ca0fe1f1f127ace319077d8ed4d0d4d348c1c",
+        "size_in_bytes": 1907
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/package.rds",
+        "path_type": "hardlink",
+        "sha256": "27201f77fb2a2b22eefc67f4a1d57605e3729e9d583c4a64c7016fc5b7a59f03",
+        "sha256_in_prefix": "27201f77fb2a2b22eefc67f4a1d57605e3729e9d583c4a64c7016fc5b7a59f03",
+        "size_in_bytes": 1551
+      },
+      {
+        "_path": "lib/R/library/lattice/Meta/vignette.rds",
+        "path_type": "hardlink",
+        "sha256": "c3a1f72ce4d29d59866774f0f3ed47920c73701caf95e042ed41bc40381b5150",
+        "sha256_in_prefix": "c3a1f72ce4d29d59866774f0f3ed47920c73701caf95e042ed41bc40381b5150",
+        "size_in_bytes": 207
+      },
+      {
+        "_path": "lib/R/library/lattice/NAMESPACE",
+        "path_type": "hardlink",
+        "sha256": "06246103107a6388995909c5871523180af458fb18e6412b4fca3583a619c1a0",
+        "sha256_in_prefix": "06246103107a6388995909c5871523180af458fb18e6412b4fca3583a619c1a0",
+        "size_in_bytes": 7863
+      },
+      {
+        "_path": "lib/R/library/lattice/NEWS.md",
+        "path_type": "hardlink",
+        "sha256": "d8d9a51da33480821987055bc23e85bf0944c674100ad8bc7e15586c553874dd",
+        "sha256_in_prefix": "d8d9a51da33480821987055bc23e85bf0944c674100ad8bc7e15586c553874dd",
+        "size_in_bytes": 37034
+      },
+      {
+        "_path": "lib/R/library/lattice/R/lattice",
+        "path_type": "hardlink",
+        "sha256": "570ca456b280cdeb201ef5ebdf22dc8f80092e2c0c68e33c7f73340e420f3759",
+        "sha256_in_prefix": "570ca456b280cdeb201ef5ebdf22dc8f80092e2c0c68e33c7f73340e420f3759",
+        "size_in_bytes": 1058
+      },
+      {
+        "_path": "lib/R/library/lattice/R/lattice.rdb",
+        "path_type": "hardlink",
+        "sha256": "c4660ee4138e80cbba05c0e0a6097c427b112eb1c72f35b5b5e88d791daf2b20",
+        "sha256_in_prefix": "c4660ee4138e80cbba05c0e0a6097c427b112eb1c72f35b5b5e88d791daf2b20",
+        "size_in_bytes": 635348
+      },
+      {
+        "_path": "lib/R/library/lattice/R/lattice.rdx",
+        "path_type": "hardlink",
+        "sha256": "86db770a77e4f48de9baf759c52a6736fb1c698e57d7e6e35db783d8aaaeeb00",
+        "sha256_in_prefix": "86db770a77e4f48de9baf759c52a6736fb1c698e57d7e6e35db783d8aaaeeb00",
+        "size_in_bytes": 4390
+      },
+      {
+        "_path": "lib/R/library/lattice/data/Rdata.rdb",
+        "path_type": "hardlink",
+        "sha256": "dad032ecb44b086bad3468811ad485255675b24ee746e10c40dd76542bf0eae3",
+        "sha256_in_prefix": "dad032ecb44b086bad3468811ad485255675b24ee746e10c40dd76542bf0eae3",
+        "size_in_bytes": 8748
+      },
+      {
+        "_path": "lib/R/library/lattice/data/Rdata.rds",
+        "path_type": "hardlink",
+        "sha256": "58c0352a85a232abe4bc5688b7486cea6323a7a9d1632396d54f4ab6329606f9",
+        "sha256_in_prefix": "58c0352a85a232abe4bc5688b7486cea6323a7a9d1632396d54f4ab6329606f9",
+        "size_in_bytes": 166
+      },
+      {
+        "_path": "lib/R/library/lattice/data/Rdata.rdx",
+        "path_type": "hardlink",
+        "sha256": "e2eca0669ffe973ae200ad9587c21e95c2d68d918c709eae9e804755e3cfec2f",
+        "sha256_in_prefix": "e2eca0669ffe973ae200ad9587c21e95c2d68d918c709eae9e804755e3cfec2f",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "lib/R/library/lattice/demo/intervals.R",
+        "path_type": "hardlink",
+        "sha256": "6993886ee37ea1782b35c11dd14dc367e7b0c66569132931a58f62e0d4a7dd26",
+        "sha256_in_prefix": "6993886ee37ea1782b35c11dd14dc367e7b0c66569132931a58f62e0d4a7dd26",
+        "size_in_bytes": 2032
+      },
+      {
+        "_path": "lib/R/library/lattice/demo/labels.R",
+        "path_type": "hardlink",
+        "sha256": "abe73b1865c4ddf9e045cd8cffeedcd35414adb5dd40e989ec8accbf7b015292",
+        "sha256_in_prefix": "abe73b1865c4ddf9e045cd8cffeedcd35414adb5dd40e989ec8accbf7b015292",
+        "size_in_bytes": 1668
+      },
+      {
+        "_path": "lib/R/library/lattice/demo/lattice.R",
+        "path_type": "hardlink",
+        "sha256": "c74f051f14e5ea8d6b611bf0dd7854ce02466246abe0d19ad5034784cad1b877",
+        "sha256_in_prefix": "c74f051f14e5ea8d6b611bf0dd7854ce02466246abe0d19ad5034784cad1b877",
+        "size_in_bytes": 6289
+      },
+      {
+        "_path": "lib/R/library/lattice/demo/panel.R",
+        "path_type": "hardlink",
+        "sha256": "cee728ce1e5cf657022544bccd95b4cd5b342d04f097b9b9a2e21a3748885981",
+        "sha256_in_prefix": "cee728ce1e5cf657022544bccd95b4cd5b342d04f097b9b9a2e21a3748885981",
+        "size_in_bytes": 3596
+      },
+      {
+        "_path": "lib/R/library/lattice/doc/grid.R",
+        "path_type": "hardlink",
+        "sha256": "aaa1a56d1927ff49b04a8b75a620ecf0c4e84400366328391a0ed19f5a277ab6",
+        "sha256_in_prefix": "aaa1a56d1927ff49b04a8b75a620ecf0c4e84400366328391a0ed19f5a277ab6",
+        "size_in_bytes": 4230
+      },
+      {
+        "_path": "lib/R/library/lattice/doc/grid.Rnw",
+        "path_type": "hardlink",
+        "sha256": "65ee29603ac6ec364b39354116e109c681c0068c2e7e021aeb531f6ee0d3fe64",
+        "sha256_in_prefix": "65ee29603ac6ec364b39354116e109c681c0068c2e7e021aeb531f6ee0d3fe64",
+        "size_in_bytes": 4275
+      },
+      {
+        "_path": "lib/R/library/lattice/doc/grid.pdf",
+        "path_type": "hardlink",
+        "sha256": "b1d805a6039182d524ced4bd2a8cfb692156a4310e2bda5e8cf7a75ccd6a2f2f",
+        "sha256_in_prefix": "b1d805a6039182d524ced4bd2a8cfb692156a4310e2bda5e8cf7a75ccd6a2f2f",
+        "size_in_bytes": 182410
+      },
+      {
+        "_path": "lib/R/library/lattice/doc/index.html",
+        "path_type": "hardlink",
+        "sha256": "a203e60abc6efa74480eeb5f28981aa0fbd64bf5d046b00814c9b0ef04b618a6",
+        "sha256_in_prefix": "a203e60abc6efa74480eeb5f28981aa0fbd64bf5d046b00814c9b0ef04b618a6",
+        "size_in_bytes": 1369
+      },
+      {
+        "_path": "lib/R/library/lattice/help/AnIndex",
+        "path_type": "hardlink",
+        "sha256": "29a4cc508e181b3ab725ea2771c3ce3482eda3fd5864c5b9e4959efe9a70fbb3",
+        "sha256_in_prefix": "29a4cc508e181b3ab725ea2771c3ce3482eda3fd5864c5b9e4959efe9a70fbb3",
+        "size_in_bytes": 6365
+      },
+      {
+        "_path": "lib/R/library/lattice/help/aliases.rds",
+        "path_type": "hardlink",
+        "sha256": "090a9d8e2a27fa8a3729fa64da5bb5a2e019c3008d971c738a573134834e06bf",
+        "sha256_in_prefix": "090a9d8e2a27fa8a3729fa64da5bb5a2e019c3008d971c738a573134834e06bf",
+        "size_in_bytes": 1926
+      },
+      {
+        "_path": "lib/R/library/lattice/help/lattice.rdb",
+        "path_type": "hardlink",
+        "sha256": "5d574c133d137dfb2a3b09ea67a4b273f15bc1a2d1cd8823e76707a88b0f39b5",
+        "sha256_in_prefix": "5d574c133d137dfb2a3b09ea67a4b273f15bc1a2d1cd8823e76707a88b0f39b5",
+        "size_in_bytes": 477910
+      },
+      {
+        "_path": "lib/R/library/lattice/help/lattice.rdx",
+        "path_type": "hardlink",
+        "sha256": "b2c63f3acdf5a6ae02a499374e1c29b47e66358a0a00c8d6343ee397d1190863",
+        "sha256_in_prefix": "b2c63f3acdf5a6ae02a499374e1c29b47e66358a0a00c8d6343ee397d1190863",
+        "size_in_bytes": 1616
+      },
+      {
+        "_path": "lib/R/library/lattice/help/paths.rds",
+        "path_type": "hardlink",
+        "sha256": "e1a3754afc2e113c1710cc820ed61307c1c9448069c6c51e92830a5394993837",
+        "sha256_in_prefix": "e1a3754afc2e113c1710cc820ed61307c1c9448069c6c51e92830a5394993837",
+        "size_in_bytes": 705
+      },
+      {
+        "_path": "lib/R/library/lattice/html/00Index.html",
+        "path_type": "hardlink",
+        "sha256": "399d1dd6abd954cd11f593da5c2fadb92ff30da571004d9e0ed2b5c71546b954",
+        "sha256_in_prefix": "399d1dd6abd954cd11f593da5c2fadb92ff30da571004d9e0ed2b5c71546b954",
+        "size_in_bytes": 34241
+      },
+      {
+        "_path": "lib/R/library/lattice/html/R.css",
+        "path_type": "hardlink",
+        "sha256": "52144cf4c349f7f2cf131342f81bbc43c6514ba2274556815df88918fdeb189b",
+        "sha256_in_prefix": "52144cf4c349f7f2cf131342f81bbc43c6514ba2274556815df88918fdeb189b",
+        "size_in_bytes": 1844
+      },
+      {
+        "_path": "lib/R/library/lattice/libs/lattice.dylib",
+        "path_type": "hardlink",
+        "sha256": "e4c502c59f43a287ddb44d4ea103c4f4a99256e4c8a2eb537ca58541876f29d1",
+        "sha256_in_prefix": "e4c502c59f43a287ddb44d4ea103c4f4a99256e4c8a2eb537ca58541876f29d1",
+        "size_in_bytes": 52096
+      },
+      {
+        "_path": "lib/R/library/lattice/po/de/LC_MESSAGES/R-lattice.mo",
+        "path_type": "hardlink",
+        "sha256": "95d8398087c7716db9edf38f2caa6a55bb31bc07c20ad2902de99c8153e05dbf",
+        "sha256_in_prefix": "95d8398087c7716db9edf38f2caa6a55bb31bc07c20ad2902de99c8153e05dbf",
+        "size_in_bytes": 14157
+      },
+      {
+        "_path": "lib/R/library/lattice/po/en@quot/LC_MESSAGES/R-lattice.mo",
+        "path_type": "hardlink",
+        "sha256": "2c9a7f6adc1053dbf1d8e9da7ca4fdd014bbb8eef7bde5a83e722867116794c0",
+        "sha256_in_prefix": "2c9a7f6adc1053dbf1d8e9da7ca4fdd014bbb8eef7bde5a83e722867116794c0",
+        "size_in_bytes": 13283
+      },
+      {
+        "_path": "lib/R/library/lattice/po/fr/LC_MESSAGES/R-lattice.mo",
+        "path_type": "hardlink",
+        "sha256": "2d3508cd206c1d742473b8ef00e93c3c80211ff49f95572ee1444251bb10ca77",
+        "sha256_in_prefix": "2d3508cd206c1d742473b8ef00e93c3c80211ff49f95572ee1444251bb10ca77",
+        "size_in_bytes": 13585
+      },
+      {
+        "_path": "lib/R/library/lattice/po/it/LC_MESSAGES/R-lattice.mo",
+        "path_type": "hardlink",
+        "sha256": "f6afbb6c830d122cb92de570b9319b438e3c74ebbdae1f1ca34e52954a06f9fd",
+        "sha256_in_prefix": "f6afbb6c830d122cb92de570b9319b438e3c74ebbdae1f1ca34e52954a06f9fd",
+        "size_in_bytes": 9845
+      },
+      {
+        "_path": "lib/R/library/lattice/po/ko/LC_MESSAGES/R-lattice.mo",
+        "path_type": "hardlink",
+        "sha256": "66df3b824e9fe9ea241a7d0fab172a8395aa1f907402cb00ac9315e46d800f83",
+        "sha256_in_prefix": "66df3b824e9fe9ea241a7d0fab172a8395aa1f907402cb00ac9315e46d800f83",
+        "size_in_bytes": 14824
+      },
+      {
+        "_path": "lib/R/library/lattice/po/pl/LC_MESSAGES/R-lattice.mo",
+        "path_type": "hardlink",
+        "sha256": "7ce6e95e7b72decdbbbd751a206fa8cd5f20a93ea9f756e90ae30ded74325903",
+        "sha256_in_prefix": "7ce6e95e7b72decdbbbd751a206fa8cd5f20a93ea9f756e90ae30ded74325903",
+        "size_in_bytes": 13372
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "79516a9eed760513ba29d408618b11b6da4640892e6f8789cd04ac61bd2de3af",
+  "size": 1354927,
+  "subdir": "osx-arm64",
+  "timestamp": 1743633312000,
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/r-lattice-0.22_7-r43h570997c_0.conda",
+  "version": "0.22_7"
+}
