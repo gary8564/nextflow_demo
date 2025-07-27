@@ -1,7 +1,7 @@
 process preprocessing {
   tag "preprocessing"
   input:
-    path raw
+    path processed_data
 
   output:
     path "data_tensors", emit: tensors
@@ -9,7 +9,7 @@ process preprocessing {
   script:
   """
   python3 ${workflow.launchDir}/scripts/preprocessing.py \
-    --input-dir ${raw} \
+    --input-dir ${processed_data} \
     --output-dir data_tensors
   """
 }
