@@ -19,19 +19,19 @@ def main():
     X = np.load(os.path.join(args.input_dir,"X.npy"))
     y = np.load(os.path.join(args.input_dir,"y.npy"))
 
-    # 1) Standardization
+    # 1. Standardization
     dataset = np.hstack((X, y))
     scaler = StandardScaler()
     scaled_dataset = scaler.fit_transform(dataset)
     X_scaled, y_scaled = scaled_dataset[:,:-1], scaled_dataset[:,-1]
 
-    # 2) Train/Test Split
+    # 2. Train/Test Split
     X_train, X_test, y_train, y_test = train_test_split(
         X_scaled, y_scaled, test_size=args.test_size, shuffle=True)
     y_train = y_train.squeeze()
     y_test = y_test.squeeze()
     
-    # 3) Convert to Tensor
+    # 3. Convert to Tensor
     joblib.dump(scaler, os.path.join(args.output_dir,"scaler.pkl"))
     torch.save(torch.from_numpy(X_train).float(),
                os.path.join(args.output_dir,"train_X.pt"))

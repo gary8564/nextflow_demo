@@ -82,6 +82,7 @@ def generate_synthetic_input(n_samples=1000, seed=None):
     return X, y
 
 def main():
+    # 1. Parse arguments
     p = argparse.ArgumentParser()
     p.add_argument("--output-dir", required=True,
                    help="Store generated X.npy, y.npy")
@@ -91,12 +92,13 @@ def main():
                    help="Random seed for reproducibility")
     args = p.parse_args()
     
+    # 2. Create output directory
     os.makedirs(args.output_dir, exist_ok=True)
     
-    # Generate synthetic data
+    # 3. Generate synthetic data
     X, y = generate_synthetic_input(n_samples=args.n_samples, seed=args.seed)
     
-    # Save data
+    # 4. Save data
     np.save(os.path.join(args.output_dir, "X.npy"), X)
     np.save(os.path.join(args.output_dir, "y.npy"), y)
     print(f"""[data_setup_synthetic] saved 

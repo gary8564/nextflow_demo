@@ -23,6 +23,7 @@ def load_tsunami(data_root_folder):
     return X, y
 
 def main():
+    # Parse arguments
     p = argparse.ArgumentParser()
     p.add_argument("--input-dir", required=True,
                    help="Directory containing extracted tsunami data")
@@ -30,9 +31,11 @@ def main():
                    help="Store processed X.npy, y.npy")
     args = p.parse_args()
     
+    # Check if input directory exists
     if not os.path.exists(args.input_dir):
         raise ValueError(f"Input directory does not exist: {args.input_dir}")
     
+    # Create output directory
     os.makedirs(args.output_dir, exist_ok=True)
     
     # Load tsunami data
