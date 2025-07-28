@@ -1,5 +1,5 @@
-process evaluate_metrics {
-  tag "evaluate_metrics"
+process benchmark_metrics {
+  tag "benchmark_metrics"
   input:
     path exactgp
     path dkl
@@ -9,7 +9,7 @@ process evaluate_metrics {
 
   script:
   """
-  python3 ${workflow.launchDir}/scripts/evaluate_metrics.py \
+  python ${workflow.launchDir}/scripts/benchmark_metrics.py \
     --exact-metrics ${exactgp} \
     --dkl-metrics   ${dkl} \
     --output-dir    ${params.outDir}

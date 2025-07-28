@@ -33,14 +33,14 @@ process data_setup {
       args="\$args --seed \$seed"
     fi
     
-    python3 ${workflow.launchDir}/scripts/data_setup_synthetic.py \$args
+    python ${workflow.launchDir}/scripts/data_setup_synthetic.py \$args
     
   elif [ "\$dataset_type" = "zenodo" ]; then
     # Process downloaded tsunami data
     echo "Processing downloaded tsunami data..."
     
     args="--input-dir ${raw_data} --output-dir processed_data"
-    python3 ${workflow.launchDir}/scripts/data_setup_tsunami.py \$args
+    python ${workflow.launchDir}/scripts/data_setup_tsunami.py \$args
       
   else
     echo "ERROR: Unknown dataset type: \$dataset_type"
