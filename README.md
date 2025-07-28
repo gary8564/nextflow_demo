@@ -2,6 +2,23 @@
 
 A modular NextFlow pipeline for benchmarking Gaussian Process models on high-dimensional input problems.
 
+## TODO
+
+### In Progress
+
+- [ ] Language-agnostic data interchange
+  - [ ] Use the same workflow but add one additional GP emulator which is not in Python to test the workflow to be programmin language agnostic
+
+### Done 
+
+- [x] Download from sources
+- [x] Working workflow
+  - [x] Separation of data setup and downloading
+  - [x] Using conditional scripts to separate different dataset case studies
+- [x] GPytorch training hardware options: cpu/gpu
+- [x] Add plotting functions in benchmark metrics
+- [x] Renaming and documenting the code in clearer way
+
 ## Workflow
 ![workflow](img/workflow.png)
 
