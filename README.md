@@ -112,6 +112,15 @@ nextflow run workflows/main.nf \
 ```
 
 ## Advanced Usage
+### Workflow DAG generation
+```bash
+nextflow run workflows/main.nf \
+  --caseStudy tsunami_tokushima \
+  --outDir results \
+  -profile local \
+  -with-dag flowchart.png
+```
+
 ### Configuration Options
 1. **Dataset Configuration**
 Extensibility for new dataset study case through the `conf/datasets.config` file
