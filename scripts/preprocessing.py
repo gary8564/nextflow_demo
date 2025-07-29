@@ -1,10 +1,9 @@
 import argparse
 import os
 import numpy as np
-import torch
+import h5py
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-import joblib
 
 def main():
     p = argparse.ArgumentParser()
@@ -31,18 +30,23 @@ def main():
     y_train = y_train.squeeze()
     y_test = y_test.squeeze()
     
-    # 3. Convert to Tensor
-    joblib.dump(scaler, os.path.join(args.output_dir,"scaler.pkl"))
-    torch.save(torch.from_numpy(X_train).float(),
-               os.path.join(args.output_dir,"train_X.pt"))
-    torch.save(torch.from_numpy(y_train).float(),
-               os.path.join(args.output_dir,"train_y.pt"))
-    torch.save(torch.from_numpy(X_test).float(),
-               os.path.join(args.output_dir,"test_X.pt"))
-    torch.save(torch.from_numpy(y_test).float(),
-               os.path.join(args.output_dir,"test_y.pt"))
+    # 3. Save to HDF5 (language-agnostic format)
+    hdf5_file = os.path.join(args.output_dir, "data.h5")
+    with h5py.File(hdf5_file, 'w') as f:
+        # Save datasets
+        f.create_dataset('train_X', data=X_train.astype(np.float32))
+        f.create_dataset('train_y', data=y_train.astype(np.float32))
+        f.create_dataset('test_X', data=X_test.astype(np.float32))
+        f.create_dataset('test_y', data=y_test.astype(np.float32))
+        
+        # Save standardization parameters as metadata
+        f.attrs['scaler_mean'] = scaler.mean_
+        f.attrs['scaler_scale'] = scaler.scale_
+        f.attrs['n_samples_train'] = len(X_train)
+        f.attrs['n_samples_test'] = len(X_test)
+        f.attrs['n_features'] = X_train.shape[1]
 
-    print(f"[preprocess] wrote tensors + scaler → {args.output_dir}")
+    print(f"[preprocess] wrote HDF5 data → {hdf5_file}")
 
 if __name__=="__main__":
     main()

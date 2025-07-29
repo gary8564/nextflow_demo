@@ -3,7 +3,7 @@ import os
 import json
 import torch
 import numpy as np
-import joblib
+import h5py
 from sklearn.preprocessing import StandardScaler
 from gpytorch_emulator import ExactGP
 from gpytorch_emulator.utils import ErrorMetrics
@@ -13,7 +13,8 @@ def descale_data(test_y: np.ndarray,
                  std_scaled: np.ndarray,
                  lower95_scaled: np.ndarray,
                  upper95_scaled: np.ndarray,
-                 standardizer: StandardScaler) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+                 scaler_mean: np.ndarray,
+                 scaler_scale: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
     Descale the data to the original scale
     
@@ -23,7 +24,8 @@ def descale_data(test_y: np.ndarray,
         std_scaled: The standard deviation of the scaled test data
         lower95_scaled: The lower 95% confidence interval of the scaled test data
         upper95_scaled: The upper 95% confidence interval of the scaled test data
-        standardizer: The standardizer used to scale the data
+        scaler_mean: Mean values from standardization
+        scaler_scale: Scale values from standardization
         
     Returns:
         groud_truth: The original test data
@@ -32,8 +34,8 @@ def descale_data(test_y: np.ndarray,
         lower95: The lower 95% confidence interval of the original test data
         upper95: The upper 95% confidence interval of the original test data
     """
-    mu = standardizer.mean_[-1] 
-    sigma = standardizer.scale_[-1] 
+    mu = scaler_mean[-1] 
+    sigma = scaler_scale[-1] 
     groud_truth = test_y * sigma + mu
     mean = mean_scaled * sigma + mu
     std = std_scaled * sigma 
@@ -49,27 +51,35 @@ def main():
     p.add_argument("--device", default="cpu")
     args = p.parse_args()
     
-    # 2. Train
-    X_train = torch.load(os.path.join(args.input_dir,"train_X.pt"))
-    y_train = torch.load(os.path.join(args.input_dir,"train_y.pt"))
+    # 2. Load data from HDF5
+    hdf5_file = os.path.join(args.input_dir, "data.h5")
+    with h5py.File(hdf5_file, 'r') as f:
+        X_train = torch.from_numpy(f['train_X'][:]).float()
+        y_train = torch.from_numpy(f['train_y'][:]).float()
+        X_test = torch.from_numpy(f['test_X'][:]).float()
+        y_test = torch.from_numpy(f['test_y'][:]).float()
+        
+        # Load standardization parameters
+        scaler_mean = f.attrs['scaler_mean']
+        scaler_scale = f.attrs['scaler_scale']
+    
+    # 3. Train
     model = ExactGP(device=args.device,
                     kernel_type="matern_5_2")
     training_time = model.train(X_train, y_train)
     
-    # 3. Predict
-    X_test = torch.load(os.path.join(args.input_dir,"test_X.pt"))
-    y_test = torch.load(os.path.join(args.input_dir,"test_y.pt"))
+    # 4. Predict
     mean_scaled, std_scaled, lower95_scaled, upper95_scaled, infer_time  = model.predict(X_test)
     
-    # 4. Descale
-    scaler = joblib.load(os.path.join(args.input_dir,"scaler.pkl"))
+    # 5. Descale
     ground_truth, mean, std, lower95, upper95 = descale_data(
-        y_test.detach().cpu().numpy(), mean_scaled, std_scaled, lower95_scaled, upper95_scaled, scaler)
+        y_test.detach().cpu().numpy(), mean_scaled, std_scaled, lower95_scaled, upper95_scaled, 
+        scaler_mean, scaler_scale)
     
-    # 5. Evaluate metrics
+    # 6. Evaluate metrics
     rmse = ErrorMetrics.RMSE(mean, ground_truth)
     
-    # 6. Save metrics
+    # 7. Save metrics
     os.makedirs(args.output_dir, exist_ok=True)
     metrics = dict(
         ground_truth=ground_truth.tolist(),

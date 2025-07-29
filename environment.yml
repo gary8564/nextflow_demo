@@ -4,6 +4,7 @@ channels:
   - defaults
 
 dependencies:
+  # Python dependencies
   - python=3.11
   - matplotlib
   - numpy<2.0
@@ -11,17 +12,26 @@ dependencies:
   - pytorch
   - torchvision
   - torchaudio
-  - r-base
   - rpy2
   - openblas
   - lapack
   - gfortran
-  - r-robustgasp
   - scikit-learn
   - scipy
   - seaborn
   - pyyaml
   - joblib
+  - hdf5
+  - h5py
+  # R dependencies
+  - conda-forge::r-base
+  - conda-forge::r-robustgasp
+  - conda-forge::r-hdf5r
+  - conda-forge::r-optparse
+  - conda-forge::r-jsonlite
+  - conda-forge::r-essentials
+  - conda-forge::r-argparse
+  # Pip dependencies
   - pip
   - pip:
       - -r requirements.txt

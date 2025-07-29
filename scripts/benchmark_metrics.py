@@ -4,6 +4,7 @@ import json
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
 
 def viz_prediction(ground_truth, predictions, model_name, output_dir):
     if ground_truth.ndim == 1:
@@ -44,37 +45,61 @@ def viz_prediction(ground_truth, predictions, model_name, output_dir):
     plt.savefig(os.path.join(output_dir, f"{model_name}.png"))
 
 def main():
-    # Parse arguments
+    # 1. Parse arguments 
     p = argparse.ArgumentParser()
-    p.add_argument("--exact-metrics-dir", required=True)
-    p.add_argument("--dkl-metrics-dir",   required=True)
-    p.add_argument("--output-dir",    required=True)
+    p.add_argument("--output-dir", required=True)
+    # Add optional method-specific arguments
+    p.add_argument("--exactgp-metrics-dir", required=False)
+    p.add_argument("--dkl-metrics-dir", required=False)
+    p.add_argument("--rgasp-metrics-dir", required=False)
+    
     args = p.parse_args()
 
-    # Create output directory
+    # 2. Create output directory
     os.makedirs(args.output_dir, exist_ok=True)
     
-    # Load metrics
-    exact = json.load(open(os.path.join(args.exact_metrics_dir, "metrics.json")))
-    dkl   = json.load(open(os.path.join(args.dkl_metrics_dir, "metrics.json")))
+    # 3. Load metrics for all selected models ready to be benchmarked
+    model_configs = {
+        'ExactGP': args.exactgp_metrics_dir,
+        'DKL': args.dkl_metrics_dir,
+        'RGaSP': args.rgasp_metrics_dir,
+    }
+    benchmark_models = {name: path for name, path in model_configs.items() 
+                     if path is not None and os.path.exists(os.path.join(path, "metrics.json"))}
+    if not benchmark_models:
+        print("Error: No valid model result directories found!")
+        sys.exit(1)
+    print(f"[benchmark_metrics] Processing {len(benchmark_models)} models: {list(benchmark_models.keys())}")
+    benchmark_metrics = {}
+    for model_name, metrics_dir in benchmark_models.items():
+        metrics_file = os.path.join(metrics_dir, "metrics.json")
+        benchmark_metrics[model_name] = json.load(open(metrics_file))
+        print(f"[benchmark_metrics] Loaded {model_name} metrics from {metrics_file}")
     
-    # Visualize predictions and save to output_dir
-    predictions_exact = np.concatenate([np.array(exact["predictions_mean"])[:,np.newaxis], 
-                                        np.array(exact["predictions_std"])[:,np.newaxis]], 
-                                       axis=1)
-    predictions_dkl = np.concatenate([np.array(dkl["predictions_mean"])[:,np.newaxis], 
-                                      np.array(dkl["predictions_std"])[:,np.newaxis]], 
-                                     axis=1)
-    viz_prediction(np.array(exact["ground_truth"]), predictions_exact, "ExactGP", args.output_dir)
-    viz_prediction(np.array(dkl["ground_truth"]), predictions_dkl, "DKL", args.output_dir)
+    # 4. Visualize prediction for each model
+    for model_name, metrics in benchmark_metrics.items():
+        predictions = np.concatenate([
+            np.array(metrics["predictions_mean"])[:,np.newaxis], 
+            np.array(metrics["predictions_std"])[:,np.newaxis]
+        ], axis=1)
+        viz_prediction(np.array(metrics["ground_truth"]), predictions, model_name, args.output_dir)
+        print(f"[benchmark_metrics] Generated visualization for {model_name}")
 
-    # Save evaluation metrics to csv
-    benchmark_metric_exact = dict(rmse=exact["rmse"], train_time=exact["train_time"], infer_time=exact["infer_time"])
-    benchmark_metric_dkl = dict(rmse=dkl["rmse"], train_time=dkl["train_time"], infer_time=dkl["infer_time"])
-    df = pd.DataFrame([benchmark_metric_exact,benchmark_metric_dkl], index=["ExactGP", "DKL"])
-    csv = os.path.join(args.output_dir,"comparison.csv")
-    df.to_csv(csv)
-    print(f"[benchmark_metrics] saved → {csv}")
+    # 5. Save evaluation metrics comparison as a csv 
+    benchmark_data = []
+    model_names = []
+    for model_name, metrics in benchmark_metrics.items():
+        benchmark_row = {
+            'rmse': metrics["rmse"], 
+            'train_time': metrics["train_time"], 
+            'infer_time': metrics["infer_time"]
+        }
+        benchmark_data.append(benchmark_row)
+        model_names.append(model_name)
+    df = pd.DataFrame(benchmark_data, index=model_names)
+    csv_path = os.path.join(args.output_dir, "comparison.csv")
+    df.to_csv(csv_path)
+    print(f"[benchmark_metrics] Saved comparison → {csv_path}")
 
 if __name__=="__main__":
     main()
