@@ -102,12 +102,30 @@ nextflow run workflows/main.nf \
   --outDir results \
   -profile local
 ```
+
+For synthetic case study with GPU acceleration:
+```bash
+nextflow run workflows/main.nf \
+  --caseStudy synthetic \
+  --outDir results \
+  --useGPU true \
+  -profile local
+```
  
 For Tokushima Tsunami:
 ```bash
 nextflow run workflows/main.nf \
   --caseStudy tsunami_tokushima \
   --outDir results \
+  -profile local
+```
+
+For Tokushima Tsunami with GPU acceleration:
+```bash
+nextflow run workflows/main.nf \
+  --caseStudy tsunami_tokushima \
+  --outDir results \
+  --useGPU true \
   -profile local
 ```
 
