@@ -52,6 +52,7 @@ def main():
     p.add_argument("--exactgp-metrics-dir", required=False)
     p.add_argument("--dkl-metrics-dir", required=False)
     p.add_argument("--rgasp-metrics-dir", required=False)
+    p.add_argument("--pca-rgasp-metrics-dir", required=False)
     
     args = p.parse_args()
 
@@ -63,6 +64,7 @@ def main():
         'ExactGP': args.exactgp_metrics_dir,
         'DKL': args.dkl_metrics_dir,
         'RGaSP': args.rgasp_metrics_dir,
+        'PCA-RGaSP': args.pca_rgasp_metrics_dir,
     }
     benchmark_models = {name: path for name, path in model_configs.items() 
                      if path is not None and os.path.exists(os.path.join(path, "metrics.json"))}

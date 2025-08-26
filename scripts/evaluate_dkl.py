@@ -1,11 +1,9 @@
 import os
 import torch
-import time
 import numpy as np
 import argparse
 import json
 import h5py
-from sklearn.preprocessing import StandardScaler
 from gpytorch_emulator import DKL_GP
 from gpytorch_emulator.utils import ErrorMetrics
 
@@ -61,8 +59,8 @@ def main():
         y_test = torch.from_numpy(f['test_y'][:]).float()
         
         # Load standardization parameters
-        scaler_mean = f.attrs['scaler_mean']
-        scaler_scale = f.attrs['scaler_scale']
+        scaler_mean = f['scaler_mean'][:]
+        scaler_scale = f['scaler_scale'][:]
     
     # 3. Train
     model = DKL_GP(reduced_dim=2,

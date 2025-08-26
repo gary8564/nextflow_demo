@@ -66,8 +66,8 @@ load_h5_data <- function(filepath) {
     y_test_raw <- h5_file[["test_y"]]$read()
     
     # Read standardization parameters
-    scaler_mean_raw <- h5_file$attr_open("scaler_mean")$read()
-    scaler_scale_raw <- h5_file$attr_open("scaler_scale")$read()
+    scaler_mean_raw <- h5_file[["scaler_mean"]]$read()
+    scaler_scale_raw <- h5_file[["scaler_scale"]]$read()
     
     # Convert to matrices/vectors
     X_train_raw <- as.matrix(X_train_raw)

@@ -1,11 +1,11 @@
 import argparse
 import os
 import json
-import torch
 import numpy as np
 import h5py
-from gpytorch_emulator import ExactGP
+from psimpy.emulator import InputDimReducer, PCAScalarGaSP, LinearPCA
 from gpytorch_emulator.utils import ErrorMetrics
+from gpytorch_emulator.utils import reduced_dim
 
 def descale_data(test_y: np.ndarray,
                  mean_scaled: np.ndarray,
@@ -13,31 +13,12 @@ def descale_data(test_y: np.ndarray,
                  lower95_scaled: np.ndarray,
                  upper95_scaled: np.ndarray,
                  scaler_mean: np.ndarray,
-                 scaler_scale: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    """
-    Descale the data to the original scale
-    
-    Args:
-        test_y: The scaled test data
-        mean_scaled: The mean of the scaled test data
-        std_scaled: The standard deviation of the scaled test data
-        lower95_scaled: The lower 95% confidence interval of the scaled test data
-        upper95_scaled: The upper 95% confidence interval of the scaled test data
-        scaler_mean: Mean values from standardization
-        scaler_scale: Scale values from standardization
-        
-    Returns:
-        groud_truth: The original test data
-        mean: The mean of the original test data
-        std: The standard deviation of the original test data
-        lower95: The lower 95% confidence interval of the original test data
-        upper95: The upper 95% confidence interval of the original test data
-    """
-    mu = scaler_mean[-1] 
-    sigma = scaler_scale[-1] 
+                 scaler_scale: np.ndarray):
+    mu = scaler_mean[-1]
+    sigma = scaler_scale[-1]
     groud_truth = test_y * sigma + mu
     mean = mean_scaled * sigma + mu
-    std = std_scaled * sigma 
+    std = std_scaled * sigma
     lower95 = lower95_scaled * sigma + mu
     upper95 = upper95_scaled * sigma + mu
     return groud_truth, mean, std, lower95, upper95
@@ -53,27 +34,36 @@ def main():
     # 2. Load data from HDF5
     hdf5_file = os.path.join(args.input_dir, "data.h5")
     with h5py.File(hdf5_file, 'r') as f:
-        X_train = torch.from_numpy(f['train_X'][:]).float()
-        y_train = torch.from_numpy(f['train_y'][:]).float()
-        X_test = torch.from_numpy(f['test_X'][:]).float()
-        y_test = torch.from_numpy(f['test_y'][:]).float()
+        X_train = f['train_X'][:]
+        y_train = f['train_y'][:]
+        X_test = f['test_X'][:]
+        y_test = f['test_y'][:]
         
         # Load standardization parameters
         scaler_mean = f['scaler_mean'][:]
         scaler_scale = f['scaler_scale'][:]
     
     # 3. Train
-    model = ExactGP(device=args.device,
-                    kernel_type="matern_5_2")
+    pca = LinearPCA()
+    input_reducer  = InputDimReducer(pca)
+    model = PCAScalarGaSP(
+        ndim=int(reduced_dim(input_reducer, X_train)),
+        input_dim_reducer=input_reducer,
+    )
     training_time = model.train(X_train, y_train)
     
     # 4. Predict
-    mean_scaled, std_scaled, lower95_scaled, upper95_scaled, infer_time  = model.predict(X_test)
+    predictions, infer_time = model.predict(X_test)
     
     # 5. Descale
+    preds = np.array(predictions)
+    mean_scaled = preds[:, 0]
+    std_scaled = preds[:, 3]
+    lower95_scaled = preds[:, 1]
+    upper95_scaled = preds[:, 2]
     ground_truth, mean, std, lower95, upper95 = descale_data(
-        y_test.detach().cpu().numpy(), mean_scaled, std_scaled, lower95_scaled, upper95_scaled, 
-        scaler_mean, scaler_scale)
+        y_test, mean_scaled, std_scaled, lower95_scaled, upper95_scaled, scaler_mean, scaler_scale
+    )
     
     # 6. Evaluate metrics
     rmse = ErrorMetrics.RMSE(mean, ground_truth)
@@ -92,7 +82,7 @@ def main():
     )
     with open(os.path.join(args.output_dir,"metrics.json"),"w") as f:
         json.dump(metrics, f, indent=2)
-    print(f"[ExactGP] metrics → {args.output_dir}/metrics.json")
+    print(f"[PCA-RGaSP] metrics → {args.output_dir}/metrics.json")
 
 if __name__=="__main__":
     main()

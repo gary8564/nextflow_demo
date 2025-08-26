@@ -39,9 +39,11 @@ def main():
         f.create_dataset('test_X', data=X_test.astype(np.float32))
         f.create_dataset('test_y', data=y_test.astype(np.float32))
         
-        # Save standardization parameters as metadata
-        f.attrs['scaler_mean'] = scaler.mean_
-        f.attrs['scaler_scale'] = scaler.scale_
+        # Save standardization parameters
+        f.create_dataset('scaler_mean', data=scaler.mean_.astype(np.float32))
+        f.create_dataset('scaler_scale', data=scaler.scale_.astype(np.float32))
+        
+        # Save the dataset info as attributes
         f.attrs['n_samples_train'] = len(X_train)
         f.attrs['n_samples_test'] = len(X_test)
         f.attrs['n_features'] = X_train.shape[1]
