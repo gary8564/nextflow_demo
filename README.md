@@ -2,26 +2,6 @@
 
 A **language-agnostic** modular NextFlow pipeline for benchmarking Gaussian Process models on high-dimensional input problems. Supports Python (GPyTorch) and R (RobustGaSP) implementations with HDF5 data interchange.
 
-## TODO
-
-### Incomplete
-
-- [ ] **PCA-RGaSP** not implemented.
-
-### Done
-
-- [x] Download from sources
-- [x] Working workflow
-  - [x] Separation of data setup and downloading
-  - [x] Using conditional scripts to separate different dataset case studies
-- [x] GPytorch training hardware options: cpu/gpu
-- [x] Add plotting functions in benchmark metrics
-- [x] Renaming and documenting the code in clearer way
-- [x] Language-agnostic data interchange
-  - [x] **HDF5-based data format** for cross-language compatibility
-  - [x] **RGaSP evaluation in R** - Added RobustGaSP Gaussian Process implementation
-  - [x] **Different GP models comparison** - ExactGP, DKL (Python), and RGaSP (R)
-
 ## Workflow
 
 ![workflow](img/workflow.png)
@@ -34,6 +14,9 @@ The pipeline follows a 4-step workflow:
    - **ExactGP** (Python/GPyTorch)
    - **DKL** (Python/GPyTorch)
    - **RGaSP** (R/RobustGaSP)
+   - **PCA-RGaSP** (R/RobustGaSP + PCA)
+   
+   Note: For larger dataset like Tsunami datasets, only **DKL** and **PCA-RGaSP** are evaluated in local devices since exact inference for **ExactGP** and **RGaSP** may face computational bottleneck.
 4. **Benchmark Metrics**: Compare model performance and save results
 
 ## Supported Datasets
@@ -89,7 +72,8 @@ The pipeline follows a 4-step workflow:
         ├── comparison.csv   # Performance metrics comparison
         ├── ExactGP.png      # Exact GP performance plots
         ├── DKL.png          # DKL performance plots
-        └── RGaSP.png        # RGaSP performance plots
+        ├── RGaSP.png        # RGaSP performance plots
+        └── PCA-RGaSP.png    # PCA-RGaSP performance plots
 ```
 
 ## Prerequisites
@@ -196,4 +180,5 @@ This workflow demonstrates **programming language agnosticism** in scientific co
 | ----------- | -------- | ---------- | ---------- | ------------------------------------------- |
 | **ExactGP** | Python   | GPyTorch   | Matérn 5/2 | Exact inference, GPU support                |
 | **DKL**     | Python   | GPyTorch   | Matérn 5/2 | Deep kernel learning, GPU support           |
-| **RGaSP**   | R        | RobustGaSP | Matérn 5/2 | Robust Gaussian processes, outlier handling |
+| **RGaSP**   | R        | RobustGaSP | Matérn 5/2 | Gaussian processes with robust initialization and outlier handling |
+| **PCA-RGaSP** | R      | RobustGaSP | Matérn 5/2 | Combine RobustGaSP with PCA for scalability |
