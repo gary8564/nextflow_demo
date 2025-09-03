@@ -1,6 +1,7 @@
 process evaluate_dkl {
   tag "DKL"
-  accelerator { params.useGPU ? 1 : null }
+
+  accelerator 2
 
   input:
     path tensors

@@ -4,6 +4,5 @@ jupyter-core
 jupyter-cache
 ipykernel
 gdown
-git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/psimpy.git@main#egg=psimpy
-git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/gpytorch.git#egg=gpytorch_emulator
-
+-e ./external/psimpy
+-e ./external/gpytorch
