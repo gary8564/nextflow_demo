@@ -47,36 +47,29 @@ def viz_prediction(ground_truth, predictions, model_name, output_dir):
 def main():
     # 1. Parse arguments 
     p = argparse.ArgumentParser()
+    p.add_argument("--metrics-file", required=True)
     p.add_argument("--output-dir", required=True)
-    # Add optional method-specific arguments
-    p.add_argument("--exactgp-metrics-dir", required=False)
-    p.add_argument("--dkl-metrics-dir", required=False)
-    p.add_argument("--rgasp-metrics-dir", required=False)
-    p.add_argument("--pca-rgasp-metrics-dir", required=False)
     
     args = p.parse_args()
 
     # 2. Create output directory
     os.makedirs(args.output_dir, exist_ok=True)
     
-    # 3. Load metrics for all selected models ready to be benchmarked
-    model_configs = {
-        'ExactGP': args.exactgp_metrics_dir,
-        'DKL': args.dkl_metrics_dir,
-        'RGaSP': args.rgasp_metrics_dir,
-        'PCA-RGaSP': args.pca_rgasp_metrics_dir,
-    }
-    benchmark_models = {name: path for name, path in model_configs.items() 
-                     if path is not None and os.path.exists(os.path.join(path, "metrics.json"))}
-    if not benchmark_models:
-        print("Error: No valid model result directories found!")
-        sys.exit(1)
-    print(f"[benchmark_metrics] Processing {len(benchmark_models)} models: {list(benchmark_models.keys())}")
+    # 3. Load metrics list
+    with open(args.metrics_file, "r") as f:
+        metrics_list = json.load(f)
+    if not isinstance(metrics_list, list) or len(metrics_list) == 0:
+        raise ValueError("[benchmark_metrics] Error: --metrics-file must be a JSON array of metrics dicts")
+    # Validate and index by model name
     benchmark_metrics = {}
-    for model_name, metrics_dir in benchmark_models.items():
-        metrics_file = os.path.join(metrics_dir, "metrics.json")
-        benchmark_metrics[model_name] = json.load(open(metrics_file))
-        print(f"[benchmark_metrics] Loaded {model_name} metrics from {metrics_file}")
+    for i, m in enumerate(metrics_list):
+        if not isinstance(m, dict):
+            raise ValueError(f"[benchmark_metrics] Error: item {i} in metrics list is not a dict")
+        model_name = m.get("name")
+        if model_name is None:
+            raise ValueError(f"[benchmark_metrics] Error: item {i} missing 'name' field")
+        benchmark_metrics[model_name] = m
+    print(f"[benchmark_metrics] Processing {len(benchmark_metrics)} models: {list(benchmark_metrics.keys())}")
     
     # 4. Visualize prediction for each model
     for model_name, metrics in benchmark_metrics.items():

@@ -81,6 +81,7 @@ def main():
     # 7. Save metrics
     os.makedirs(args.output_dir, exist_ok=True)
     metrics = dict(
+        name="ExactGP",
         ground_truth=ground_truth.tolist(),
         predictions_mean=mean.tolist(),
         predictions_std=std.tolist(),

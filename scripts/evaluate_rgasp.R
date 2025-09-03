@@ -324,6 +324,7 @@ main <- function() {
   
   # Prepare and save results
   metrics <- list(
+    name = "RGaSP",
     ground_truth = as.numeric(descaled$ground_truth),
     predictions_mean = as.numeric(descaled$mean),
     predictions_std = as.numeric(descaled$std),
