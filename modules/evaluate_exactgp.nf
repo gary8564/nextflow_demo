@@ -1,5 +1,6 @@
 process evaluate_exactgp {
   tag "ExactGP"
+  accelerator { params.useGPU ? 1 : null }
   input:
     path tensors
 
