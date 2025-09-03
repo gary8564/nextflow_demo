@@ -17,6 +17,6 @@ process evaluate_exactgp {
   python ${workflow.launchDir}/scripts/evaluate_exactgp.py \
     --input-dir  ${tensors} \
     --output-dir results_exactgp \
-    ${params.useGPU ? '--device gpu' : '--device cpu'}
+    ${params.useGPU ? '--device cuda' : '--device cpu'}
   """
 }

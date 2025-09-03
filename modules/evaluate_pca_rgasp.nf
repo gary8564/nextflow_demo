@@ -14,8 +14,7 @@ process evaluate_pca_rgasp {
 
   python ${workflow.launchDir}/scripts/evaluate_pca_rgasp.py \
     --input-dir ${tensors} \
-    --output-dir results_pca_rgasp \
-    ${params.useGPU ? '--device gpu' : '--device cpu'}
+    --output-dir results_pca_rgasp
   """
 }
 

@@ -1,7 +1,7 @@
 process evaluate_dkl {
   tag "DKL"
 
-  accelerator 2
+  accelerator 1 
 
   input:
     path tensors
@@ -17,6 +17,6 @@ process evaluate_dkl {
   python ${workflow.launchDir}/scripts/evaluate_dkl.py \
     --input-dir ${tensors} \
     --output-dir results_dkl \
-    ${params.useGPU ? '--device gpu' : '--device cpu'}
+    ${params.useGPU ? '--device cuda' : '--device cpu'}
   """
 }
