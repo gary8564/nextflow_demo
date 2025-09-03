@@ -1,29 +1,24 @@
 name: nextflow_dkl_demo
 channels:
+  - pytorch
+  - nvidia
   - conda-forge
-  - defaults
-
 dependencies:
-  # Python dependencies
   - python=3.11
-  - matplotlib
-  - numpy<2.0
-  - pandas
   - pytorch
   - torchvision
   - torchaudio
-  - rpy2 >=3.5.1,<3.6.0
-  - openblas
-  - lapack
-  - gfortran
+  - pytorch-cuda=12.4
+  - numpy<2.0
+  - pandas
   - scikit-learn
   - scipy
+  - matplotlib
   - seaborn
   - pyyaml
   - joblib
   - hdf5
   - h5py
-  # R dependencies
   - conda-forge::r-base
   - conda-forge::r-robustgasp
   - conda-forge::r-hdf5r
@@ -31,7 +26,7 @@ dependencies:
   - conda-forge::r-jsonlite
   - conda-forge::r-essentials
   - conda-forge::r-argparse
-  # Pip dependencies
   - pip
   - pip:
-      - -r requirements.txt
+      - -e ./external/psimpy
+      - -e ./external/gpytorch
