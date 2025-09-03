@@ -87,7 +87,13 @@ The pipeline follows a 4-step workflow:
 
 ## Basic Usage
 
-The workflow uses conda for dependency management by default.
+1. Clone repository:
+```bash
+git clone --recurse-submodules https://github.com/gary8564/nextflow_demo.git
+git submodule update --init --recursive
+```
+
+2. Run:
 
 ### Synthetic dataset:
 
