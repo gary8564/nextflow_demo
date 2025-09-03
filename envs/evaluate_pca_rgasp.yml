@@ -1,0 +1,16 @@
+name: nf_evaluate_pca_rgasp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - r-base
+  - r-robustgasp
+  - numpy
+  - matplotlib
+  - h5py
+  - pip
+  - pip:
+      - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/psimpy.git@main#egg=psimpy
+      - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/gpytorch.git#egg=gpytorch_emulator
+
+

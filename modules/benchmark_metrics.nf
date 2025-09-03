@@ -1,4 +1,5 @@
 process benchmark_metrics {
+  conda "${workflow.launchDir}/envs/benchmark_metrics.yml"
   tag "benchmark_metrics"
   publishDir "${params.outDir}/${params.caseStudy}", mode: 'copy'
   

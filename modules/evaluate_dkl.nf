@@ -1,4 +1,5 @@
 process evaluate_dkl {
+  conda "${workflow.launchDir}/envs/${params.useGPU ? 'evaluate_dkl_cuda.yml' : 'evaluate_dkl.yml'}"
   tag "DKL"
 
   accelerator 1 
@@ -13,7 +14,7 @@ process evaluate_dkl {
   """
   # macOS-specific environment variable to avoid OpenMP error
   [[ "\$(uname)" == "Darwin" ]] && export KMP_DUPLICATE_LIB_OK=TRUE
-  
+    
   python ${workflow.launchDir}/scripts/evaluate_dkl.py \
     --input-dir ${tensors} \
     --output-dir results_dkl \

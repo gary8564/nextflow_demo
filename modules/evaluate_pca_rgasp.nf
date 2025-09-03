@@ -1,4 +1,5 @@
 process evaluate_pca_rgasp {
+  conda "${workflow.launchDir}/envs/evaluate_pca_rgasp.yml"
   tag "PCA-RGaSP"
 
   input:

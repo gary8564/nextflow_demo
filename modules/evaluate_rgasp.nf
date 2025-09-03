@@ -1,4 +1,5 @@
 process evaluate_rgasp {
+  conda "${workflow.launchDir}/envs/evaluate_rgasp.yml"
   tag "RGaSP"
   
   input:

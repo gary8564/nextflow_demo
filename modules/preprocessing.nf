@@ -1,4 +1,5 @@
 process preprocessing {
+  conda "${workflow.launchDir}/envs/preprocessing.yml"
   tag "preprocessing"
   input:
     path processed_data

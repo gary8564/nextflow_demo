@@ -1,0 +1,11 @@
+name: nf_evaluate_rgasp
+channels:
+  - conda-forge
+dependencies:
+  - r-base
+  - r-robustgasp
+  - r-hdf5r
+  - r-optparse
+  - r-jsonlite
+  - r-essentials
+  - r-argparse

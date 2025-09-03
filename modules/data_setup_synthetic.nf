@@ -1,4 +1,5 @@
 process data_setup_synthetic {
+  conda "${workflow.launchDir}/envs/data_setup_synthetic.yml"
   tag "${caseStudy}"
   
   input:
