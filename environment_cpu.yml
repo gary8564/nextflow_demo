@@ -1,0 +1,31 @@
+name: nextflow_dkl_demo_cpu
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - torchaudio
+  - numpy<2.0
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - joblib
+  - hdf5
+  - h5py
+  - conda-forge::r-base
+  - conda-forge::r-robustgasp
+  - conda-forge::r-hdf5r
+  - conda-forge::r-optparse
+  - conda-forge::r-jsonlite
+  - conda-forge::r-essentials
+  - conda-forge::r-argparse
+  - pip
+  - pip:
+      - -e ./external/psimpy
+      - -e ./external/gpytorch
+

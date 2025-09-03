@@ -5,7 +5,7 @@ import numpy as np
 import h5py
 from psimpy.emulator import InputDimReducer, PCAScalarGaSP, LinearPCA
 from gpytorch_emulator.utils import ErrorMetrics
-from gpytorch_emulator.utils import reduced_dim
+from psimpy.utility.util_funcs import reduced_dim
 
 def descale_data(test_y: np.ndarray,
                  mean_scaled: np.ndarray,
