@@ -116,7 +116,7 @@ nextflow run workflows/main.nf \
   --caseStudy synthetic \
   --outDir results \
   --useGPU true \
-  -profile slurm
+  -profile local
 ```
 
 ### Workflow DAG generation
@@ -127,6 +127,16 @@ nextflow run workflows/main.nf \
   --outDir results \
   -profile local \
   -with-dag flowchart.png
+```
+
+### SLURM:
+
+```bash
+nextflow run workflows/main.nf \
+  --caseStudy synthetic \
+  --outDir results \
+  --useGPU true \
+  -profile slurm
 ```
 
 ### Configuration Options
