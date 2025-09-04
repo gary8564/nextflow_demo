@@ -10,15 +10,10 @@ dependencies:
   - r-jsonlite
   - r-optparse
   - r-argparse
-  - blas=*=openblas
-  - libopenblas
-  - lapack
-  - liblapack
-  - liblapacke
   - rpy2<3.6.0
   - numpy
   - h5py
   - pip
   - pip:
-      - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/psimpy.git@main#egg=psimpy
-      - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/gpytorch.git#egg=gpytorch_emulator
+      - -e ../external/psimpy
+      - -e ../external/gpytorch

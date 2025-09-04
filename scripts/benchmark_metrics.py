@@ -1,10 +1,10 @@
 import argparse
 import os
 import json
+import ast
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import sys
 
 def viz_prediction(ground_truth, predictions, model_name, output_dir):
     if ground_truth.ndim == 1:
@@ -44,10 +44,30 @@ def viz_prediction(ground_truth, predictions, model_name, output_dir):
     plt.title(title)
     plt.savefig(os.path.join(output_dir, f"{model_name}.png"))
 
+def viz_rmse_vs_train_time(benchmark_metrics, output_dir):
+    names = list(benchmark_metrics.keys())
+    rmses = [benchmark_metrics[name]["rmse"] for name in names]
+    train_times = [benchmark_metrics[name]["train_time"] for name in names]
+    plt.figure()
+    tab10 = plt.get_cmap("tab10").colors
+    markers = ["o", "s", "^", "D", "X", "h", "*", "p", "v", ">", "<"]
+    for i, name in enumerate(names):
+        color = tab10[i % len(tab10)]
+        marker = markers[i % len(markers)]
+        plt.scatter(train_times[i], rmses[i], color=color, marker=marker, s=70, label=name, edgecolors="black", linewidths=0.6, zorder=3)
+    plt.xlabel("Training time (sec)")
+    plt.ylabel("RMSE")
+    plt.title("RMSE vs Training Time")
+    plt.grid(True, linestyle=":", linewidth=0.6, zorder=0)
+    plt.legend(title="Model")
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, "rmse_vs_training_time.png"))
+
 def main():
     # 1. Parse arguments 
     p = argparse.ArgumentParser()
-    p.add_argument("--metrics-file", required=True)
+    p.add_argument("--metrics-paths", required=True, type=ast.literal_eval,
+                   help="A list of directory paths containing metrics.json files to benchmark")
     p.add_argument("--output-dir", required=True)
     
     args = p.parse_args()
@@ -55,22 +75,28 @@ def main():
     # 2. Create output directory
     os.makedirs(args.output_dir, exist_ok=True)
     
-    # 3. Load metrics list
-    with open(args.metrics_file, "r") as f:
-        metrics_list = json.load(f)
-    if not isinstance(metrics_list, list) or len(metrics_list) == 0:
-        raise ValueError("[benchmark_metrics] Error: --metrics-file must be a JSON array of metrics dicts")
-    # Validate and index by model name
+    # 3. Load metrics from each path
+    if not isinstance(args.metrics_paths, list) or len(args.metrics_paths) == 0:
+        raise ValueError("[benchmark_metrics] Error: --metrics-paths must be a non-empty list of directory paths")
+    
     benchmark_metrics = {}
-    for i, m in enumerate(metrics_list):
-        if not isinstance(m, dict):
-            raise ValueError(f"[benchmark_metrics] Error: item {i} in metrics list is not a dict")
-        model_name = m.get("name")
+    for i, p in enumerate(args.metrics_paths):
+        if not isinstance(p, str):
+            raise ValueError(f"[benchmark_metrics] Error: item {i} must be a string path, got {type(p)}")
+        metrics_path = os.path.join(p, "metrics.json")
+        if not os.path.exists(metrics_path):
+            raise FileNotFoundError(f"[benchmark_metrics] Missing metrics file for item {i}: {metrics_path}")
+        with open(metrics_path, "r") as f:
+            try:
+                metrics = json.load(f)
+            except json.JSONDecodeError as e:
+                raise ValueError(f"[benchmark_metrics] Error decoding JSON for item {i}: {metrics_path}: {e}")
+        model_name = metrics.get("name")
         if model_name is None:
             raise ValueError(f"[benchmark_metrics] Error: item {i} missing 'name' field")
-        benchmark_metrics[model_name] = m
+        benchmark_metrics[model_name] = metrics
     print(f"[benchmark_metrics] Processing {len(benchmark_metrics)} models: {list(benchmark_metrics.keys())}")
-    
+
     # 4. Visualize prediction for each model
     for model_name, metrics in benchmark_metrics.items():
         predictions = np.concatenate([
@@ -95,6 +121,10 @@ def main():
     csv_path = os.path.join(args.output_dir, "comparison.csv")
     df.to_csv(csv_path)
     print(f"[benchmark_metrics] Saved comparison → {csv_path}")
+    
+    # 6. Visualize RMSE vs Training Time scatter plot
+    viz_rmse_vs_train_time(benchmark_metrics, args.output_dir)
+    print("[benchmark_metrics] Generated RMSE vs Training Time scatter plot")
 
 if __name__=="__main__":
     main()

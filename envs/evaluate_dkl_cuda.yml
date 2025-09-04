@@ -11,6 +11,6 @@ dependencies:
   - h5py
   - pip
   - pip:
-      - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/gpytorch.git#egg=gpytorch_emulator
+      - -e ../external/gpytorch
 
 

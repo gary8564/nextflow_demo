@@ -75,29 +75,25 @@ load_h5_data <- function(filepath) {
     X_test_raw <- as.matrix(X_test_raw)
     y_test_raw <- as.vector(y_test_raw)
     
-    # Handle potential transposition issues
-    if (ncol(X_train_raw) > nrow(X_train_raw)) {
-      cat("[RGaSP] Detected transposed X data, transposing...\n")
-      X_train <- t(X_train_raw)
-      X_test <- t(X_test_raw)
-    } else {
-      X_train <- X_train_raw
-      X_test <- X_test_raw
+    # Align X rows with y length: rows must equal number of responses
+    y_len <- length(y_train_raw)
+    X_train <- X_train_raw
+    X_test <- X_test_raw
+    if (nrow(X_train) != y_len) {
+      if (ncol(X_train) == y_len) {
+        cat("[RGaSP] Aligning rows: transposing X matrices to match y length\n")
+        X_train <- t(X_train)
+        X_test <- t(X_test)
+      } else {
+        stop(sprintf(
+          "Cannot align X and y: y length=%d, X_train dims=%s",
+          y_len, paste(dim(X_train_raw), collapse=" x ")
+        ))
+      }
     }
     
-    # Handle y data transposition
-    if (length(y_train_raw) != nrow(X_train)) {
-      if (length(y_train_raw) == ncol(X_train_raw)) {
-        y_train <- y_train_raw
-        y_test <- y_test_raw
-      } else {
-        stop(sprintf("Cannot resolve y_train length mismatch: y_train has %d elements, X_train has %d rows", 
-                     length(y_train_raw), nrow(X_train)))
-      }
-    } else {
-      y_train <- y_train_raw
-      y_test <- y_test_raw
-    }
+    y_train <- y_train_raw
+    y_test <- y_test_raw
     
     # Validate dimensions
     cat(sprintf("[RGaSP] Data dimensions:\n"))

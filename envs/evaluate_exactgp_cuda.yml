@@ -11,5 +11,5 @@ dependencies:
   - pytorch-cuda=12.4
   - pip
   - pip:
-      - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/gpytorch.git#egg=gpytorch_emulator
+      - -e ../external/gpytorch
 
