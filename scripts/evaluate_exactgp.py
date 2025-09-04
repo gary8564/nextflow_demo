@@ -7,8 +7,6 @@ import h5py
 from gpytorch_emulator import ExactGP
 from gpytorch_emulator.utils import ErrorMetrics
 
-print(os.environ["CUDA_VISIBLE_DEVICES"])
-
 def descale_data(test_y: np.ndarray,
                  mean_scaled: np.ndarray,
                  std_scaled: np.ndarray,
