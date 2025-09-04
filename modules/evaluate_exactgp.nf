@@ -1,6 +1,5 @@
 process evaluate_exactgp {
   tag "ExactGP"
-
   accelerator 1 
 
   input:
