@@ -19,15 +19,14 @@ dependencies:
   - joblib
   - hdf5
   - h5py
-  - conda-forge::r-base
-  - conda-forge::r-robustgasp
-  - conda-forge::r-hdf5r
-  - conda-forge::r-optparse
-  - conda-forge::r-jsonlite
-  - conda-forge::r-essentials
-  - conda-forge::r-argparse
+  - r-base
+  - r-robustgasp
+  - r-hdf5r
+  - r-optparse
+  - r-jsonlite
+  - r-essentials
+  - r-argparse
   - pip
   - pip:
       - -e ./external/psimpy
       - -e ./external/gpytorch
-

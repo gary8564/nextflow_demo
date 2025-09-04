@@ -1,8 +1,0 @@
-nbformat
-nbclient
-jupyter-core
-jupyter-cache
-ipykernel
-gdown
--e ./external/psimpy
--e ./external/gpytorch
