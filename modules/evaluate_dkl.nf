@@ -1,6 +1,5 @@
 process evaluate_dkl {
   tag "DKL"
-
   accelerator 1 
 
   input:
