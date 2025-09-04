@@ -1,4 +1,5 @@
 process fetch_from_zenodo {
+  conda "${workflow.launchDir}/envs/fetch_from_zenodo.yml"
   tag "${caseStudy}"
   
   input:

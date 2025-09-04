@@ -1,0 +1,7 @@
+name: nf_fetch_from_zenodo
+channels:
+  - conda-forge
+dependencies:
+  - bash
+  - wget
+  - unzip

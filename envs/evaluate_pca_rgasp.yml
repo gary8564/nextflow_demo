@@ -4,13 +4,21 @@ channels:
 dependencies:
   - python=3.11
   - r-base
+  - r-essentials
   - r-robustgasp
+  - r-hdf5r
+  - r-jsonlite
+  - r-optparse
+  - r-argparse
+  - blas=*=openblas
+  - libopenblas
+  - lapack
+  - liblapack
+  - liblapacke
+  - rpy2<3.6.0
   - numpy
-  - matplotlib
   - h5py
   - pip
   - pip:
       - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/psimpy.git@main#egg=psimpy
       - git+ssh://git@git-ce.rwth-aachen.de/mbd/eccr/gpytorch.git#egg=gpytorch_emulator
-
-
