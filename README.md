@@ -212,6 +212,7 @@ This workflow demonstrates **programming language agnosticism** in scientific co
 
 
 ## Benchmark Results
+DKL and ExactGP implemented in GPytorch can benefits from GPU acceleration, whereas RGaSP cannot. 
 ### Synthetic Case
 ![benchmark_results_synthetic](results/synthetic_100d_function/benchmark_results/rmse_vs_training_time.png)
 
