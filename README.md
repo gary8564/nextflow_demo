@@ -35,7 +35,9 @@ The pipeline follows a 4-step workflow:
 - **Data**: Initial water level distributions, tsunami water level distributions, and inundation distributions
 
 ## Folder Structure
+Currently, there are two branches here: main and per_process_env. 
 
+In main branch: 
 ```
 .
 ├── nextflow.config          # Main NextFlow configuration
@@ -70,6 +72,13 @@ The pipeline follows a 4-step workflow:
 |   ├── evaluate_pca_rgasp.nf    # PCA-RGaSP implementation (Python/PCA-RobustGaSP)
 │   └── benchmark_metrics.py     # Metrics calculation and comparison
 └── results/                     # Pipeline outputs
+```
+
+In per_process_env branch, it use conda environment locally per process unit instead of sharing global conda environment across all compute units. The folder structure is basically the same as main branch. The only difference is that there are additionall envs folder:
+```
+...
+├── envs          # conda environment yaml files for each process unit
+...
 ```
 
 ## Prerequisites
