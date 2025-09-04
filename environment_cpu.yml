@@ -24,6 +24,12 @@ dependencies:
   - r-jsonlite
   - r-essentials
   - r-argparse
+  - rpy2<3.6.0
+  - blas=*=openblas
+  - libopenblas
+  - lapack
+  - liblapack
+  - liblapacke
   - pip
   - pip:
       - -e ./external/psimpy
