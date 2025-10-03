@@ -1,6 +1,0 @@
-[submodule "external/psimpy"]
-	path = external/psimpy
-	url = https://git-ce.rwth-aachen.de/mbd/eccr/psimpy.git
-[submodule "external/gpytorch"]
-	path = external/gpytorch
-	url = https://git-ce.rwth-aachen.de/mbd/eccr/gpytorch.git

@@ -49,18 +49,17 @@ workflow {
         // 2. Preprocessing: Standardize, split, save to HDF5
         def processed_ch = preprocessing(data_ch)
 
-        // 3. Train and inference: For real-world tsunami data,  RGaSP on ultra-high-dimensional inputs would face numerical instability issues
-        // Evaluate ExactGP, DKL and PCA-RGaSP
-        def exactgp_ch   = evaluate_exactgp(processed_ch)
+        // 3. Train and inference: Train emulators in parallel based on selected models and get predictions
+        // Real-world dataset is oftern larger, so exact inference may not be tractable
+        // We only evaluate PCA-RGaSP and DKL
         def dkl_ch       = evaluate_dkl(processed_ch)
         def pca_rgasp_ch = evaluate_pca_rgasp(processed_ch)
 
-        // 4. Gather result directories and benchmark
-        def metrics_list_ch = exactgp_ch.exactgp
-                                    .mix(dkl_ch.dkl)
-                                    .mix(pca_rgasp_ch.pca_rgasp)
-                                    .map { path -> path.toString() }
-                                    .collect()
+        // 4. Gather result directories and benchmark (DKL + PCA-RGaSP only)
+        def metrics_list_ch = dkl_ch.dkl
+                                .mix(pca_rgasp_ch.pca_rgasp)
+                                .map { path -> path.toString() }
+                                .collect()
         benchmark_metrics(metrics_list_ch)
         
     } else {

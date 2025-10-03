@@ -5,6 +5,7 @@ import ast
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
 
 def viz_prediction(ground_truth, predictions, model_name, output_dir):
     if ground_truth.ndim == 1:
@@ -43,25 +44,6 @@ def viz_prediction(ground_truth, predictions, model_name, output_dir):
     plt.tight_layout()
     plt.title(title)
     plt.savefig(os.path.join(output_dir, f"{model_name}.png"))
-
-def viz_rmse_vs_train_time(benchmark_metrics, output_dir):
-    names = list(benchmark_metrics.keys())
-    rmses = [benchmark_metrics[name]["rmse"] for name in names]
-    train_times = [benchmark_metrics[name]["train_time"] for name in names]
-    plt.figure()
-    tab10 = plt.get_cmap("tab10").colors
-    markers = ["o", "s", "^", "D", "X", "h", "*", "p", "v", ">", "<"]
-    for i, name in enumerate(names):
-        color = tab10[i % len(tab10)]
-        marker = markers[i % len(markers)]
-        plt.scatter(train_times[i], rmses[i], color=color, marker=marker, s=70, label=name, edgecolors="black", linewidths=0.6, zorder=3)
-    plt.xlabel("Training time (sec)")
-    plt.ylabel("RMSE")
-    plt.title("RMSE vs Training Time")
-    plt.grid(True, linestyle=":", linewidth=0.6, zorder=0)
-    plt.legend(title="Model")
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, "rmse_vs_training_time.png"))
 
 def main():
     # 1. Parse arguments 
@@ -121,10 +103,6 @@ def main():
     csv_path = os.path.join(args.output_dir, "comparison.csv")
     df.to_csv(csv_path)
     print(f"[benchmark_metrics] Saved comparison → {csv_path}")
-    
-    # 6. Visualize RMSE vs Training Time scatter plot
-    viz_rmse_vs_train_time(benchmark_metrics, args.output_dir)
-    print("[benchmark_metrics] Generated RMSE vs Training Time scatter plot")
 
 if __name__=="__main__":
     main()
