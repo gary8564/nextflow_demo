@@ -98,17 +98,13 @@ git submodule update --init --recursive
 ```
 
 2. Run:
+```bash
+nextflow run workflows/main.nf -params-file params.yaml -profile local
+```
 
 ### Synthetic dataset:
 
-```bash
-nextflow run workflows/main.nf \
-  --caseStudy synthetic_100d_function \
-  --outDir results \
-  -profile local \
-  # If using micromamba
-  --useMicromamba true
-```
+
 
 ### Tokushima Tsunami:
 

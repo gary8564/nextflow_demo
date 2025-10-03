@@ -3,9 +3,10 @@ import os
 import json
 import numpy as np
 import h5py
-from psimpy.emulator import InputDimReducer, PCAScalarGaSP, LinearPCA
-from gpytorch_emulator.utils import ErrorMetrics
-from psimpy.utility.util_funcs import reduced_dim
+from high_dim_gp.emulator import PCAScalarGaSP
+from high_dim_gp.dr import InputDimReducer, LinearPCA
+from high_dim_gp.utils import ErrorMetrics
+from high_dim_gp.utils.util_funcs import reduced_dim
 
 def descale_data(test_y: np.ndarray,
                  mean_scaled: np.ndarray,

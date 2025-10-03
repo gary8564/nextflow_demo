@@ -4,8 +4,8 @@ import numpy as np
 import argparse
 import json
 import h5py
-from gpytorch_emulator import DKL_GP
-from gpytorch_emulator.utils import ErrorMetrics
+from high_dim_gp.emulator import DKL_GP
+from high_dim_gp.utils import ErrorMetrics
 
 def descale_data(test_y: np.ndarray, 
                  mean_scaled: np.ndarray, 

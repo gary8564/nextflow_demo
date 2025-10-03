@@ -1,0 +1,4 @@
+   caseStudy: synthetic_100d_function  # name of the case study, should exist in datasets.config
+   outDir: results # name of the output directory
+   useGPU: false # true/false
+   condaEngine: conda # conda/mamba/micromamba

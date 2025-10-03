@@ -6,8 +6,6 @@ channels:
 dependencies:
   - python=3.11
   - pytorch
-  - torchvision
-  - torchaudio
   - pytorch-cuda=12.4
   - numpy<2.0
   - pandas
@@ -27,7 +25,10 @@ dependencies:
   - r-essentials
   - r-argparse
   - rpy2<3.6.0
+  - rasterio
+  - tqdm
+  - psimpy
+  - gpytorch
   - pip
   - pip:
-      - -e ./external/psimpy
-      - -e ./external/gpytorch
+      - -e .
