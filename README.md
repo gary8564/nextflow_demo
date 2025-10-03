@@ -35,7 +35,9 @@ The pipeline follows a 4-step workflow:
 - **Data**: Initial water level distributions, tsunami water level distributions, and inundation distributions
 
 ## Folder Structure
+Currently, there are two branches here: main and per_process_env. 
 
+In main branch: 
 ```
 .
 ├── nextflow.config          # Main NextFlow configuration
@@ -53,11 +55,12 @@ The pipeline follows a 4-step workflow:
 ├── modules/                 # Modular NextFlow processes
 │   ├── fetch_from_zenodo.nf # Data fetching from Zenodo
 │   ├── data_setup_synthetic.nf # Synthetic data generation
-│   ├── data_setup_zenodo.nf    # Zenodo data processing
+│   ├── data_setup_tsunami.nf   # Tsunami data processing
 │   ├── preprocessing.nf     # Data standardization and splitting
 │   ├── evaluate_exactgp.nf  # Exact GP model training and evaluation
 │   ├── evaluate_dkl.nf      # DKL model training and evaluation
 │   ├── evaluate_rgasp.nf    # RGaSP model training and evaluation
+|   ├── evaluate_pca_rgasp.nf  # PCA-RGaSP model training and evaluation
 │   └── benchmark_metrics.nf # Performance comparison and reporting
 ├── scripts/                 # Implementation scripts
 │   ├── data_setup_synthetic.py  # Synthetic data generation
@@ -66,14 +69,16 @@ The pipeline follows a 4-step workflow:
 │   ├── evaluate_exactgp.py      # Exact GP implementation (Python/GPyTorch)
 │   ├── evaluate_dkl.py          # DKL implementation (Python/GPyTorch)
 │   ├── evaluate_rgasp.R         # RGaSP implementation (R/RobustGaSP)
+|   ├── evaluate_pca_rgasp.nf    # PCA-RGaSP implementation (Python/PCA-RobustGaSP)
 │   └── benchmark_metrics.py     # Metrics calculation and comparison
-└── results/                 # Pipeline outputs
-    └── benchmark_results/   # Model comparison results
-        ├── comparison.csv   # Performance metrics comparison
-        ├── ExactGP.png      # Exact GP performance plots
-        ├── DKL.png          # DKL performance plots
-        ├── RGaSP.png        # RGaSP performance plots
-        └── PCA-RGaSP.png    # PCA-RGaSP performance plots
+└── results/                     # Pipeline outputs
+```
+
+In per_process_env branch, it use conda environment locally per process unit instead of sharing global conda environment across all compute units. The folder structure is basically the same as main branch. The only difference is that there are additionall envs folder:
+```
+...
+├── envs          # conda environment yaml files for each process unit
+...
 ```
 
 ## Prerequisites
@@ -99,9 +104,11 @@ git submodule update --init --recursive
 
 ```bash
 nextflow run workflows/main.nf \
-  --caseStudy synthetic \
+  --caseStudy synthetic_100d_function \
   --outDir results \
-  -profile local
+  -profile local \
+  # If using micromamba
+  --useMicromamba true
 ```
 
 ### Tokushima Tsunami:
@@ -110,7 +117,9 @@ nextflow run workflows/main.nf \
 nextflow run workflows/main.nf \
   --caseStudy tsunami_tokushima \
   --outDir results \
-  -profile local
+  -profile local \
+  # If using micromamba
+  --useMicromamba true
 ```
 
 ## Advanced Usage
@@ -119,30 +128,36 @@ nextflow run workflows/main.nf \
 
 ```bash
 nextflow run workflows/main.nf \
-  --caseStudy synthetic \
+  --caseStudy synthetic_100d_function \
   --outDir results \
   --useGPU true \
-  -profile local
+  -profile local \
+  # If using micromamba
+  --useMicromamba true
 ```
 
 ### Workflow DAG generation
 
 ```bash
 nextflow run workflows/main.nf \
-  --caseStudy tsunami_tokushima \
+  --caseStudy synthetic_100d_function \
   --outDir results \
   -profile local \
-  -with-dag flowchart.png
+  -with-dag flowchart.png \
+  # If using micromamba
+  --useMicromamba true
 ```
 
 ### SLURM:
 
 ```bash
 nextflow run workflows/main.nf \
-  --caseStudy synthetic \
+  --caseStudy synthetic_100d_function \
   --outDir results \
   --useGPU true \
-  -profile slurm
+  -profile slurm \
+  # If using micromamba
+  --useMicromamba true
 ```
 
 ### Configuration Options
@@ -156,7 +171,7 @@ params {
     // ... existing datasets ...
 
     my_new_study: [
-      type: "zenodo",  // or "generate" for synthetic data
+      source: "zenodo",  
       description: "Description of your dataset",
       doi: "10.5281/zenodo.XXXXXXX",  // for Zenodo datasets
       base_url: "https://zenodo.org/records/XXXXXXX",  // for Zenodo datasets
@@ -164,10 +179,6 @@ params {
         "data_file1.csv",
         "data_file2.zip"
       ],
-      parameters: [  // for generated datasets
-        n_samples: 1000,
-        custom_param: "value"
-      ]
     ]
   ]
 }
@@ -198,3 +209,12 @@ This workflow demonstrates **programming language agnosticism** in scientific co
 | **DKL**     | Python   | GPyTorch   | Matérn 5/2 | Deep kernel learning, GPU support           |
 | **RGaSP**   | R        | RobustGaSP | Matérn 5/2 | Gaussian processes with robust initialization and outlier handling |
 | **PCA-RGaSP** | R      | RobustGaSP | Matérn 5/2 | Combine RobustGaSP with PCA for scalability |
+
+
+## Benchmark Results
+### Synthetic Case
+![benchmark_results_synthetic](results/synthetic_100d_function/benchmark_results/rmse_vs_training_time.png)
+
+### Tsunami Case
+Noted that for tsunami case study, which input dimension (21600) is extremely high, traininng RGaSP will face numerical instability issue (covariance matrix is ill-conditioned and gets inf/nan values). Hence, only PCA-RGaSP, ExactGP, DKL are considered here. 
+![benchmark_results_tsunami](results/tsunami_tokushima/benchmark_results/rmse_vs_training_time.png)
