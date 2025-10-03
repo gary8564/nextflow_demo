@@ -1,6 +1,6 @@
-# NextFlow Demo: GPytorch High-dimensional Input Problem (DKL)
+# Evaluation Pipeline for Gaussian Process Emulators with High-dimensional Dataset
 
-A **language-agnostic** modular NextFlow pipeline for benchmarking Gaussian Process models on high-dimensional input problems. Supports Python (GPyTorch) and R (RobustGaSP) implementations with HDF5 data interchange.
+Gaussian Processes (GPs) are suffering from the "curse of the dimensionality". As input or output dimension grows up, the computation becomes intractable. This project aims to explore the state-of-the-art research of dimensionality reduction in Gaussian Process emulation. In this repository, a workflow is constructed to facilitate benchmarking different Gaussian Process models on high-dimensional input/output problems with minimal efforts. 
 
 ## Workflow
 
@@ -10,7 +10,7 @@ The pipeline follows a 4-step workflow:
 
 1. **Data Setup**: Generate synthetic data or fetch and process real-world data using specialized modules
 2. **Preprocessing**: Standardize, split, and save data in **HDF5 format** (language-agnostic)
-3. **Model Evaluation**: Train and evaluate **three GP models in parallel**:
+3. **Model Evaluation**: Train and evaluate **GP models in parallel**:
    - **ExactGP** (Python/GPyTorch)
    - **DKL** (Python/GPyTorch)
    - **RGaSP** (R/RobustGaSP)
@@ -19,7 +19,7 @@ The pipeline follows a 4-step workflow:
    Note: For larger dataset like Tsunami datasets, only **DKL** and **PCA-RGaSP** are evaluated in local devices since exact inference for **ExactGP** and **RGaSP** may face computational bottleneck.
 4. **Benchmark Metrics**: Compare model performance and save results
 
-## Supported Datasets
+## Datasets
 
 ### Synthetic Dataset
 
@@ -83,11 +83,10 @@ In per_process_env branch, it use conda environment locally per process unit ins
 
 ## Prerequisites
 
-1. **Python >= 3.10**
-2. **Conda Environment Manager**
+1. **Conda Environment Manager**
    - [conda](https://www.anaconda.com/docs/getting-started/miniconda/install) or
    - [micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html)
-3. **NextFlow**
+2. **NextFlow**
    - Follow the [installation instructions](https://www.nextflow.io/docs/latest/install.html)
 
 ## Basic Usage
@@ -212,6 +211,7 @@ This workflow demonstrates **programming language agnosticism** in scientific co
 
 
 ## Benchmark Results
+DKL and ExactGP implemented in GPytorch can benefits from GPU acceleration, whereas RGaSP cannot. 
 ### Synthetic Case
 ![benchmark_results_synthetic](results/synthetic_100d_function/benchmark_results/rmse_vs_training_time.png)
 
